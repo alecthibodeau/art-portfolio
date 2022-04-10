@@ -1,0 +1,10 @@
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+@use './styles/variables' as *;
+div {
+  background-color: lime;
+}
+
+div span {
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */

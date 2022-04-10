@@ -1,0 +1,11 @@
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+@use './styles/variables' as *;
+
+div {
+  background-color: $div-background;
+  color: $text;
+
+  span {
+    background-color: $span-background;
+  }
+}
