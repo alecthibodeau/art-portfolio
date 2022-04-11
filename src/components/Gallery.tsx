@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-/* Helpers */
-import { getDrawingsSquareByKey } from '../helpers/helpers';
-
 /* Interfaces */
 import GallerySquare from '../interfaces/GallerySquare';
 import GalleryProps from '../interfaces/GalleryProps';
+
+/* Helpers */
+import { getSquareByKey } from '../helpers/squares';
 
 function renderSquare(square: GallerySquare) {
   return (
@@ -15,7 +15,7 @@ function renderSquare(square: GallerySquare) {
     >
       <img
         className="gallery-square"
-        src={getDrawingsSquareByKey(square.id)}
+        src={getSquareByKey(square.id)}
         alt={square.alt}
       />
     </Link>
