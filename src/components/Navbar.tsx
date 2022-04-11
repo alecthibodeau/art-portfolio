@@ -5,7 +5,7 @@ import NavbarLink from '../interfaces/NavbarLink';
 
 const defaultNavLink: string = 'nav-link';
 
-function renderNavLinks(link: NavbarLink) {
+function renderNavbarLink(link: NavbarLink) {
   return (
     <NavLink
       key={link.id}
@@ -22,7 +22,7 @@ function renderNavLinks(link: NavbarLink) {
 function Navbar() {
   return (
     <nav className="navbar">
-      {config.navLinks.map(renderNavLinks)}
+      {config.navbarLinks.map(renderNavbarLink)}
     </nav>
   );
 };

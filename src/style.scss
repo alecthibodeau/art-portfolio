@@ -27,3 +27,16 @@
   color: $black;
   background-color: $nav-link-accent;
 }
+
+.gallery-squares-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  max-width: 575px;
+  margin: 0 auto;
+}
+
+.gallery-square {
+  border: 1px solid $black;
+  margin: 1rem;
+}

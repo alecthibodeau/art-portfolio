@@ -1,24 +1,8 @@
-import { Link } from 'react-router-dom';
-
-/* Interfaces */
-import MailToLinkProps from '../interfaces/MailToLinkProps';
+/* Components */
+import MailToLink from './MailToLink';
 
 /* Images */
 import selfPortrait from '../assets/images/main/alec-thibodeau-self-portrait.jpg';
-
-function MailToLink({ label, mailTo }: MailToLinkProps) {
-  return (
-    <Link
-      to='#'
-      onClick={(event) => {
-          window.location.href = mailTo;
-          event.preventDefault();
-      }}
-    >
-      {label}
-    </Link>
-  );
-};
 
 function About() {
   return (
