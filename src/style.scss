@@ -1,11 +1,29 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-div {
-  background-color: $div-background;
-  color: $text;
+.wordmark {
+  max-width: 300px;
+}
 
-  span {
-    background-color: $span-background;
-  }
+.navbar {
+  justify-content: center;
+  margin-top: .75rem;
+}
+
+.feature-image {
+  max-width: 675px;
+}
+
+.self-portrait {
+  margin-right: 1rem;
+  float: left;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.active-link {
+  color: $black;
+  background-color: $nav-link-accent;
 }
