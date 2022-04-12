@@ -5,7 +5,7 @@ import GallerySquare from '../interfaces/GallerySquare';
 import GalleryProps from '../interfaces/GalleryProps';
 
 /* Helpers */
-import { getSquareByKey } from '../helpers/squares';
+import { getSquareImage } from '../helpers/squares';
 
 function renderSquare(square: GallerySquare) {
   return (
@@ -15,7 +15,7 @@ function renderSquare(square: GallerySquare) {
     >
       <img
         className="gallery-square"
-        src={getSquareByKey(square.id)}
+        src={getSquareImage(square.id)}
         alt={square.alt}
       />
     </Link>

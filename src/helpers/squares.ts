@@ -1,33 +1,57 @@
-const filePath = '../assets/images/squares/';
+import thibodeauSquareDrawingAerodynamicsTribute from '../assets/images/squares/thibodeau-square-drawing-aerodynamics-tribute.jpg';
+import thibodeauSquareDrawingAhem from '../assets/images/squares/thibodeau-square-drawing-ahem.jpg';
+import thibodeauSquareDrawingBasil from '../assets/images/squares/thibodeau-square-drawing-basil.jpg';
+import thibodeauSquareDrawingBaskingWithTheStars from '../assets/images/squares/thibodeau-square-drawing-basking-with-the-stars.jpg';
+import thibodeauSquareDrawingClarice from '../assets/images/squares/thibodeau-square-drawing-clarice.jpg';
+import thibodeauSquareDrawingConversion from '../assets/images/squares/thibodeau-square-drawing-conversion.jpg';
+import thibodeauSquareDrawingDistraction from '../assets/images/squares/thibodeau-square-drawing-distraction.jpg';
+import thibodeauSquareDrawingDoYouHaveAMoment from '../assets/images/squares/thibodeau-square-drawing-do-you-have-a-moment.jpg';
+import thibodeauSquareDrawingFriendshipsPath from '../assets/images/squares/thibodeau-square-drawing-friendships-path.jpg';
+import thibodeauSquareDrawingGrackle from '../assets/images/squares/thibodeau-square-drawing-grackle.jpg';
+import thibodeauSquareDrawingInfinityWithYou from '../assets/images/squares/thibodeau-square-drawing-infinity-with-you.jpg';
+import thibodeauSquareDrawingInvoluntaryInvestment from '../assets/images/squares/thibodeau-square-drawing-involuntary-investment.jpg';
+import thibodeauSquareDrawingJubilance from '../assets/images/squares/thibodeau-square-drawing-jubilance.jpg';
+import thibodeauSquareDrawingMirageBash from '../assets/images/squares/thibodeau-square-drawing-mirage-bash.jpg';
+import thibodeauSquareDrawingMsSock from '../assets/images/squares/thibodeau-square-drawing-ms-sock.jpg';
+import thibodeauSquareDrawingNemo from '../assets/images/squares/thibodeau-square-drawing-nemo.jpg';
+import thibodeauSquareDrawingNoOneLikesATwit from '../assets/images/squares/thibodeau-square-drawing-no-one-likes-a-twit.jpg';
+import thibodeauSquareDrawingPeregrineFalcon from '../assets/images/squares/thibodeau-square-drawing-peregrine-falcon.jpg';
+import thibodeauSquareDrawingPostcardToWilliamSchaff from '../assets/images/squares/thibodeau-square-drawing-postcard-to-william-schaff.jpg';
+import thibodeauSquareDrawingQuimby from '../assets/images/squares/thibodeau-square-drawing-quimby.jpg';
+import thibodeauSquareDrawingSonsAndDaughters from '../assets/images/squares/thibodeau-square-drawing-sons-and-daughters.jpg';
+import thibodeauSquareDrawingSwanAndAnchor from '../assets/images/squares/thibodeau-square-drawing-swan-and-anchor.jpg';
+import thibodeauSquareDrawingTemporaryChemicalFactory from '../assets/images/squares/thibodeau-square-drawing-temporary-chemical-factory.jpg';
+import thibodeauSquareDrawingTrust from '../assets/images/squares/thibodeau-square-drawing-trust.jpg';
+import thibodeauSquareDrawingZeke from '../assets/images/squares/thibodeau-square-drawing-zeke.jpg';
 
 const squaresImages = {
-  thibodeauSquareDrawingAerodynamicsTribute: require(`${filePath}thibodeau-square-drawing-ahem.jpg`),
-  thibodeauSquareDrawingAhem: require(`${filePath}thibodeau-square-drawing-ahem.jpg`),
-  thibodeauSquareDrawingBasil: require(`${filePath}thibodeau-square-drawing-basil.jpg`),
-  thibodeauSquareDrawingBaskingWithTheStars: require(`${filePath}thibodeau-square-drawing-basking-with-the-stars.jpg`),
-  thibodeauSquareDrawingClarice: require(`${filePath}thibodeau-square-drawing-clarice.jpg`),
-  thibodeauSquareDrawingConversion: require(`${filePath}thibodeau-square-drawing-conversion.jpg`),
-  thibodeauSquareDrawingDistraction: require(`${filePath}thibodeau-square-drawing-distraction.jpg`),
-  thibodeauSquareDrawingDoYouHaveAMoment: require(`${filePath}thibodeau-square-drawing-do-you-have-a-moment.jpg`),
-  thibodeauSquareDrawingFriendshipsPath: require(`${filePath}thibodeau-square-drawing-friendships-path.jpg`),
-  thibodeauSquareDrawingGrackle: require(`${filePath}thibodeau-square-drawing-grackle.jpg`),
-  thibodeauSquareDrawingInfinityWithYou: require(`${filePath}thibodeau-square-drawing-infinity-with-you.jpg`),
-  thibodeauSquareDrawingInvoluntaryInvestment: require(`${filePath}thibodeau-square-drawing-involuntary-investment.jpg`),
-  thibodeauSquareDrawingJubilance: require(`${filePath}thibodeau-square-drawing-jubilance.jpg`),
-  thibodeauSquareDrawingMirageBash: require(`${filePath}thibodeau-square-drawing-mirage-bash.jpg`),
-  thibodeauSquareDrawingMsSock: require(`${filePath}thibodeau-square-drawing-ms-sock.jpg`),
-  thibodeauSquareDrawingNemo: require(`${filePath}thibodeau-square-drawing-nemo.jpg`),
-  thibodeauSquareDrawingNoOneLikesATwit: require(`${filePath}thibodeau-square-drawing-no-one-likes-a-twit.jpg`),
-  thibodeauSquareDrawingPeregrineFalcon: require(`${filePath}thibodeau-square-drawing-peregrine-falcon.jpg`),
-  thibodeauSquareDrawingPostcardToWilliamSchaff: require(`${filePath}thibodeau-square-drawing-postcard-to-william-schaff.jpg`),
-  thibodeauSquareDrawingQuimby: require(`${filePath}thibodeau-square-drawing-quimby.jpg`),
-  thibodeauSquareDrawingSonsAndDaughters: require(`${filePath}thibodeau-square-drawing-sons-and-daughters.jpg`),
-  thibodeauSquareDrawingSwanAndAnchor: require(`${filePath}thibodeau-square-drawing-swan-and-anchor.jpg`),
-  thibodeauSquareDrawingTemporaryChemicalFactory: require(`${filePath}thibodeau-square-drawing-temporary-chemical-factory.jpg`),
-  thibodeauSquareDrawingTrust: require(`${filePath}thibodeau-square-drawing-trust.jpg`),
-  thibodeauSquareDrawingZeke: require(`${filePath}thibodeau-square-drawing-zeke.jpg`)
+  thibodeauSquareDrawingAerodynamicsTribute,
+  thibodeauSquareDrawingAhem,
+  thibodeauSquareDrawingBasil,
+  thibodeauSquareDrawingBaskingWithTheStars,
+  thibodeauSquareDrawingClarice,
+  thibodeauSquareDrawingConversion,
+  thibodeauSquareDrawingDistraction,
+  thibodeauSquareDrawingDoYouHaveAMoment,
+  thibodeauSquareDrawingFriendshipsPath,
+  thibodeauSquareDrawingGrackle,
+  thibodeauSquareDrawingInfinityWithYou,
+  thibodeauSquareDrawingInvoluntaryInvestment,
+  thibodeauSquareDrawingJubilance,
+  thibodeauSquareDrawingMirageBash,
+  thibodeauSquareDrawingMsSock,
+  thibodeauSquareDrawingNemo,
+  thibodeauSquareDrawingNoOneLikesATwit,
+  thibodeauSquareDrawingPeregrineFalcon,
+  thibodeauSquareDrawingPostcardToWilliamSchaff,
+  thibodeauSquareDrawingQuimby,
+  thibodeauSquareDrawingSonsAndDaughters,
+  thibodeauSquareDrawingSwanAndAnchor,
+  thibodeauSquareDrawingTemporaryChemicalFactory,
+  thibodeauSquareDrawingTrust,
+  thibodeauSquareDrawingZeke
 };
 
-export function getSquareByKey(key: string) {
+export function getSquareImage(key: string) {
   return squaresImages[key as keyof typeof squaresImages];
 };
