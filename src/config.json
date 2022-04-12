@@ -24,37 +24,31 @@
   "drawingsSquares": [
     {
       "id": "thibodeauSquareDrawingAerodynamicsTribute",
-      "src": "thibodeau-square-drawing-aerodynamics-tribute.jpg",
       "alt": "Detail of drawing Aerodynamics Tribute",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingAhem",
-      "src": "thibodeau-square-drawing-ahem.jpg",
       "alt": "Detail of drawing Ahem",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingBasil",
-      "src": "thibodeau-square-drawing-basil.jpg",
       "alt": "Detail of drawing Basil",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingBaskingWithTheStars",
-      "src": "thibodeau-square-drawing-basking-with-the-stars.jpg",
       "alt": "Detail of drawing Basking With the Stars",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingClarice",
-      "src": "thibodeau-square-drawing-clarice.jpg",
       "alt": "Detail of drawing Clarice",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingConversion",
-      "src": "thibodeau-square-drawing-conversion.jpg",
       "alt": "Detail of drawing Conversion",
       "path": "/"
     },
@@ -66,109 +60,91 @@
     },
     {
       "id": "thibodeauSquareDrawingDoYouHaveAMoment",
-      "src": "thibodeau-square-drawing-do-you-have-a-moment.jpg",
       "alt": "Detail of drawing Do You Have a Moment?",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingFriendshipsPath",
-      "src": "thibodeau-square-drawing-friendships-path.jpg",
       "alt": "Detail of drawing Friendship's Path",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingGrackle",
-      "src": "thibodeau-square-drawing-grackle.jpg",
       "alt": "Detail of drawing Grackle",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingInfinityWithYou",
-      "src": "thibodeau-square-drawing-infinity-with-you.jpg",
       "alt": "Detail of drawing Infinity With You",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingInvoluntaryInvestment",
-      "src": "thibodeau-square-drawing-involuntary-investment.jpg",
       "alt": "Detail of drawing Involuntary Investment",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingJubilance",
-      "src": "thibodeau-square-drawing-jubilance.jpg",
       "alt": "Detail of drawing Jubilance",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingMirageBash",
-      "src": "thibodeau-square-drawing-mirage-bash.jpg",
       "alt": "Detail of drawing Mirage Bash",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingMsSock",
-      "src": "thibodeau-square-drawing-ms-sock.jpg",
       "alt": "Detail of drawing Ms. Sock",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingNemo",
-      "src": "thibodeau-square-drawing-nemo.jpg",
       "alt": "Detail of drawing Nemo",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingNoOneLikesATwit",
-      "src": "thibodeau-square-drawing-no-one-likes-a-twit.jpg",
       "alt": "Detail of drawing No One Likes a Twit",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingPeregrineFalcon",
-      "src": "thibodeau-square-drawing-peregrine-falcon.jpg",
       "alt": "Detail of drawing Peregrine Falcon",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingPostcardToWilliamSchaff",
-      "src": "thibodeau-square-drawing-postcard-to-william-schaff.jpg",
       "alt": "Detail of drawing Postcard to William Schaff",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingQuimby",
-      "src": "thibodeau-square-drawing-quimby.jpg",
       "alt": "Detail of drawing Quimby",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingSonsAndDaughters",
-      "src": "thibodeau-square-drawing-sons-and-daughters.jpg",
       "alt": "Detail of drawing Sons and Daughters of Eternal Light",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingSwanAndAnchor",
-      "src": "thibodeau-square-drawing-swan-and-anchor.jpg",
       "alt": "Detail of drawing Swan & Anchor",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingTemporaryChemicalFactory",
-      "src": "thibodeau-square-drawing-temporary-chemical-factory.jpg",
       "alt": "Detail of drawing Temporary Chemical Factory",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingTrust",
-      "src": "thibodeau-square-drawing-trust.jpg",
       "alt": "Detail of drawing Trust",
       "path": "/"
     },
     {
       "id": "thibodeauSquareDrawingZeke",
-      "src": "thibodeau-square-drawing-zeke.jpg",
       "alt": "Detail of drawing Zeke",
       "path": "/"
     }
