@@ -26,9 +26,13 @@
 .active-link {
   color: $black;
   background-color: $nav-link-accent;
+
+  &:hover {
+    color: $black;
+  }
 }
 
-.gallery-squares-container {
+.gallery-details-container {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -36,7 +40,7 @@
   margin: 0 auto;
 }
 
-.gallery-square {
+.gallery-detail {
   border: 1px solid $black;
   margin: 1rem;
 }

@@ -21,131 +21,257 @@
       "path": "/about"
     }
   ],
-  "drawingsSquares": [
+  "drawingsDetails": [
     {
-      "id": "thibodeauSquareDrawingAerodynamicsTribute",
+      "id": "thibodeauDetailDrawingAerodynamicsTribute",
       "alt": "Detail of drawing Aerodynamics Tribute",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingAhem",
+      "id": "thibodeauDetailDrawingAhem",
       "alt": "Detail of drawing Ahem",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingBasil",
+      "id": "thibodeauDetailDrawingBasil",
       "alt": "Detail of drawing Basil",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingBaskingWithTheStars",
+      "id": "thibodeauDetailDrawingBaskingWithTheStars",
       "alt": "Detail of drawing Basking With the Stars",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingClarice",
+      "id": "thibodeauDetailDrawingClarice",
       "alt": "Detail of drawing Clarice",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingConversion",
+      "id": "thibodeauDetailDrawingConversion",
       "alt": "Detail of drawing Conversion",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingDistraction",
-      "src": "thibodeau-square-drawing-distraction.jpg",
+      "id": "thibodeauDetailDrawingDistraction",
       "alt": "Detail of drawing Distraction",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingDoYouHaveAMoment",
+      "id": "thibodeauDetailDrawingDoYouHaveAMoment",
       "alt": "Detail of drawing Do You Have a Moment?",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingFriendshipsPath",
+      "id": "thibodeauDetailDrawingFriendshipsPath",
       "alt": "Detail of drawing Friendship's Path",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingGrackle",
+      "id": "thibodeauDetailDrawingGrackle",
       "alt": "Detail of drawing Grackle",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingInfinityWithYou",
+      "id": "thibodeauDetailDrawingInfinityWithYou",
       "alt": "Detail of drawing Infinity With You",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingInvoluntaryInvestment",
+      "id": "thibodeauDetailDrawingInvoluntaryInvestment",
       "alt": "Detail of drawing Involuntary Investment",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingJubilance",
+      "id": "thibodeauDetailDrawingJubilance",
       "alt": "Detail of drawing Jubilance",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingMirageBash",
+      "id": "thibodeauDetailDrawingMirageBash",
       "alt": "Detail of drawing Mirage Bash",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingMsSock",
+      "id": "thibodeauDetailDrawingMsSock",
       "alt": "Detail of drawing Ms. Sock",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingNemo",
+      "id": "thibodeauDetailDrawingNemo",
       "alt": "Detail of drawing Nemo",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingNoOneLikesATwit",
+      "id": "thibodeauDetailDrawingNoOneLikesATwit",
       "alt": "Detail of drawing No One Likes a Twit",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingPeregrineFalcon",
+      "id": "thibodeauDetailDrawingPeregrineFalcon",
       "alt": "Detail of drawing Peregrine Falcon",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingPostcardToWilliamSchaff",
+      "id": "thibodeauDetailDrawingPostcardToWilliamSchaff",
       "alt": "Detail of drawing Postcard to William Schaff",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingQuimby",
+      "id": "thibodeauDetailDrawingQuimby",
       "alt": "Detail of drawing Quimby",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingSonsAndDaughters",
+      "id": "thibodeauDetailDrawingSonsAndDaughters",
       "alt": "Detail of drawing Sons and Daughters of Eternal Light",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingSwanAndAnchor",
+      "id": "thibodeauDetailDrawingSwanAndAnchor",
       "alt": "Detail of drawing Swan & Anchor",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingTemporaryChemicalFactory",
+      "id": "thibodeauDetailDrawingTemporaryChemicalFactory",
       "alt": "Detail of drawing Temporary Chemical Factory",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingTrust",
+      "id": "thibodeauDetailDrawingTrust",
       "alt": "Detail of drawing Trust",
       "path": "/"
     },
     {
-      "id": "thibodeauSquareDrawingZeke",
+      "id": "thibodeauDetailDrawingZeke",
       "alt": "Detail of drawing Zeke",
+      "path": "/"
+    }
+  ],
+  "postersDetails": [
+    {
+      "id": "thibodeauDetailPosterActionSpeaks",
+      "alt": "Detail of poster Action Speaks!",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterAltSpaceAtThePlanetarium",
+      "alt": "Detail of poster Alt-Space at the Planetarium",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterArtSwap",
+      "alt": "Detail of poster  Art Swap",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic1",
+      "alt": "Detail of Black Acoustic #1",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic2",
+      "alt": "Detail of Black Acoustic #2",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic3",
+      "alt": "Detail of Black Acoustic #3",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic4",
+      "alt": "Detail of Black Acoustic #4",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic5",
+      "alt": "Detail of Black Acoustic #5",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic6",
+      "alt": "Detail of Black Acoustic #6",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterBlackAcoustic7",
+      "alt": "Detail of Black Acoustic #7",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterDeadInDesemboque",
+      "alt": "Detail of Dead in Desemboque",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterDeathVesselAtAS220",
+      "alt": "Detail of Death Vessel at AS220",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterDeathVesselAt186Carpenter",
+      "alt": "Detail of Death Vessel at 186 Carpenter",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterDeathVesselAtMachinesWithMagnets",
+      "alt": "Detail of Death Vessel at Machines With Magnets",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterDeathVesselAtSinE",
+      "alt": "Detail of Death Vessel at Sin-é",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterKrankyRecords",
+      "alt": "Detail of Kranky Records",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterLowAnthemAtAvonTheater",
+      "alt": "Detail of Low Anthem at Avon Theater",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterMagicLanternExperimentalEthnographyShow",
+      "alt": "Detail of Magic Lantern Experimental Ethnography Show",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterMagicLanternSnowblindShow",
+      "alt": "Detail of Magic Lantern Snowblind Show",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterLibraryArchitectureOfMistakeMaking",
+      "alt": "Detail of A Library for the Architecture of Mistake Making",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterMachinesWithMagnetsAnniversary",
+      "alt": "Detail of Machines With Magnets Anniversary",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterParmaleeBenefit",
+      "alt": "Detail of Parmalee Benefit",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterStringBuilderAtWhiteElectric",
+      "alt": "Detail of String Builder at White Electric",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterAS22020Fest",
+      "alt": "Detail of AS220's 20 Fest",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPosterTheWonderShowOfTheUniverse",
+      "alt": "Detail of The Wonder Show of the Universe",
       "path": "/"
     }
   ]
