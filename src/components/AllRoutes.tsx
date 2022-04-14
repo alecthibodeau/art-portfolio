@@ -13,9 +13,9 @@ function AllRoutes() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/drawings" element={<Gallery category="drawings" squares={config.drawingsSquares} />} />
-      <Route path="/posters" element={<Gallery category="posters" squares={config.drawingsSquares} />} />
-      <Route path="/prints" element={<Gallery category="prints" squares={config.drawingsSquares} />} />
+      <Route path="/drawings" element={<Gallery category="drawings" details={config.drawingsDetails} />} />
+      <Route path="/posters" element={<Gallery category="posters" details={config.postersDetails} />} />
+      <Route path="/prints" element={<Gallery category="prints" details={config.drawingsDetails} />} />
     </Routes>
   )
 };

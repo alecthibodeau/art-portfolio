@@ -10,7 +10,7 @@ function About() {
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
-          Alec Thibodeau is a visual artist whose work is rooted in drawing and printmaking. This site serves as a portfolio for Alec's earlier pieces and projects. <a href="http://huetown.com">Huetown</a> has his social media links, email list and latest work for sale.
+          Alec Thibodeau is a visual artist whose work is rooted in drawing and printmaking. This site serves as a portfolio for Alec's earlier pieces and projects. Visit <a href="http://huetown.com">Huetown</a> for his social media links, email list and latest work for sale.
         </p>
         <p>
           Alec's <span className="italic">Epoch Travelers</span> is a permanent installation in marble located in New York City and commissioned by the NYC Department of Education and the NYC School Construction Authority Public Art for Public Schools Program in collaboration with the NYC Department of Cultural Affairs Percent for Art Program. Alec is the recipient of a project grant from the LEF Foundation to print an experimental currency: Noney.

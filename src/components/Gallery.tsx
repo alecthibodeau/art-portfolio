@@ -1,22 +1,22 @@
 import { Link } from 'react-router-dom';
 
 /* Interfaces */
-import GallerySquare from '../interfaces/GallerySquare';
+import GalleryDetail from '../interfaces/GalleryDetail';
 import GalleryProps from '../interfaces/GalleryProps';
 
 /* Helpers */
-import { getSquareImage } from '../helpers/squares';
+import { getDetailImage } from '../helpers/details';
 
-function renderSquare(square: GallerySquare) {
+function renderDetail(detail: GalleryDetail) {
   return (
     <Link
-      key={square.id}
-      to={square.path}
+      key={detail.id}
+      to={detail.path}
     >
       <img
-        className="gallery-square"
-        src={getSquareImage(square.id)}
-        alt={square.alt}
+        className="gallery-detail"
+        src={getDetailImage(detail.id)}
+        alt={detail.alt}
       />
     </Link>
   )
@@ -24,8 +24,8 @@ function renderSquare(square: GallerySquare) {
 
 function Gallery(props: GalleryProps) {
   return (
-    <div className="gallery-squares-container">
-      {props.squares.map(renderSquare)}
+    <div className="gallery-details-container">
+      {props.details.map(renderDetail)}
     </div>
   );
 }
