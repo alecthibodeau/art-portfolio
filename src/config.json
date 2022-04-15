@@ -161,117 +161,244 @@
     },
     {
       "id": "thibodeauDetailPosterArtSwap",
-      "alt": "Detail of poster  Art Swap",
+      "alt": "Detail of poster Art Swap",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic1",
-      "alt": "Detail of Black Acoustic #1",
+      "alt": "Detail of poster Black Acoustic #1",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic2",
-      "alt": "Detail of Black Acoustic #2",
+      "alt": "Detail of poster Black Acoustic #2",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic3",
-      "alt": "Detail of Black Acoustic #3",
+      "alt": "Detail of poster Black Acoustic #3",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic4",
-      "alt": "Detail of Black Acoustic #4",
+      "alt": "Detail of poster Black Acoustic #4",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic5",
-      "alt": "Detail of Black Acoustic #5",
+      "alt": "Detail of poster Black Acoustic #5",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic6",
-      "alt": "Detail of Black Acoustic #6",
+      "alt": "Detail of poster Black Acoustic #6",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterBlackAcoustic7",
-      "alt": "Detail of Black Acoustic #7",
+      "alt": "Detail of poster Black Acoustic #7",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterDeadInDesemboque",
-      "alt": "Detail of Dead in Desemboque",
+      "alt": "Detail of poster Dead in Desemboque",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterDeathVesselAtAS220",
-      "alt": "Detail of Death Vessel at AS220",
+      "alt": "Detail of poster Death Vessel at AS220",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterDeathVesselAt186Carpenter",
-      "alt": "Detail of Death Vessel at 186 Carpenter",
+      "alt": "Detail of poster Death Vessel at 186 Carpenter",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterDeathVesselAtMachinesWithMagnets",
-      "alt": "Detail of Death Vessel at Machines With Magnets",
+      "alt": "Detail of poster Death Vessel at Machines With Magnets",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterDeathVesselAtSinE",
-      "alt": "Detail of Death Vessel at Sin-é",
+      "alt": "Detail of poster Death Vessel at Sin-é",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterKrankyRecords",
-      "alt": "Detail of Kranky Records",
+      "alt": "Detail of poster Kranky Records",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterLowAnthemAtAvonTheater",
-      "alt": "Detail of Low Anthem at Avon Theater",
+      "alt": "Detail of poster Low Anthem at Avon Theater",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterMagicLanternExperimentalEthnographyShow",
-      "alt": "Detail of Magic Lantern Experimental Ethnography Show",
+      "alt": "Detail of poster Magic Lantern Experimental Ethnography Show",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterMagicLanternSnowblindShow",
-      "alt": "Detail of Magic Lantern Snowblind Show",
+      "alt": "Detail of poster Magic Lantern Snowblind Show",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterLibraryArchitectureOfMistakeMaking",
-      "alt": "Detail of A Library for the Architecture of Mistake Making",
+      "alt": "Detail of poster A Library for the Architecture of Mistake Making",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterMachinesWithMagnetsAnniversary",
-      "alt": "Detail of Machines With Magnets Anniversary",
+      "alt": "Detail of poster Machines With Magnets Anniversary",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterParmaleeBenefit",
-      "alt": "Detail of Parmalee Benefit",
+      "alt": "Detail of poster Parmalee Benefit",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterStringBuilderAtWhiteElectric",
-      "alt": "Detail of String Builder at White Electric",
+      "alt": "Detail of poster String Builder at White Electric",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterAS22020Fest",
-      "alt": "Detail of AS220's 20 Fest",
+      "alt": "Detail of poster AS220's 20 Fest",
       "path": "/"
     },
     {
       "id": "thibodeauDetailPosterTheWonderShowOfTheUniverse",
-      "alt": "Detail of The Wonder Show of the Universe",
+      "alt": "Detail of poster The Wonder Show of the Universe",
+      "path": "/"
+    }
+  ],
+  "printsDetails": [
+    {
+      "id": "thibodeauDetailPrintTheApeAndTheBuffalosGhost",
+      "alt": "Detail of print The Ape and the Buffalo's Ghost",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintApplesAndSparrows",
+      "alt": "Detail of print Apples and Sparrows",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintAssets",
+      "alt": "Detail of print Assets",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintCompetitionIsOverrated",
+      "alt": "Detail of print Competition Is Overrated",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintCopperDog",
+      "alt": "Detail of print Copper Dog",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintEasyByForce",
+      "alt": "Detail of print Easy by Force",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintFunktionslustForAllOfUs",
+      "alt": "Detail of print Funktionslust for All of Us",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintGoesToShowYouWhatAMoonCanDo",
+      "alt": "Detail of print Goes to Show You What a Moon Can Do",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintGoldenApe",
+      "alt": "Detail of print Golden Ape",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintGoodLibrations",
+      "alt": "Detail of print Good Librations",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintHammerheadShark",
+      "alt": "Detail of print Hammerhead Shark",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintIStillSeeTheX",
+      "alt": "Detail of print I Still See the X",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintIndigotine",
+      "alt": "Detail of print Indigotine",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintLetTheirsBeLights",
+      "alt": "Detail of print Let Theirs Be Lights",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintLoverlyLeapers",
+      "alt": "Detail of print Loverly Leapers",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintPeersOfTheSpheres",
+      "alt": "Detail of print Peers of the Spheres",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintPinealGrigio",
+      "alt": "Detail of print Pineal Grigio",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintProbablyTheEarthsCoreReallyIsTheSky",
+      "alt": "Detail of print Probably the Earth's Core Really Is the Sky",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintProvidenceOuroboros",
+      "alt": "Detail of print Providence Ouroboros",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintSingForYourSupper",
+      "alt": "Detail of print Sing for Your Supper",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintTartrazine",
+      "alt": "Detail of print Tartrazine",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintThinkingOfYou",
+      "alt": "Detail of print Thinking of You",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintTuffLuv",
+      "alt": "Detail of print Tuff Luv",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintYouHeldMe",
+      "alt": "Detail of print You Held Me, and That's What Mattered",
+      "path": "/"
+    },
+    {
+      "id": "thibodeauDetailPrintYouMayThinkTheseAreTheFinestGems",
+      "alt": "Detail of print You May Think These Are the Finest Gems (Day-Day)",
       "path": "/"
     }
   ]
