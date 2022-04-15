@@ -48,6 +48,31 @@ import thibodeauDetailPosterParmaleeBenefit from '../assets/images/details/thibo
 import thibodeauDetailPosterStringBuilderAtWhiteElectric from '../assets/images/details/thibodeau-detail-poster-string-builder-white-electric.jpg';
 import thibodeauDetailPosterAS22020Fest from '../assets/images/details/thibodeau-detail-poster-twenty-fest.jpg';
 import thibodeauDetailPosterTheWonderShowOfTheUniverse from '../assets/images/details/thibodeau-detail-poster-wonder-show.jpg';
+import thibodeauDetailPrintTheApeAndTheBuffalosGhost from '../assets/images/details/thibodeau-detail-print-ape-and-buffalos-ghost.jpg';
+import thibodeauDetailPrintApplesAndSparrows from '../assets/images/details/thibodeau-detail-print-apples-and-sparrows.jpg';
+import thibodeauDetailPrintAssets from '../assets/images/details/thibodeau-detail-print-assets.jpg';
+import thibodeauDetailPrintCompetitionIsOverrated from '../assets/images/details/thibodeau-detail-print-competition-is-overrated.jpg';
+import thibodeauDetailPrintCopperDog from '../assets/images/details/thibodeau-detail-print-copper-dog.jpg';
+import thibodeauDetailPrintEasyByForce from '../assets/images/details/thibodeau-detail-print-easy-by-force.jpg';
+import thibodeauDetailPrintFunktionslustForAllOfUs from '../assets/images/details/thibodeau-detail-print-funktionslust.jpg';
+import thibodeauDetailPrintGoesToShowYouWhatAMoonCanDo from '../assets/images/details/thibodeau-detail-print-lunar-calendar-goes-to-show-you.jpg';
+import thibodeauDetailPrintGoldenApe from '../assets/images/details/thibodeau-detail-print-golden-ape.jpg';
+import thibodeauDetailPrintGoodLibrations from '../assets/images/details/thibodeau-detail-print-lunar-calendar-good-librations.jpg';
+import thibodeauDetailPrintHammerheadShark from '../assets/images/details/thibodeau-detail-print-shark-hammerhead.jpg';
+import thibodeauDetailPrintIStillSeeTheX from '../assets/images/details/thibodeau-detail-print-lunar-calendar-i-still-see-the-x.jpg';
+import thibodeauDetailPrintIndigotine from '../assets/images/details/thibodeau-detail-print-indigotine.jpg';
+import thibodeauDetailPrintLetTheirsBeLights from '../assets/images/details/thibodeau-detail-print-let-theirs-be-lights.jpg';
+import thibodeauDetailPrintLoverlyLeapers from '../assets/images/details/thibodeau-detail-print-loverly-leapers.jpg';
+import thibodeauDetailPrintPeersOfTheSpheres from '../assets/images/details/thibodeau-detail-print-peers-of-the-spheres.jpg';
+import thibodeauDetailPrintPinealGrigio from '../assets/images/details/thibodeau-detail-print-lunar-calendar-pineal-grigio.jpg';
+import thibodeauDetailPrintProbablyTheEarthsCoreReallyIsTheSky from '../assets/images/details/thibodeau-detail-print-lunar-calendar-probably-the-earths-core.jpg';
+import thibodeauDetailPrintProvidenceOuroboros from '../assets/images/details/thibodeau-detail-print-providence-ouroboros.jpg';
+import thibodeauDetailPrintSingForYourSupper from '../assets/images/details/thibodeau-detail-print-sing-for-your-supper.jpg';
+import thibodeauDetailPrintTartrazine from '../assets/images/details/thibodeau-detail-print-tartrazine.jpg';
+import thibodeauDetailPrintThinkingOfYou from '../assets/images/details/thibodeau-detail-print-thinking-of-you.jpg';
+import thibodeauDetailPrintTuffLuv from '../assets/images/details/thibodeau-detail-print-tuff-luv.jpg';
+import thibodeauDetailPrintYouHeldMe from '../assets/images/details/thibodeau-detail-print-you-held-me.jpg';
+import thibodeauDetailPrintYouMayThinkTheseAreTheFinestGems from '../assets/images/details/thibodeau-detail-print-you-may-think.jpg';
 
 const detailsImages = {
   thibodeauDetailDrawingAerodynamicsTribute,
@@ -99,7 +124,32 @@ const detailsImages = {
   thibodeauDetailPosterParmaleeBenefit,
   thibodeauDetailPosterStringBuilderAtWhiteElectric,
   thibodeauDetailPosterAS22020Fest,
-  thibodeauDetailPosterTheWonderShowOfTheUniverse
+  thibodeauDetailPosterTheWonderShowOfTheUniverse,
+  thibodeauDetailPrintTheApeAndTheBuffalosGhost,
+  thibodeauDetailPrintApplesAndSparrows,
+  thibodeauDetailPrintAssets,
+  thibodeauDetailPrintCompetitionIsOverrated,
+  thibodeauDetailPrintCopperDog,
+  thibodeauDetailPrintEasyByForce,
+  thibodeauDetailPrintFunktionslustForAllOfUs,
+  thibodeauDetailPrintGoesToShowYouWhatAMoonCanDo,
+  thibodeauDetailPrintGoldenApe,
+  thibodeauDetailPrintGoodLibrations,
+  thibodeauDetailPrintHammerheadShark,
+  thibodeauDetailPrintIStillSeeTheX,
+  thibodeauDetailPrintIndigotine,
+  thibodeauDetailPrintLetTheirsBeLights,
+  thibodeauDetailPrintLoverlyLeapers,
+  thibodeauDetailPrintPeersOfTheSpheres,
+  thibodeauDetailPrintPinealGrigio,
+  thibodeauDetailPrintProbablyTheEarthsCoreReallyIsTheSky,
+  thibodeauDetailPrintProvidenceOuroboros,
+  thibodeauDetailPrintSingForYourSupper,
+  thibodeauDetailPrintTartrazine,
+  thibodeauDetailPrintThinkingOfYou,
+  thibodeauDetailPrintTuffLuv,
+  thibodeauDetailPrintYouHeldMe,
+  thibodeauDetailPrintYouMayThinkTheseAreTheFinestGems
 };
 
 export function getDetailImage(key: string) {

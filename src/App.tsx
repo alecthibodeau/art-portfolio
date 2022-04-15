@@ -8,13 +8,13 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Header></Header>
-        <Navbar></Navbar>
+    <BrowserRouter>
+      <Header></Header>
+      <Navbar></Navbar>
+      <main>
         <AllRoutes></AllRoutes>
-      </BrowserRouter>
-    </div>
+      </main>
+    </BrowserRouter>
   );
 };
 
