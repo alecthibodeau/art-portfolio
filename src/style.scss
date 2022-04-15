@@ -46,5 +46,15 @@
 
 .gallery-detail {
   border: 1px solid $black;
+  outline: 3px solid transparent;
   margin: 1rem;
+
+  &:hover {
+    border-color: $details-border-hover;
+    outline-color: $details-border-hover;
+  }
+}
+
+.not-found {
+  text-align: center;
 }

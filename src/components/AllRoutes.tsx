@@ -7,6 +7,7 @@ import config from '../config.json';
 import About from './About';
 import Gallery from './Gallery';
 import Home from './Home';
+import NotFound from './NotFound';
 
 function AllRoutes() {
   return (
@@ -16,6 +17,7 @@ function AllRoutes() {
       <Route path="/drawings" element={<Gallery category="drawings" details={config.drawingsDetails} />} />
       <Route path="/posters" element={<Gallery category="posters" details={config.postersDetails} />} />
       <Route path="/prints" element={<Gallery category="prints" details={config.printsDetails} />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   )
 };
