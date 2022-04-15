@@ -11,6 +11,7 @@ function renderDetail(detail: GalleryDetail) {
   return (
     <Link
       key={detail.id}
+      className="m-3"
       to={detail.path}
     >
       <img
@@ -24,7 +25,7 @@ function renderDetail(detail: GalleryDetail) {
 
 function Gallery(props: GalleryProps) {
   return (
-    <div className="gallery-details-container">
+    <div className="mx-auto d-flex flex-wrap justify-content-center gallery-details-container">
       {props.details.map(renderDetail)}
     </div>
   );

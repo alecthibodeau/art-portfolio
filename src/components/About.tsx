@@ -7,7 +7,7 @@ import selfPortrait from '../assets/images/main/alec-thibodeau-self-portrait.jpg
 function About() {
   return (
     <div className="px-3 px-md-4">
-      <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
+      <img className="float-left mr-3" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
           Alec Thibodeau is a visual artist whose work is rooted in drawing and printmaking. This site serves as a portfolio for Alec's earlier pieces and projects. Visit <a href="http://huetown.com">Huetown</a> for his social media links, email list and latest work for sale.
