@@ -1,30 +1,45 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-.wordmark {
-  max-width: 300px;
-}
-
-.feature-image {
-  max-width: 675px;
+.bold {
+  font-weight: 700;
 }
 
 .italic {
   font-style: italic;
 }
 
-.nav-link:hover {
-  color: $nav-link-hover;
+.header-link,
+.wordmark {
+  max-width: 300px;
+}
+
+.nav-link {
+  color: $nav-link-default;
+
+  &:hover {
+    color: $nav-link-hover;
+  }
 }
 
 .active-link {
   color: $black;
-  background-color: $nav-link-accent;
+  background-color: $nav-link-accent-backbround;
 
   &:hover {
     color: $black;
   }
 }
+
+.feature-image {
+  max-width: 675px;
+}
+
+.piece {
+  max-width: 100%;
+  border: 1px solid $thirtyFivePercentGray;
+}
+
 
 .gallery-details-container {
   max-width: 575px;

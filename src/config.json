@@ -25,7 +25,7 @@
     {
       "id": "thibodeauDetailDrawingAerodynamicsTribute",
       "alt": "Detail of drawing Aerodynamics Tribute",
-      "path": "/"
+      "path": "/drawings/aerodynamics-tribute"
     },
     {
       "id": "thibodeauDetailDrawingAhem",
@@ -401,5 +401,13 @@
       "alt": "Detail of print You May Think These Are the Finest Gems (Day-Day)",
       "path": "/"
     }
-  ]
+  ],
+  "drawings": {
+    "aerodynamicsTribute": {
+      "id": "thibodeauPieceDrawingAerodynamicsTribute",
+      "alt": "Aerodynamics Tribute drawing by Alec Thibodeau",
+      "title": "Aerodynamics Tribute",
+      "medium": "ink and pencil"
+    }
+  }
 }
