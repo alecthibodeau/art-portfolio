@@ -21,7 +21,7 @@ function renderNavbarLink(link: NavbarLink) {
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="mt-3 d-flex justify-content-center">
       {config.navbarLinks.map(renderNavbarLink)}
     </nav>
   );

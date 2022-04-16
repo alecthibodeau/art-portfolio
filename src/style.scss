@@ -1,50 +1,56 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-.wordmark {
-  max-width: 300px;
-}
-
-.navbar {
-  justify-content: center;
-  margin-top: .75rem;
-}
-
-.feature-image {
-  max-width: 675px;
-}
-
-.self-portrait {
-  margin-right: 1rem;
-  float: left;
+.bold {
+  font-weight: 700;
 }
 
 .italic {
   font-style: italic;
 }
 
-.nav-link:hover {
-  color: $nav-link-hover;
+.header-link,
+.wordmark {
+  max-width: 300px;
+}
+
+.nav-link {
+  color: $nav-link-default;
+
+  &:hover {
+    color: $nav-link-hover;
+  }
 }
 
 .active-link {
   color: $black;
-  background-color: $nav-link-accent;
+  background-color: $nav-link-accent-backbround;
 
   &:hover {
     color: $black;
   }
 }
 
+.feature-image {
+  max-width: 675px;
+}
+
+.piece {
+  max-width: 100%;
+  border: 1px solid $thirtyFivePercentGray;
+}
+
+
 .gallery-details-container {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
   max-width: 575px;
-  margin: 0 auto;
 }
 
 .gallery-detail {
   border: 1px solid $black;
-  margin: 1rem;
+  outline: 3px solid transparent;
+
+  &:hover {
+    border-color: $details-border-hover;
+    outline-color: $details-border-hover;
+  }
 }
