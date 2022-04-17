@@ -1,16 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
+/* Config */
 import config from '../config.json';
+
+/* Interfaces */
 import NavbarLink from '../interfaces/NavbarLink';
 
-const defaultNavLink: string = 'nav-link';
+const navLinkDefault: string = 'col mx-1 text-center nav-link';
 
 function renderNavbarLink(link: NavbarLink) {
   return (
     <NavLink
       key={link.id}
       className={
-        ({ isActive }) => (isActive ? defaultNavLink + " active-link" : defaultNavLink)
+        ({ isActive }) => isActive ?
+        navLinkDefault + ' nav-link-active' + (useLocation().pathname === link.path ? ' gallery' : '') :
+        navLinkDefault
       }
       to={link.path}
     >
@@ -21,7 +26,7 @@ function renderNavbarLink(link: NavbarLink) {
 
 function Navbar() {
   return (
-    <nav className="mt-3 d-flex justify-content-center">
+    <nav className="row mx-auto px-1">
       {config.navbarLinks.map(renderNavbarLink)}
     </nav>
   );

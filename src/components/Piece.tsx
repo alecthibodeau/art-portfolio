@@ -8,11 +8,11 @@ function Piece(props: PieceProps) {
   return (
     <div className="mx-3 d-flex flex-column align-items-center">
       <img
-        className="my-3 piece"
+        className="my-3 mw-100 piece"
         src={getPieceImage(props.id)}
         alt={props.alt}
       />
-      <div className="bold">
+      <div className="fw-bold">
         {props.title}
       </div>
       <div>

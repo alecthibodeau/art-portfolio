@@ -3,8 +3,8 @@ import featureImage from '../assets/images/work/site-specific/thibodeau-site-spe
 
 function Home() {
   return (
-    <div className="row justify-content-center">
-      <img className="feature-image" src={featureImage} alt="Detail from Alec Thibodeau's Epoch Travelers" />
+    <div>
+      <img className="mw-100" src={featureImage} alt="Detail from Alec Thibodeau's Epoch Travelers" />
     </div>
   );
 }

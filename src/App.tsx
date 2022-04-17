@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Header></Header>
       <Navbar></Navbar>
-      <main>
+      <main className="m-3 d-flex flex-column align-items-center">
         <AllRoutes></AllRoutes>
       </main>
     </BrowserRouter>

@@ -1,56 +1,49 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.header-link,
-.wordmark {
-  max-width: 300px;
+nav {
+  max-width: 400px;
 }
 
 .nav-link {
-  color: $nav-link-default;
+  color: $nav-link-color-default;
 
   &:hover {
-    color: $nav-link-hover;
+    color: $nav-link-color-default-hover;
+  }
+
+  &.nav-link-active {
+    color: $nav-link-color-active;
+    background-color: $nav-link-background-color-active;
+
+    &:hover {
+      color: $nav-link-color-active-hover-piece;
+    }
+
+    &:hover.gallery {
+      color: $nav-link-color-active-hover-gallery;
+    }
   }
 }
-
-.active-link {
-  color: $black;
-  background-color: $nav-link-accent-backbround;
-
-  &:hover {
-    color: $black;
-  }
-}
-
-.feature-image {
-  max-width: 675px;
-}
-
-.piece {
-  max-width: 100%;
-  border: 1px solid $thirtyFivePercentGray;
-}
-
 
 .gallery-details-container {
-  max-width: 575px;
+  max-width: $bootstrap-breakpoint-sm;
 }
 
 .gallery-detail {
-  border: 1px solid $black;
+  border: 1px solid $gallery-detail-color-border;
   outline: 3px solid transparent;
 
   &:hover {
-    border-color: $details-border-hover;
-    outline-color: $details-border-hover;
+    border-color: $gallery-detail-color-border-hover;
+    outline-color: $gallery-detail-color-border-hover;
   }
+}
+
+.piece {
+  border: 1px solid $piece-border-color;
+}
+
+.about-content-container {
+  max-width: $bootstrap-breakpoint-lg;
 }

@@ -25,7 +25,7 @@ function renderDetail(detail: GalleryDetail) {
 
 function Gallery(props: GalleryProps) {
   return (
-    <div className="mx-auto d-flex flex-wrap justify-content-center gallery-details-container">
+    <div className="d-flex flex-wrap justify-content-center gallery-details-container">
       {props.details.map(renderDetail)}
     </div>
   );
