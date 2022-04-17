@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 /* Config */
 import config from '../config.json';
@@ -13,7 +13,9 @@ function renderNavbarLink(link: NavbarLink) {
     <NavLink
       key={link.id}
       className={
-        ({ isActive }) => (isActive ? navLinkDefault + " nav-link-active" : navLinkDefault)
+        ({ isActive }) => isActive ?
+        navLinkDefault + ' nav-link-active' + (useLocation().pathname === link.path ? ' gallery' : '') :
+        navLinkDefault
       }
       to={link.path}
     >

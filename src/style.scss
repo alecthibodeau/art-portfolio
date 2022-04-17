@@ -6,18 +6,22 @@ nav {
 }
 
 .nav-link {
-  color: $nav-link-default;
+  color: $nav-link-color-default;
 
   &:hover {
-    color: $nav-link-hover;
+    color: $nav-link-color-default-hover;
   }
 
   &.nav-link-active {
-    color: $black;
-    background-color: $nav-link-accent-background;
+    color: $nav-link-color-active;
+    background-color: $nav-link-background-color-active;
 
     &:hover {
-      color: $black;
+      color: $nav-link-color-active-hover-piece;
+    }
+
+    &:hover.gallery {
+      color: $nav-link-color-active-hover-gallery;
     }
   }
 }
@@ -27,17 +31,17 @@ nav {
 }
 
 .gallery-detail {
-  border: 1px solid $gallery-detail-border;
+  border: 1px solid $gallery-detail-color-border;
   outline: 3px solid transparent;
 
   &:hover {
-    border-color: $gallery-detail-border-hover;
-    outline-color: $gallery-detail-border-hover;
+    border-color: $gallery-detail-color-border-hover;
+    outline-color: $gallery-detail-color-border-hover;
   }
 }
 
 .piece {
-  border: 1px solid $piece-border;
+  border: 1px solid $piece-border-color;
 }
 
 .about-content-container {
