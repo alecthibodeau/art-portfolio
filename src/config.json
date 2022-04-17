@@ -30,122 +30,122 @@
     {
       "id": "thibodeauDetailDrawingAhem",
       "alt": "Detail of drawing Ahem",
-      "path": "/"
+      "path": "/drawings/ahem"
     },
     {
       "id": "thibodeauDetailDrawingBasil",
       "alt": "Detail of drawing Basil",
-      "path": "/"
+      "path": "/drawings/basil"
     },
     {
       "id": "thibodeauDetailDrawingBaskingWithTheStars",
       "alt": "Detail of drawing Basking With the Stars",
-      "path": "/"
+      "path": "/drawings/basking-with-the-stars"
     },
     {
       "id": "thibodeauDetailDrawingClarice",
       "alt": "Detail of drawing Clarice",
-      "path": "/"
+      "path": "/drawings/clarice"
     },
     {
       "id": "thibodeauDetailDrawingConversion",
       "alt": "Detail of drawing Conversion",
-      "path": "/"
+      "path": "/drawings/conversion"
     },
     {
       "id": "thibodeauDetailDrawingDistraction",
       "alt": "Detail of drawing Distraction",
-      "path": "/"
+      "path": "/drawings/distraction"
     },
     {
       "id": "thibodeauDetailDrawingDoYouHaveAMoment",
       "alt": "Detail of drawing Do You Have a Moment?",
-      "path": "/"
+      "path": "/drawings/do-you-have-a-moment"
     },
     {
       "id": "thibodeauDetailDrawingFriendshipsPath",
       "alt": "Detail of drawing Friendship's Path",
-      "path": "/"
+      "path": "/drawings/friendships-path"
     },
     {
       "id": "thibodeauDetailDrawingGrackle",
       "alt": "Detail of drawing Grackle",
-      "path": "/"
+      "path": "/drawings/grackle"
     },
     {
       "id": "thibodeauDetailDrawingInfinityWithYou",
       "alt": "Detail of drawing Infinity With You",
-      "path": "/"
+      "path": "/drawings/infinity-with-you"
     },
     {
       "id": "thibodeauDetailDrawingInvoluntaryInvestment",
       "alt": "Detail of drawing Involuntary Investment",
-      "path": "/"
+      "path": "/drawings/involuntary-investment"
     },
     {
       "id": "thibodeauDetailDrawingJubilance",
       "alt": "Detail of drawing Jubilance",
-      "path": "/"
+      "path": "/drawings/jubilance"
     },
     {
       "id": "thibodeauDetailDrawingMirageBash",
       "alt": "Detail of drawing Mirage Bash",
-      "path": "/"
+      "path": "/drawings/mirage-bash"
     },
     {
       "id": "thibodeauDetailDrawingMsSock",
       "alt": "Detail of drawing Ms. Sock",
-      "path": "/"
+      "path": "/drawings/ms-sock"
     },
     {
       "id": "thibodeauDetailDrawingNemo",
       "alt": "Detail of drawing Nemo",
-      "path": "/"
+      "path": "/drawings/nemo"
     },
     {
       "id": "thibodeauDetailDrawingNoOneLikesATwit",
       "alt": "Detail of drawing No One Likes a Twit",
-      "path": "/"
+      "path": "/drawings/no-one-likes-a-twit"
     },
     {
       "id": "thibodeauDetailDrawingPeregrineFalcon",
       "alt": "Detail of drawing Peregrine Falcon",
-      "path": "/"
+      "path": "/drawings/peregrine-falcon"
     },
     {
       "id": "thibodeauDetailDrawingPostcardToWilliamSchaff",
       "alt": "Detail of drawing Postcard to William Schaff",
-      "path": "/"
+      "path": "/drawings/postcard-to-william-schaff"
     },
     {
       "id": "thibodeauDetailDrawingQuimby",
       "alt": "Detail of drawing Quimby",
-      "path": "/"
+      "path": "/drawings/quimby"
     },
     {
       "id": "thibodeauDetailDrawingSonsAndDaughters",
       "alt": "Detail of drawing Sons and Daughters of Eternal Light",
-      "path": "/"
+      "path": "/drawings/sons-and-daughters"
     },
     {
       "id": "thibodeauDetailDrawingSwanAndAnchor",
       "alt": "Detail of drawing Swan & Anchor",
-      "path": "/"
+      "path": "/drawings/swan-and-anchor"
     },
     {
       "id": "thibodeauDetailDrawingTemporaryChemicalFactory",
       "alt": "Detail of drawing Temporary Chemical Factory",
-      "path": "/"
+      "path": "/drawings/temporary-chemical-factory"
     },
     {
       "id": "thibodeauDetailDrawingTrust",
       "alt": "Detail of drawing Trust",
-      "path": "/"
+      "path": "/drawings/trust"
     },
     {
       "id": "thibodeauDetailDrawingZeke",
       "alt": "Detail of drawing Zeke",
-      "path": "/"
+      "path": "/drawings/zeke"
     }
   ],
   "postersDetails": [
@@ -408,6 +408,150 @@
       "alt": "Aerodynamics Tribute drawing by Alec Thibodeau",
       "title": "Aerodynamics Tribute",
       "medium": "ink and pencil"
+    },
+    "ahem": {
+      "id": "thibodeauPieceDrawingAhem",
+      "alt": "Ahem drawing by Alec Thibodeau",
+      "title": "Ahem",
+      "medium": "ink and pencil"
+    },
+    "basil": {
+      "id": "thibodeauPieceDrawingBasil",
+      "alt": "Basil drawing by Alec Thibodeau",
+      "title": "Basil",
+      "medium": "ink and pencil"
+    },
+    "baskingWithTheStars": {
+      "id": "thibodeauPieceDrawingBaskingWithTheStars",
+      "alt": "Basking With the Stars drawing by Alec Thibodeau",
+      "title": "Basking With the Stars",
+      "medium": "ink and pencil"
+    },
+    "clarice": {
+      "id": "thibodeauPieceDrawingClarice",
+      "alt": "Clarice drawing by Alec Thibodeau",
+      "title": "Clarice",
+      "medium": "ink"
+    },
+    "conversion": {
+      "id": "thibodeauPieceDrawingConversion",
+      "alt": "Conversion drawing by Alec Thibodeau",
+      "title": "Conversion",
+      "medium": "ink and acrylic"
+    },
+    "distraction": {
+      "id": "thibodeauPieceDrawingDistraction",
+      "alt": "Distraction drawing by Alec Thibodeau",
+      "title": "Distraction",
+      "medium": "ink and pencil"
+    },
+    "doYouHaveAMoment": {
+      "id": "thibodeauPieceDrawingDoYouHaveAMoment",
+      "alt": "Do You Have a Moment? drawing by Alec Thibodeau",
+      "title": "Do You Have a Moment?",
+      "medium": "ink and pencil"
+    },
+    "friendshipsPath": {
+      "id": "thibodeauPieceDrawingFriendshipsPath",
+      "alt": "Friendship's Path drawing by Alec Thibodeau",
+      "title": "Friendship's Path",
+      "medium": "ink and pencil"
+    },
+    "grackle": {
+      "id": "thibodeauPieceDrawingGrackle",
+      "alt": "Grackle drawing by Alec Thibodeau",
+      "title": "Grackle",
+      "medium": "ink"
+    },
+    "infinityWithYou": {
+      "id": "thibodeauPieceDrawingInfinityWithYou",
+      "alt": "Infinity With You drawing by Alec Thibodeau",
+      "title": "Infinity With You",
+      "medium": "ink and pencil"
+    },
+    "involuntaryInvestment": {
+      "id": "thibodeauPieceDrawingInvoluntaryInvestment",
+      "alt": "Involuntary Investment drawing by Alec Thibodeau",
+      "title": "Involuntary Investment",
+      "medium": "ink and pencil"
+    },
+    "jubilance": {
+      "id": "thibodeauPieceDrawingJubilance",
+      "alt": "Jubilance drawing by Alec Thibodeau",
+      "title": "Jubilance",
+      "medium": "ink and pencil"
+    },
+    "mirageBash": {
+      "id": "thibodeauPieceDrawingMirageBash",
+      "alt": "Mirage Bash drawing by Alec Thibodeau",
+      "title": "Mirage Bash",
+      "medium": "ink and pencil"
+    },
+    "msSock": {
+      "id": "thibodeauPieceDrawingMsSock",
+      "alt": "Ms. Sock drawing by Alec Thibodeau",
+      "title": "Ms. Sock",
+      "medium": "ink"
+    },
+    "nemo": {
+      "id": "thibodeauPieceDrawingNemo",
+      "alt": "Nemo drawing by Alec Thibodeau",
+      "title": "Nemo",
+      "medium": "ink and pencil"
+    },
+    "noOneLikesATwit": {
+      "id": "thibodeauPieceDrawingNoOneLikesATwit",
+      "alt": "No One Likes a Twit drawing by Alec Thibodeau",
+      "title": "No One Likes a Twit",
+      "medium": "ink and pencil"
+    },
+    "peregrineFalcon": {
+      "id": "thibodeauPieceDrawingPeregrineFalcon",
+      "alt": "Peregrine Falcon drawing by Alec Thibodeau",
+      "title": "Peregrine Falcon",
+      "medium": "ink"
+    },
+    "postcardToWilliamSchaff": {
+      "id": "thibodeauPieceDrawingPostcardToWilliamSchaff",
+      "alt": "Postcard to William Schaff drawing by Alec Thibodeau",
+      "title": "Postcard to William Schaff",
+      "medium": "ink and pencil"
+    },
+    "quimby": {
+      "id": "thibodeauPieceDrawingQuimby",
+      "alt": "Quimby drawing by Alec Thibodeau",
+      "title": "Quimby",
+      "medium": "ink and pencil"
+    },
+    "sonsAndDaughters": {
+      "id": "thibodeauPieceDrawingSonsAndDaughters",
+      "alt": "Sons and Daughters of Eternal Light drawing by Alec Thibodeau",
+      "title": "Sons and Daughters of Eternal Light",
+      "medium": "ink"
+    },
+    "swanAndAnchor": {
+      "id": "thibodeauPieceDrawingSwanAndAnchor",
+      "alt": "Swan & Anchor drawing by Alec Thibodeau",
+      "title": "Swan & Anchor",
+      "medium": "ink"
+    },
+    "temporaryChemicalFactory": {
+      "id": "thibodeauPieceDrawingTemporaryChemicalFactory",
+      "alt": "Temporary Chemical Factory drawing by Alec Thibodeau",
+      "title": "Temporary Chemical Factory",
+      "medium": "pencil"
+    },
+    "trust": {
+      "id": "thibodeauPieceDrawingTrust",
+      "alt": "Trust drawing by Alec Thibodeau",
+      "title": "Trust",
+      "medium": "ink and pencil"
+    },
+    "zeke": {
+      "id": "thibodeauPieceDrawingZeke",
+      "alt": "Zeke drawing by Alec Thibodeau",
+      "title": "Zeke",
+      "medium": "ink"
     }
   }
 }
