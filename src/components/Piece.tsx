@@ -12,7 +12,7 @@ function Piece(props: PieceProps) {
         src={getPieceImage(props.id)}
         alt={props.alt}
       />
-      <div className="bold">
+      <div className="fw-bold">
         {props.title}
       </div>
       <div>

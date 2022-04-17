@@ -1,16 +1,19 @@
 import { NavLink } from 'react-router-dom';
 
+/* Config */
 import config from '../config.json';
+
+/* Interfaces */
 import NavbarLink from '../interfaces/NavbarLink';
 
-const defaultNavLink: string = 'nav-link';
+const navLinkDefault: string = 'nav-link';
 
 function renderNavbarLink(link: NavbarLink) {
   return (
     <NavLink
       key={link.id}
       className={
-        ({ isActive }) => (isActive ? defaultNavLink + " active-link" : defaultNavLink)
+        ({ isActive }) => (isActive ? navLinkDefault + " nav-link-active" : navLinkDefault)
       }
       to={link.path}
     >

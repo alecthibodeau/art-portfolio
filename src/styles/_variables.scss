@@ -1,8 +1,21 @@
+/* Color Variables */
+
 $black: #000;
-$thirtyFivePercentGray: #a6a6a6;
+$fifty-percent-gray: #7f7f7f;
+$thirty-five-percent-gray: #a6a6a6;
 
-$nav-link-default: #0d6efd;
-$nav-link-hover: #e70475;
-$nav-link-accent-backbround: #c0de4b;
+$dark-cyan-blue: #0d6efd;
+$dark-hotpink: #e70475;
+$dark-yellow-green: #c0de4b;
+$html-hotpink: #ff69b4;
 
-$details-border-hover: #ff69b4;
+/* Color Assignments */
+
+$nav-link-default: $dark-cyan-blue;
+$nav-link-hover: $dark-hotpink;
+$nav-link-accent-backbround: $dark-yellow-green;
+
+$gallery-detail-border: $fifty-percent-gray;
+$gallery-detail-border-hover: $html-hotpink;
+
+$piece-border: $thirty-five-percent-gray;

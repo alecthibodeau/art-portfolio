@@ -1,14 +1,6 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
 .header-link,
 .wordmark {
   max-width: 300px;
@@ -20,37 +12,36 @@
   &:hover {
     color: $nav-link-hover;
   }
-}
 
-.active-link {
-  color: $black;
-  background-color: $nav-link-accent-backbround;
-
-  &:hover {
+  &.nav-link-active {
     color: $black;
+    background-color: $nav-link-accent-backbround;
+
+    &:hover {
+      color: $black;
+    }
   }
 }
 
 .feature-image {
-  max-width: 675px;
+  max-width: 100%;
 }
 
 .piece {
   max-width: 100%;
-  border: 1px solid $thirtyFivePercentGray;
+  border: 1px solid $piece-border;
 }
-
 
 .gallery-details-container {
   max-width: 575px;
 }
 
 .gallery-detail {
-  border: 1px solid $black;
+  border: 1px solid $gallery-detail-border;
   outline: 3px solid transparent;
 
   &:hover {
-    border-color: $details-border-hover;
-    outline-color: $details-border-hover;
+    border-color: $gallery-detail-border-hover;
+    outline-color: $gallery-detail-border-hover;
   }
 }
