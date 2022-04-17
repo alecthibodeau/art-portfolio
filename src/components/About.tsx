@@ -6,7 +6,7 @@ import selfPortrait from '../assets/images/main/alec-thibodeau-self-portrait.jpg
 
 function About() {
   return (
-    <div className="px-3 px-md-4">
+    <div className="about-content-container">
       <img className="float-left mr-3" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>

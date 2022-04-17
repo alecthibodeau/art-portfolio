@@ -1,11 +1,6 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
-.header-link,
-.wordmark {
-  max-width: 300px;
-}
-
 .nav-link {
   color: $nav-link-default;
 
@@ -15,7 +10,7 @@
 
   &.nav-link-active {
     color: $black;
-    background-color: $nav-link-accent-backbround;
+    background-color: $nav-link-accent-background;
 
     &:hover {
       color: $black;
@@ -23,17 +18,8 @@
   }
 }
 
-.feature-image {
-  max-width: 100%;
-}
-
-.piece {
-  max-width: 100%;
-  border: 1px solid $piece-border;
-}
-
 .gallery-details-container {
-  max-width: 575px;
+  max-width: $bootstrap-breakpoint-sm;
 }
 
 .gallery-detail {
@@ -44,4 +30,12 @@
     border-color: $gallery-detail-border-hover;
     outline-color: $gallery-detail-border-hover;
   }
+}
+
+.piece {
+  border: 1px solid $piece-border;
+}
+
+.about-content-container {
+  max-width: $bootstrap-breakpoint-lg;
 }

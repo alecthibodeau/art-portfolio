@@ -13,9 +13,17 @@ $html-hotpink: #ff69b4;
 
 $nav-link-default: $dark-cyan-blue;
 $nav-link-hover: $dark-hotpink;
-$nav-link-accent-backbround: $dark-yellow-green;
+$nav-link-accent-background: $dark-yellow-green;
 
 $gallery-detail-border: $fifty-percent-gray;
 $gallery-detail-border-hover: $html-hotpink;
 
 $piece-border: $thirty-five-percent-gray;
+
+/* Bootstrap Breakpoints */
+
+$bootstrap-breakpoint-sm: 576px;
+$bootstrap-breakpoint-md: 768px;
+$bootstrap-breakpoint-lg: 992px;
+$bootstrap-breakpoint-xl: 1200px;
+$bootstrap-breakpoint-xxl: 1400px;
