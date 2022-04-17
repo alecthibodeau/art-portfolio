@@ -1,6 +1,10 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
+nav {
+  max-width: 400px;
+}
+
 .nav-link {
   color: $nav-link-default;
 

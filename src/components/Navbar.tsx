@@ -6,7 +6,7 @@ import config from '../config.json';
 /* Interfaces */
 import NavbarLink from '../interfaces/NavbarLink';
 
-const navLinkDefault: string = 'mx-1 nav-link';
+const navLinkDefault: string = 'col mx-1 text-center nav-link';
 
 function renderNavbarLink(link: NavbarLink) {
   return (
@@ -24,7 +24,7 @@ function renderNavbarLink(link: NavbarLink) {
 
 function Navbar() {
   return (
-    <nav className="d-flex justify-content-center">
+    <nav className="row mx-auto px-1">
       {config.navbarLinks.map(renderNavbarLink)}
     </nav>
   );
