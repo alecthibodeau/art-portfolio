@@ -1,8 +1,6 @@
-import GalleryDetail from './GalleryDetail';
-
+import Piece from './Piece';
 interface GalleryProps {
-  category: string,
-  details: GalleryDetail[]
+  pieces: Piece[]
 }
 
 export default GalleryProps;

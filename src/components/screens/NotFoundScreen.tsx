@@ -1,4 +1,4 @@
-function NotFound() {
+function NotFoundScreen() {
   return (
     <div className="m-3 text-center">
       <h1>404 Error</h1>
@@ -7,4 +7,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default NotFoundScreen;
