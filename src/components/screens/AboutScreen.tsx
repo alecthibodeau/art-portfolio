@@ -1,10 +1,10 @@
 /* Components */
-import MailToLink from './MailToLink';
+import MailToLink from '../MailToLink';
 
 /* Images */
-import selfPortrait from '../assets/images/main/alec-thibodeau-self-portrait.jpg';
+import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
 
-function About() {
+function AboutScreen() {
   return (
     <div className="about-content-container">
       <img className="float-left mr-3" src={selfPortrait} alt="Alec Thibodeau self portrait" />
@@ -26,4 +26,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutScreen;

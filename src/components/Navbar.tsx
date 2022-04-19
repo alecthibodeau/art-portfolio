@@ -3,23 +3,27 @@ import { NavLink, useLocation } from 'react-router-dom';
 /* Config */
 import config from '../config.json';
 
-/* Interfaces */
-import NavbarLink from '../interfaces/NavbarLink';
-
 const navLinkDefault: string = 'col mx-1 text-center nav-link';
 
-function renderNavbarLink(link: NavbarLink) {
+// const usePathname = () => {
+//   const location = useLocation();
+//   return location.pathname;
+// }
+
+function renderNavbarLink(name: string) {
   return (
     <NavLink
-      key={link.id}
+      key={`${name}NavLink`}
       className={
         ({ isActive }) => isActive ?
-        navLinkDefault + ' nav-link-active' + (useLocation().pathname === link.path ? ' gallery' : '') :
+        // navLinkDefault + ' nav-link-active' + (useLocation().pathname === `/${name}` ? ' gallery' : '') :
+        navLinkDefault + ' nav-link-active' :
+
         navLinkDefault
       }
-      to={link.path}
+      to={`/${name}`}
     >
-      {link.category}
+      {name}
     </NavLink>
   )
 }

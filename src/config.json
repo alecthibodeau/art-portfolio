@@ -1,557 +1,534 @@
 {
-  "navbarLinks": [
-    {
-      "id": "navLinkDrawings",
-      "category": "drawings",
-      "path": "/drawings"
-    },
-    {
-      "id": "navLinkPrints",
-      "category": "prints",
-      "path": "/prints"
-    },
-    {
-      "id": "navLinkPosters",
-      "category": "posters",
-      "path": "/posters"
-    },
-    {
-      "id": "navLinkAbout",
-      "category": "about",
-      "path": "/about"
-    }
-  ],
-  "drawingsDetails": [
-    {
-      "id": "thibodeauDetailDrawingAerodynamicsTribute",
-      "alt": "Detail of drawing Aerodynamics Tribute",
-      "path": "/drawings/aerodynamics-tribute"
-    },
-    {
-      "id": "thibodeauDetailDrawingAhem",
-      "alt": "Detail of drawing Ahem",
-      "path": "/drawings/ahem"
-    },
-    {
-      "id": "thibodeauDetailDrawingBasil",
-      "alt": "Detail of drawing Basil",
-      "path": "/drawings/basil"
-    },
-    {
-      "id": "thibodeauDetailDrawingBaskingWithTheStars",
-      "alt": "Detail of drawing Basking With the Stars",
-      "path": "/drawings/basking-with-the-stars"
-    },
-    {
-      "id": "thibodeauDetailDrawingClarice",
-      "alt": "Detail of drawing Clarice",
-      "path": "/drawings/clarice"
-    },
-    {
-      "id": "thibodeauDetailDrawingConversion",
-      "alt": "Detail of drawing Conversion",
-      "path": "/drawings/conversion"
-    },
-    {
-      "id": "thibodeauDetailDrawingDistraction",
-      "alt": "Detail of drawing Distraction",
-      "path": "/drawings/distraction"
-    },
-    {
-      "id": "thibodeauDetailDrawingDoYouHaveAMoment",
-      "alt": "Detail of drawing Do You Have a Moment?",
-      "path": "/drawings/do-you-have-a-moment"
-    },
-    {
-      "id": "thibodeauDetailDrawingFriendshipsPath",
-      "alt": "Detail of drawing Friendship's Path",
-      "path": "/drawings/friendships-path"
-    },
-    {
-      "id": "thibodeauDetailDrawingGrackle",
-      "alt": "Detail of drawing Grackle",
-      "path": "/drawings/grackle"
-    },
-    {
-      "id": "thibodeauDetailDrawingInfinityWithYou",
-      "alt": "Detail of drawing Infinity With You",
-      "path": "/drawings/infinity-with-you"
-    },
-    {
-      "id": "thibodeauDetailDrawingInvoluntaryInvestment",
-      "alt": "Detail of drawing Involuntary Investment",
-      "path": "/drawings/involuntary-investment"
-    },
-    {
-      "id": "thibodeauDetailDrawingJubilance",
-      "alt": "Detail of drawing Jubilance",
-      "path": "/drawings/jubilance"
-    },
-    {
-      "id": "thibodeauDetailDrawingMirageBash",
-      "alt": "Detail of drawing Mirage Bash",
-      "path": "/drawings/mirage-bash"
-    },
-    {
-      "id": "thibodeauDetailDrawingMsSock",
-      "alt": "Detail of drawing Ms. Sock",
-      "path": "/drawings/ms-sock"
-    },
-    {
-      "id": "thibodeauDetailDrawingNemo",
-      "alt": "Detail of drawing Nemo",
-      "path": "/drawings/nemo"
-    },
-    {
-      "id": "thibodeauDetailDrawingNoOneLikesATwit",
-      "alt": "Detail of drawing No One Likes a Twit",
-      "path": "/drawings/no-one-likes-a-twit"
-    },
-    {
-      "id": "thibodeauDetailDrawingPeregrineFalcon",
-      "alt": "Detail of drawing Peregrine Falcon",
-      "path": "/drawings/peregrine-falcon"
-    },
-    {
-      "id": "thibodeauDetailDrawingPostcardToWilliamSchaff",
-      "alt": "Detail of drawing Postcard to William Schaff",
-      "path": "/drawings/postcard-to-william-schaff"
-    },
-    {
-      "id": "thibodeauDetailDrawingQuimby",
-      "alt": "Detail of drawing Quimby",
-      "path": "/drawings/quimby"
-    },
-    {
-      "id": "thibodeauDetailDrawingSonsAndDaughters",
-      "alt": "Detail of drawing Sons and Daughters of Eternal Light",
-      "path": "/drawings/sons-and-daughters"
-    },
-    {
-      "id": "thibodeauDetailDrawingSwanAndAnchor",
-      "alt": "Detail of drawing Swan & Anchor",
-      "path": "/drawings/swan-and-anchor"
-    },
-    {
-      "id": "thibodeauDetailDrawingTemporaryChemicalFactory",
-      "alt": "Detail of drawing Temporary Chemical Factory",
-      "path": "/drawings/temporary-chemical-factory"
-    },
-    {
-      "id": "thibodeauDetailDrawingTrust",
-      "alt": "Detail of drawing Trust",
-      "path": "/drawings/trust"
-    },
-    {
-      "id": "thibodeauDetailDrawingZeke",
-      "alt": "Detail of drawing Zeke",
-      "path": "/drawings/zeke"
-    }
-  ],
-  "postersDetails": [
-    {
-      "id": "thibodeauDetailPosterActionSpeaks",
-      "alt": "Detail of poster Action Speaks!",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterAltSpaceAtThePlanetarium",
-      "alt": "Detail of poster Alt-Space at the Planetarium",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterArtSwap",
-      "alt": "Detail of poster Art Swap",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic1",
-      "alt": "Detail of poster Black Acoustic #1",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic2",
-      "alt": "Detail of poster Black Acoustic #2",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic3",
-      "alt": "Detail of poster Black Acoustic #3",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic4",
-      "alt": "Detail of poster Black Acoustic #4",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic5",
-      "alt": "Detail of poster Black Acoustic #5",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic6",
-      "alt": "Detail of poster Black Acoustic #6",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterBlackAcoustic7",
-      "alt": "Detail of poster Black Acoustic #7",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterDeadInDesemboque",
-      "alt": "Detail of poster Dead in Desemboque",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterDeathVesselAtAS220",
-      "alt": "Detail of poster Death Vessel at AS220",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterDeathVesselAt186Carpenter",
-      "alt": "Detail of poster Death Vessel at 186 Carpenter",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterDeathVesselAtMachinesWithMagnets",
-      "alt": "Detail of poster Death Vessel at Machines With Magnets",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterDeathVesselAtSinE",
-      "alt": "Detail of poster Death Vessel at Sin-é",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterKrankyRecords",
-      "alt": "Detail of poster Kranky Records",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterLowAnthemAtAvonTheater",
-      "alt": "Detail of poster Low Anthem at Avon Theater",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterMagicLanternExperimentalEthnographyShow",
-      "alt": "Detail of poster Magic Lantern Experimental Ethnography Show",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterMagicLanternSnowblindShow",
-      "alt": "Detail of poster Magic Lantern Snowblind Show",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterLibraryArchitectureOfMistakeMaking",
-      "alt": "Detail of poster A Library for the Architecture of Mistake Making",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterMachinesWithMagnetsAnniversary",
-      "alt": "Detail of poster Machines With Magnets Anniversary",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterParmaleeBenefit",
-      "alt": "Detail of poster Parmalee Benefit",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterStringBuilderAtWhiteElectric",
-      "alt": "Detail of poster String Builder at White Electric",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterAS22020Fest",
-      "alt": "Detail of poster AS220's 20 Fest",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPosterTheWonderShowOfTheUniverse",
-      "alt": "Detail of poster The Wonder Show of the Universe",
-      "path": "/"
-    }
-  ],
-  "printsDetails": [
-    {
-      "id": "thibodeauDetailPrintTheApeAndTheBuffalosGhost",
-      "alt": "Detail of print The Ape and the Buffalo's Ghost",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintApplesAndSparrows",
-      "alt": "Detail of print Apples and Sparrows",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintAssets",
-      "alt": "Detail of print Assets",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintCompetitionIsOverrated",
-      "alt": "Detail of print Competition Is Overrated",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintCopperDog",
-      "alt": "Detail of print Copper Dog",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintEasyByForce",
-      "alt": "Detail of print Easy by Force",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintFunktionslustForAllOfUs",
-      "alt": "Detail of print Funktionslust for All of Us",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoesToShowYouWhatAMoonCanDo",
-      "alt": "Detail of print Goes to Show You What a Moon Can Do",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoldenApe",
-      "alt": "Detail of print Golden Ape",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoodLibrations",
-      "alt": "Detail of print Good Librations",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintHammerheadShark",
-      "alt": "Detail of print Hammerhead Shark",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintIStillSeeTheX",
-      "alt": "Detail of print I Still See the X",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintIndigotine",
-      "alt": "Detail of print Indigotine",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintLetTheirsBeLights",
-      "alt": "Detail of print Let Theirs Be Lights",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintLoverlyLeapers",
-      "alt": "Detail of print Loverly Leapers",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintPeersOfTheSpheres",
-      "alt": "Detail of print Peers of the Spheres",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintPinealGrigio",
-      "alt": "Detail of print Pineal Grigio",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintProbablyTheEarthsCoreReallyIsTheSky",
-      "alt": "Detail of print Probably the Earth's Core Really Is the Sky",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintProvidenceOuroboros",
-      "alt": "Detail of print Providence Ouroboros",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintSingForYourSupper",
-      "alt": "Detail of print Sing for Your Supper",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintTartrazine",
-      "alt": "Detail of print Tartrazine",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintThinkingOfYou",
-      "alt": "Detail of print Thinking of You",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintTuffLuv",
-      "alt": "Detail of print Tuff Luv",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintYouHeldMe",
-      "alt": "Detail of print You Held Me, and That's What Mattered",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintYouMayThinkTheseAreTheFinestGems",
-      "alt": "Detail of print You May Think These Are the Finest Gems (Day-Day)",
-      "path": "/"
-    }
-  ],
-  "drawings": {
-    "aerodynamicsTribute": {
-      "id": "thibodeauPieceDrawingAerodynamicsTribute",
-      "alt": "Aerodynamics Tribute drawing by Alec Thibodeau",
+  "navbarLinks": ["drawings", "prints", "posters", "about"],
+  "drawings": [
+    {
+      "category": "drawing",
+      "id": "drawingAerodynamicsTribute",
+      "path": "aerodynamics-tribute",
       "title": "Aerodynamics Tribute",
       "medium": "ink and pencil"
     },
-    "ahem": {
-      "id": "thibodeauPieceDrawingAhem",
-      "alt": "Ahem drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingAhem",
+      "path": "ahem",
       "title": "Ahem",
       "medium": "ink and pencil"
     },
-    "basil": {
-      "id": "thibodeauPieceDrawingBasil",
-      "alt": "Basil drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingBasil",
+      "path": "basil",
       "title": "Basil",
       "medium": "ink and pencil"
     },
-    "baskingWithTheStars": {
-      "id": "thibodeauPieceDrawingBaskingWithTheStars",
-      "alt": "Basking With the Stars drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingBaskingWithTheStars",
+      "path": "basking-with-the-stars",
       "title": "Basking With the Stars",
       "medium": "ink and pencil"
     },
-    "clarice": {
-      "id": "thibodeauPieceDrawingClarice",
-      "alt": "Clarice drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingClarice",
+      "path": "clarice",
       "title": "Clarice",
       "medium": "ink"
     },
-    "conversion": {
-      "id": "thibodeauPieceDrawingConversion",
-      "alt": "Conversion drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingConversion",
+      "path": "conversion",
       "title": "Conversion",
       "medium": "ink and acrylic"
     },
-    "distraction": {
-      "id": "thibodeauPieceDrawingDistraction",
-      "alt": "Distraction drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingDistraction",
+      "path": "distraction",
       "title": "Distraction",
       "medium": "ink and pencil"
     },
-    "doYouHaveAMoment": {
-      "id": "thibodeauPieceDrawingDoYouHaveAMoment",
-      "alt": "Do You Have a Moment? drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingDoYouHaveAMoment",
+      "path": "do-you-have-a-moment",
       "title": "Do You Have a Moment?",
       "medium": "ink and pencil"
     },
-    "friendshipsPath": {
-      "id": "thibodeauPieceDrawingFriendshipsPath",
-      "alt": "Friendship's Path drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingFriendshipsPath",
+      "path": "friendships-path",
       "title": "Friendship's Path",
       "medium": "ink and pencil"
     },
-    "grackle": {
-      "id": "thibodeauPieceDrawingGrackle",
-      "alt": "Grackle drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingGrackle",
+      "path": "grackle",
       "title": "Grackle",
       "medium": "ink"
     },
-    "infinityWithYou": {
-      "id": "thibodeauPieceDrawingInfinityWithYou",
-      "alt": "Infinity With You drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingInfinityWithYou",
+      "path": "infinity-with-you",
       "title": "Infinity With You",
       "medium": "ink and pencil"
     },
-    "involuntaryInvestment": {
-      "id": "thibodeauPieceDrawingInvoluntaryInvestment",
-      "alt": "Involuntary Investment drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingInvoluntaryInvestment",
+      "path": "involuntary-investment",
       "title": "Involuntary Investment",
       "medium": "ink and pencil"
     },
-    "jubilance": {
-      "id": "thibodeauPieceDrawingJubilance",
-      "alt": "Jubilance drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingJubilance",
+      "path": "jubilance",
       "title": "Jubilance",
       "medium": "ink and pencil"
     },
-    "mirageBash": {
-      "id": "thibodeauPieceDrawingMirageBash",
-      "alt": "Mirage Bash drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingMirageBash",
+      "path": "mirage-bash",
       "title": "Mirage Bash",
       "medium": "ink and pencil"
     },
-    "msSock": {
-      "id": "thibodeauPieceDrawingMsSock",
-      "alt": "Ms. Sock drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingMsSock",
+      "path": "ms-sock",
       "title": "Ms. Sock",
       "medium": "ink"
     },
-    "nemo": {
-      "id": "thibodeauPieceDrawingNemo",
-      "alt": "Nemo drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingNemo",
+      "path": "nemo",
       "title": "Nemo",
       "medium": "ink and pencil"
     },
-    "noOneLikesATwit": {
-      "id": "thibodeauPieceDrawingNoOneLikesATwit",
-      "alt": "No One Likes a Twit drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingNoOneLikesATwit",
+      "path": "no-one-likes-a-twit",
       "title": "No One Likes a Twit",
       "medium": "ink and pencil"
     },
-    "peregrineFalcon": {
-      "id": "thibodeauPieceDrawingPeregrineFalcon",
-      "alt": "Peregrine Falcon drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingPeregrineFalcon",
+      "path": "peregrine-falcon",
       "title": "Peregrine Falcon",
       "medium": "ink"
     },
-    "postcardToWilliamSchaff": {
-      "id": "thibodeauPieceDrawingPostcardToWilliamSchaff",
-      "alt": "Postcard to William Schaff drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingPostcardToWilliamSchaff",
+      "path": "postcard-to-william-schaff",
       "title": "Postcard to William Schaff",
       "medium": "ink and pencil"
     },
-    "quimby": {
-      "id": "thibodeauPieceDrawingQuimby",
-      "alt": "Quimby drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingQuimby",
+      "path": "quimby",
       "title": "Quimby",
       "medium": "ink and pencil"
     },
-    "sonsAndDaughters": {
-      "id": "thibodeauPieceDrawingSonsAndDaughters",
-      "alt": "Sons and Daughters of Eternal Light drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingSonsAndDaughters",
+      "path": "sons-and-daughters-of-eternal-light",
       "title": "Sons and Daughters of Eternal Light",
       "medium": "ink"
     },
-    "swanAndAnchor": {
-      "id": "thibodeauPieceDrawingSwanAndAnchor",
-      "alt": "Swan & Anchor drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingSwanAndAnchor",
+      "path": "swan-and-anchor",
       "title": "Swan & Anchor",
       "medium": "ink"
     },
-    "temporaryChemicalFactory": {
-      "id": "thibodeauPieceDrawingTemporaryChemicalFactory",
-      "alt": "Temporary Chemical Factory drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingTemporaryChemicalFactory",
+      "path": "temporary-chemical-factory",
       "title": "Temporary Chemical Factory",
       "medium": "pencil"
     },
-    "trust": {
-      "id": "thibodeauPieceDrawingTrust",
-      "alt": "Trust drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingTrust",
+      "path": "trust",
       "title": "Trust",
       "medium": "ink and pencil"
     },
-    "zeke": {
-      "id": "thibodeauPieceDrawingZeke",
-      "alt": "Zeke drawing by Alec Thibodeau",
+    {
+      "category": "drawing",
+      "id": "drawingZeke",
+      "path": "zeke",
       "title": "Zeke",
       "medium": "ink"
     }
-  }
+  ],
+  "posters": [
+    {
+      "category": "poster",
+      "id": "posterActionSpeaks",
+      "path": "action-speaks",
+      "title": "Action Speaks!",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterAltSpaceAtThePlanetarium",
+      "path": "alt-space-at-the-planetarium",
+      "title": "Alt-Space at the Planetarium",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterArtSwap",
+      "path": "art-swap",
+      "title": "Art Swap poster",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic01",
+      "path": "black-acoustic-01",
+      "title": "Black Acoustic #1",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic02",
+      "path": "black-acoustic-02",
+      "title": "Black Acoustic #2",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic03",
+      "path": "black-acoustic-03",
+      "title": "Black Acoustic #3",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic04",
+      "path": "black-acoustic-04",
+      "title": "Black Acoustic #4",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic05",
+      "path": "black-acoustic-05",
+      "title": "Black Acoustic #5",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic06",
+      "path": "black-acoustic-06",
+      "title": "Black Acoustic #6",
+      "medium": "screen print, collaboration with Lydia Stein, hand-printed by the artists"
+    },
+    {
+      "category": "poster",
+      "id": "posterBlackAcoustic07",
+      "path": "black-acoustic-07",
+      "title": "Black Acoustic #7",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterDeadInDesemboque",
+      "path": "dead-in-desemboque",
+      "title": "Dead in Desemboque",
+      "medium": "screen print, hand-printed and hand-cut by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterDeathVesselAtAS220",
+      "path": "death-vessel-at-as220",
+      "title": "Death Vessel at AS220",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterDeathVesselAt186Carpenter",
+      "path": "death-vessel-at-186-carpenter",
+      "title": "Death Vessel at 186 Carpenter",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterDeathVesselAtMachinesWithMagnets",
+      "path": "death-vessel-at-machines-with-magnets",
+      "title": "Death Vessel at Machines With Magnets",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterDeathVesselAtSinE",
+      "path": "death-vessel-at-sin-e",
+      "title": "Death Vessel at Sin-é",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterKrankyRecords",
+      "path": "kranky-records",
+      "title": "Kranky Records",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterLowAnthemAtAvonTheater",
+      "path": "low-anthem-at-avon-theater",
+      "title": "Low Anthem at Avon Theater",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterMagicLanternExperimentalEthnographyShow",
+      "path": "magic-lantern-experimental-ethnography-show",
+      "title": "Magic Lantern Experimental Ethnography Show",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterMagicLanternSnowblindShow",
+      "path": "magic-lantern-snowblind-show",
+      "title": "Magic Lantern Snowblind Show",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterLibraryForTheArchitectureOfMistakeMaking",
+      "path": "library-for-the-architecture-of-mistake-making",
+      "title": "A Library for the Architecture of Mistake Making",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterMachinesWithMagnetsAnniversary",
+      "path": "machine-with-magnets-anniversary",
+      "title": "Machines With Magnets Anniversary",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterParmaleeBenefit",
+      "path": "parmalee-benefit",
+      "title": "Parmalee Benefit",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterStringBuilderAtWhiteElectric",
+      "path": "string-builder-at-white-electric",
+      "title": "String Builder at White Electric",
+      "medium": "spray paint print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterAS22020Fest",
+      "path": "AS220s-20-fest",
+      "title": "AS220's 20 Fest",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "poster",
+      "id": "posterWonderShowOfTheUniverse",
+      "path": "wonder-show-of-the-universe",
+      "title": "The Wonder Show of the Universe",
+      "medium": "screen print, hand-printed by the artist"
+    }
+  ],
+  "prints": [
+    {
+      "category": "print",
+      "id": "printTheApeAndTheBuffalosGhost",
+      "path": "/",
+      "title": "The Ape and the Buffalo's Ghost",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printApplesAndSparrows",
+      "path": "/",
+      "title": "Apples and Sparrows",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printAssets",
+      "path": "/",
+      "title": "Assets",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printCompetitionIsOverrated",
+      "path": "/",
+      "title": "Competition Is Overrated",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printCopperDog",
+      "path": "/",
+      "title": "Copper Dog",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printEasyByForce",
+      "path": "/",
+      "title": "Easy by Force",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printFunktionslustForAllOfUs",
+      "path": "/",
+      "title": "Funktionslust for All of Us",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoesToShowYouWhatAMoonCanDo",
+      "path": "/",
+      "title": "Goes to Show You What a Moon Can Do",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoldenApe",
+      "path": "/",
+      "title": "Golden Ape",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoodLibrations",
+      "path": "/",
+      "title": "Good Librations",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printHammerheadShark",
+      "path": "/",
+      "title": "Hammerhead Shark",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printIStillSeeTheX",
+      "path": "/",
+      "title": "I Still See the X",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printIndigotine",
+      "path": "/",
+      "title": "Indigotine",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printLetTheirsBeLights",
+      "path": "/",
+      "title": "Let Theirs Be Lights",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printLoverlyLeapers",
+      "path": "/",
+      "title": "Loverly Leapers",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printPeersOfTheSpheres",
+      "path": "/",
+      "title": "Peers of the Spheres",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printPinealGrigio",
+      "path": "/",
+      "title": "Pineal Grigio",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printProbablyTheEarthsCoreReallyIsTheSky",
+      "path": "/",
+      "title": "Probably the Earth's Core Really Is the Sky",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printProvidenceOuroboros",
+      "path": "/",
+      "title": "Providence Ouroboros",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printSingForYourSupper",
+      "path": "/",
+      "title": "Sing for Your Supper",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printTartrazine",
+      "path": "/",
+      "title": "Tartrazine",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printThinkingOfYou",
+      "path": "/",
+      "title": "Thinking of You",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printTuffLuv",
+      "path": "/",
+      "title": "Tuff Luv",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printYouHeldMe",
+      "path": "/",
+      "title": "You Held Me, and That's What Mattered",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printYouMayThinkTheseAreTheFinestGems",
+      "path": "/",
+      "title": "You May Think These Are the Finest Gems (Day-Day)",
+      "medium": "screen print, hand-printed by the artist"
+    }
+  ]
 }
