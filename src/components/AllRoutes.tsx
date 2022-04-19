@@ -38,7 +38,7 @@ function AllRoutes() {
       />
       <Route
         path="/prints"
-        element={<GalleryScreen pieces={config.drawings} />}
+        element={<GalleryScreen pieces={config.prints} />}
       />
 
       {config.drawings.map(renderPieceRoute)}

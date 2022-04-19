@@ -1,132 +1,5 @@
 {
   "navbarLinks": ["drawings", "prints", "posters", "about"],
-  "printsDetails": [
-    {
-      "id": "thibodeauDetailPrintTheApeAndTheBuffalosGhost",
-      "alt": "Detail of print The Ape and the Buffalo's Ghost",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintApplesAndSparrows",
-      "alt": "Detail of print Apples and Sparrows",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintAssets",
-      "alt": "Detail of print Assets",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintCompetitionIsOverrated",
-      "alt": "Detail of print Competition Is Overrated",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintCopperDog",
-      "alt": "Detail of print Copper Dog",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintEasyByForce",
-      "alt": "Detail of print Easy by Force",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintFunktionslustForAllOfUs",
-      "alt": "Detail of print Funktionslust for All of Us",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoesToShowYouWhatAMoonCanDo",
-      "alt": "Detail of print Goes to Show You What a Moon Can Do",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoldenApe",
-      "alt": "Detail of print Golden Ape",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintGoodLibrations",
-      "alt": "Detail of print Good Librations",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintHammerheadShark",
-      "alt": "Detail of print Hammerhead Shark",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintIStillSeeTheX",
-      "alt": "Detail of print I Still See the X",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintIndigotine",
-      "alt": "Detail of print Indigotine",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintLetTheirsBeLights",
-      "alt": "Detail of print Let Theirs Be Lights",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintLoverlyLeapers",
-      "alt": "Detail of print Loverly Leapers",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintPeersOfTheSpheres",
-      "alt": "Detail of print Peers of the Spheres",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintPinealGrigio",
-      "alt": "Detail of print Pineal Grigio",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintProbablyTheEarthsCoreReallyIsTheSky",
-      "alt": "Detail of print Probably the Earth's Core Really Is the Sky",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintProvidenceOuroboros",
-      "alt": "Detail of print Providence Ouroboros",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintSingForYourSupper",
-      "alt": "Detail of print Sing for Your Supper",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintTartrazine",
-      "alt": "Detail of print Tartrazine",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintThinkingOfYou",
-      "alt": "Detail of print Thinking of You",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintTuffLuv",
-      "alt": "Detail of print Tuff Luv",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintYouHeldMe",
-      "alt": "Detail of print You Held Me, and That's What Mattered",
-      "path": "/"
-    },
-    {
-      "id": "thibodeauDetailPrintYouMayThinkTheseAreTheFinestGems",
-      "alt": "Detail of print You May Think These Are the Finest Gems (Day-Day)",
-      "path": "/"
-    }
-  ],
   "drawings": [
     {
       "category": "drawing",
@@ -478,6 +351,183 @@
       "id": "posterWonderShowOfTheUniverse",
       "path": "wonder-show-of-the-universe",
       "title": "The Wonder Show of the Universe",
+      "medium": "screen print, hand-printed by the artist"
+    }
+  ],
+  "prints": [
+    {
+      "category": "print",
+      "id": "printTheApeAndTheBuffalosGhost",
+      "path": "/",
+      "title": "The Ape and the Buffalo's Ghost",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printApplesAndSparrows",
+      "path": "/",
+      "title": "Apples and Sparrows",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printAssets",
+      "path": "/",
+      "title": "Assets",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printCompetitionIsOverrated",
+      "path": "/",
+      "title": "Competition Is Overrated",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printCopperDog",
+      "path": "/",
+      "title": "Copper Dog",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printEasyByForce",
+      "path": "/",
+      "title": "Easy by Force",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printFunktionslustForAllOfUs",
+      "path": "/",
+      "title": "Funktionslust for All of Us",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoesToShowYouWhatAMoonCanDo",
+      "path": "/",
+      "title": "Goes to Show You What a Moon Can Do",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoldenApe",
+      "path": "/",
+      "title": "Golden Ape",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printGoodLibrations",
+      "path": "/",
+      "title": "Good Librations",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printHammerheadShark",
+      "path": "/",
+      "title": "Hammerhead Shark",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printIStillSeeTheX",
+      "path": "/",
+      "title": "I Still See the X",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printIndigotine",
+      "path": "/",
+      "title": "Indigotine",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printLetTheirsBeLights",
+      "path": "/",
+      "title": "Let Theirs Be Lights",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printLoverlyLeapers",
+      "path": "/",
+      "title": "Loverly Leapers",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printPeersOfTheSpheres",
+      "path": "/",
+      "title": "Peers of the Spheres",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printPinealGrigio",
+      "path": "/",
+      "title": "Pineal Grigio",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printProbablyTheEarthsCoreReallyIsTheSky",
+      "path": "/",
+      "title": "Probably the Earth's Core Really Is the Sky",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printProvidenceOuroboros",
+      "path": "/",
+      "title": "Providence Ouroboros",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printSingForYourSupper",
+      "path": "/",
+      "title": "Sing for Your Supper",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printTartrazine",
+      "path": "/",
+      "title": "Tartrazine",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printThinkingOfYou",
+      "path": "/",
+      "title": "Thinking of You",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printTuffLuv",
+      "path": "/",
+      "title": "Tuff Luv",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printYouHeldMe",
+      "path": "/",
+      "title": "You Held Me, and That's What Mattered",
+      "medium": "screen print, hand-printed by the artist"
+    },
+    {
+      "category": "print",
+      "id": "printYouMayThinkTheseAreTheFinestGems",
+      "path": "/",
+      "title": "You May Think These Are the Finest Gems (Day-Day)",
       "medium": "screen print, hand-printed by the artist"
     }
   ]
