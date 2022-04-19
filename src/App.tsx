@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 /* Components */
-import AllRoutes from './components/AllRoutes';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Routing from './components/Routing';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
       <Navbar></Navbar>
       <main className="m-3 d-flex flex-column align-items-center">
-        <AllRoutes></AllRoutes>
+        <Routing></Routing>
       </main>
     </BrowserRouter>
   );
