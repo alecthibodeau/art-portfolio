@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+/* Config */
+import config from '../../config.json';
+
 /* Interfaces */
 import GalleryProps from '../../interfaces/GalleryProps';
 import Piece from '../../interfaces/Piece';
@@ -10,14 +13,14 @@ import { getDetailImage } from '../../helpers/details';
 function renderDetail(piece: Piece) {
   return (
     <Link
-      key={piece.id}
+      key={`${piece.id}Detail`}
       className="m-3"
       to={piece.path}
     >
       <img
         className="gallery-image"
         src={getDetailImage(piece.id)}
-        alt={`Detail of ${piece.title} ${piece.category} by Alec Thibodeau`}
+        alt={`Detail of ${piece.title} ${piece.category} ${config.artistCredit}`}
       />
     </Link>
   )

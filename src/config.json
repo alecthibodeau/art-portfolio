@@ -1,4 +1,5 @@
 {
+  "artistCredit": "by Alec Thibodeau",
   "navbarLinks": ["drawings", "prints", "posters", "about"],
   "drawings": [
     {
@@ -337,14 +338,14 @@
       "id": "posterStringBuilderAtWhiteElectric",
       "path": "string-builder-at-white-electric",
       "title": "String Builder at White Electric",
-      "medium": "spray paint print, hand-printed by the artist"
+      "medium": "spray paint stencil, hand-printed by the artist"
     },
     {
       "category": "poster",
       "id": "posterAS22020Fest",
       "path": "AS220s-20-fest",
       "title": "AS220's 20 Fest",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "screen print with die cuts, hand-printed by the artist"
     },
     {
       "category": "poster",
@@ -358,175 +359,175 @@
     {
       "category": "print",
       "id": "printTheApeAndTheBuffalosGhost",
-      "path": "/",
+      "path": "the-ape-and-the-buffalos-ghost",
       "title": "The Ape and the Buffalo's Ghost",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printApplesAndSparrows",
-      "path": "/",
+      "path": "apples-and-sparrows",
       "title": "Apples and Sparrows",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printAssets",
-      "path": "/",
+      "path": "assets",
       "title": "Assets",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printCompetitionIsOverrated",
-      "path": "/",
+      "path": "competition-is-overrated",
       "title": "Competition Is Overrated",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printCopperDog",
-      "path": "/",
+      "path": "copper-dog",
       "title": "Copper Dog",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printEasyByForce",
-      "path": "/",
+      "path": "easy-by-force",
       "title": "Easy by Force",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printFunktionslustForAllOfUs",
-      "path": "/",
+      "path": "funktionslust-for-all-of-us",
       "title": "Funktionslust for All of Us",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printGoesToShowYouWhatAMoonCanDo",
-      "path": "/",
-      "title": "Goes to Show You What a Moon Can Do",
-      "medium": "screen print, hand-printed by the artist"
+      "path": "goes-to-show-you-what-a-moon-can-do",
+      "title": "Goes to Show You What a Moon Can Do: 2009 lunar calendar",
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printGoldenApe",
-      "path": "/",
+      "path": "golden-ape",
       "title": "Golden Ape",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printGoodLibrations",
-      "path": "/",
-      "title": "Good Librations",
-      "medium": "screen print, hand-printed by the artist"
+      "path": "good-librations",
+      "title": "Good Librations: 2008 lunar calendar",
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printHammerheadShark",
-      "path": "/",
+      "path": "hammerhead-shark",
       "title": "Hammerhead Shark",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "screen print with spray paint, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printIStillSeeTheX",
-      "path": "/",
-      "title": "I Still See the X",
-      "medium": "screen print, hand-printed by the artist"
+      "path": "i-still-see-the-x",
+      "title": "I Still See the X: 2017 lunar calendar",
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printIndigotine",
-      "path": "/",
+      "path": "indigotine",
       "title": "Indigotine",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printLetTheirsBeLights",
-      "path": "/",
+      "path": "let-theirs-be-lights",
       "title": "Let Theirs Be Lights",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printLoverlyLeapers",
-      "path": "/",
+      "path": "loverly-leapers",
       "title": "Loverly Leapers",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printPeersOfTheSpheres",
-      "path": "/",
+      "path": "peers-of-the-spheres",
       "title": "Peers of the Spheres",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printPinealGrigio",
-      "path": "/",
-      "title": "Pineal Grigio",
-      "medium": "screen print, hand-printed by the artist"
+      "path": "pineal-grigio",
+      "title": "Pineal Grigio: 2011 lunar calendar",
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printProbablyTheEarthsCoreReallyIsTheSky",
-      "path": "/",
-      "title": "Probably the Earth's Core Really Is the Sky",
-      "medium": "screen print, hand-printed by the artist"
+      "path": "probably-the-earths-core-really-is-the-sky",
+      "title": "Probably the Earth's Core Really Is the Sky: 2010 lunar calendar",
+      "medium": "letterpress print, printed by DWRI Letterpress"
     },
     {
       "category": "print",
       "id": "printProvidenceOuroboros",
-      "path": "/",
+      "path": "providence-ouroboros",
       "title": "Providence Ouroboros",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "screen print, foldable, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printSingForYourSupper",
-      "path": "/",
+      "path": "sing-for-your-supper",
       "title": "Sing for Your Supper",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printTartrazine",
-      "path": "/",
+      "path": "tartrazine",
       "title": "Tartrazine",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printThinkingOfYou",
-      "path": "/",
+      "path": "thinking-of-you",
       "title": "Thinking of You",
-      "medium": "screen print, hand-printed by the artist"
+      "medium": "screen print with spray paint, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printTuffLuv",
-      "path": "/",
+      "path": "tuff-luv",
       "title": "Tuff Luv",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printYouHeldMe",
-      "path": "/",
+      "path": "you-held-me-and-thats-what-mattered",
       "title": "You Held Me, and That's What Mattered",
       "medium": "screen print, hand-printed by the artist"
     },
     {
       "category": "print",
       "id": "printYouMayThinkTheseAreTheFinestGems",
-      "path": "/",
+      "path": "you-may-think-these-are-the-finest-gems",
       "title": "You May Think These Are the Finest Gems (Day-Day)",
       "medium": "screen print, hand-printed by the artist"
     }
