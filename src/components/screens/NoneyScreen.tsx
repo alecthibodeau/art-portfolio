@@ -1,20 +1,22 @@
+import { Link } from 'react-router-dom';
+
 /* Images */
-import noneyArtichokeCrane from '../..//assets/images/work/noney/noney-artichoke-crane.jpg';
-import noneyCulturalTender from '../..//assets/images/work/noney/noney-cultural-tender.jpg';
-import noneyFrontAnimation from '../..//assets/images/work/noney/noney-front-animation.gif';
-import noneyNoteBack from '../..//assets/images/work/noney/noney-note-back.gif';
-import noneyPeoplesCurrency from '../..//assets/images/work/noney/noney-peoples-currency.jpg';
-import noneyUncutSheetBack from '../..//assets/images/work/noney/noney-uncut-sheet-back.gif';
-import noneyUncutSheetFront from '../..//assets/images/work/noney/noney-uncut-sheet-front.gif';
+import noneyArtichokeCrane from '../../assets/images/work/noney/noney-artichoke-crane.jpg';
+import noneyCulturalTender from '../../assets/images/work/noney/noney-cultural-tender.jpg';
+import noneyFrontAnimation from '../../assets/images/work/noney/noney-front-animation.gif';
+import noneyNoteBack from '../../assets/images/work/noney/noney-note-back.gif';
+import noneyPeoplesCurrency from '../../assets/images/work/noney/noney-peoples-currency.jpg';
+import noneyUncutSheetBack from '../../assets/images/work/noney/noney-uncut-sheet-back.gif';
+import noneyUncutSheetFront from '../../assets/images/work/noney/noney-uncut-sheet-front.gif';
 
 function NoneyScreen() {
   return (
-    <div className="row">
+    <div className="row justify-content-center max-width-xxl-breakpoint">
       <div className="col d-flex flex-column align-items-center">
-        <img className="noney-front-animation" src={noneyFrontAnimation} alt="Scrolling sequence of Noney's ten note faces" />
-        <img src={noneyCulturalTender} alt="Noney note's back detail: scroll with hand-drawn text" />
+        <img className="mb-3 noney-image noney-front-animation" src={noneyFrontAnimation} alt="Scrolling sequence of Noney's ten note faces" />
+        <img className="mt-2 mb-3 noney-image" src={noneyCulturalTender} alt="Noney note's back detail: scroll with hand-drawn text" />
         <p>
-          Noney entered circulation when artist Alec Thibodeau began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA.
+          Noney entered circulation when artist <Link to="/">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA.
         </p>
         <p className="noney-rule"></p>
         <p>
@@ -36,20 +38,20 @@ function NoneyScreen() {
           Through the process of screen printing, Noney notes are represented in violet and yellow ink on archival sheets of polyethylene fiber, a material that's lighter and tougher than paper. Each note is numbered by hand and signed with "Obadiah Eelcut". Noney's total print run is 10,000 notes (1,000 of each face).
         </p>
         <p>
-          Each Noney note has the same denomination: zero. This doesn't mean each note has no value... just relative value. There's no fixed exchange rate or area of operation. Noney's worth as both art and currency is to be determined through personal contemplation and negotiated transactions &mdash; anywhere.
+          Each Noney note has the same denomination: zero. This doesn't mean each note has no value&hellip; just relative value. There's no fixed exchange rate or area of operation. Noney's worth as both art and currency is to be determined through personal contemplation and negotiated transactions &mdash; anywhere.
         </p>
         <p>
           In addition to the supply of cut Noney notes, there exists a limited edition of 200 uncut sheets, also on polyethylene fiber. These sheets feature Noney's standard ink colors on the front, but with red ink &mdash; not violet &mdash; on the back. Each sheet is numbered, signed and dated in pencil on the front.
         </p>
-        <img src={noneyArtichokeCrane} alt="Noney note's front detail: artichoke and crane illustration" />
+        <img className="mb-3 noney-image" src={noneyArtichokeCrane} alt="Noney note's front detail: artichoke and crane illustration" />
       </div>
       <div className="col d-flex flex-column align-items-center">
-        <img src={noneyPeoplesCurrency} alt="Noney note's front detail: The People's Currency illustration" />
+        <img className="mb-3 noney-image" src={noneyPeoplesCurrency} alt="Noney note's front detail: The People's Currency illustration" />
         <p>
           Noney is a limited edition currency, with each note being hand-drawn, hand-printed and hand-signed. Like other money, Noney is for people to circulate through trades. Unlike other money, Noney addresses the subjectivity of its own value. The result is a combination of printmaking, public art and performance. Click the animated image to see the shared back of Noney's ten front faces: Bexca, Stephen, Frances, Ryan, Ursula, Tha Streets, Cynthia, Tucci, Jennifer and William.
         </p>
-        <img className="noney-sheet" src={noneyUncutSheetFront} alt="Noney uncut sheet front" />
-        <img className="noney-sheet" src={noneyUncutSheetBack} alt="Noney uncut sheet back" />
+        <img className="my-3 noney-image noney-sheet" src={noneyUncutSheetFront} alt="Noney uncut sheet front" />
+        <img className="my-3 noney-image noney-sheet" src={noneyUncutSheetBack} alt="Noney uncut sheet back" />
       </div>
     </div>
   );

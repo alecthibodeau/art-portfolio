@@ -48,24 +48,34 @@ nav {
   }
 }
 
-.piece {
-  @include image-border;
-}
-
-.noney-front-animation {
-  @include image-border;
-}
-
+.piece,
+.noney-front-animation,
 .noney-sheet {
   @include image-border;
-  margin: 1rem auto;
 }
 
 .max-width-lg-breakpoint {
   max-width: $bootstrap-breakpoint-lg;
 }
 
+.max-width-xxl-breakpoint {
+  max-width: $bootstrap-breakpoint-xxl;
+}
+
 .noney-rule {
   width: 150px;
   border-bottom: 1px solid $noney-violet;
+}
+
+.noney-image {
+  max-width: 340px;
+}
+
+/* Breakpoints */
+
+@media only screen and (min-width: $bootstrap-breakpoint-sm) {
+
+  .noney-image {
+    max-width: initial;
+  }
 }
