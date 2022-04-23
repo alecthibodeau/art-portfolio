@@ -10,6 +10,8 @@ $dark-yellow-green: #c0de4b;
 $html-hotpink: #ff69b4;
 $medium-dark-pink: #a05;
 
+$noney-violet: #330066;
+
 /* Color Assignments */
 
 $nav-link-color-default: $dark-cyan-blue;
@@ -26,6 +28,11 @@ $piece-border-color: $thirty-five-percent-gray;
 
 /* Size */
 $gallery-detail-dimension: 80px;
+
+/* Border */
+@mixin image-border {
+  border: 1px solid $piece-border-color;
+}
 
 /* Bootstrap Breakpoints */
 

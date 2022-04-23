@@ -49,9 +49,23 @@ nav {
 }
 
 .piece {
-  border: 1px solid $piece-border-color;
+  @include image-border;
+}
+
+.noney-front-animation {
+  @include image-border;
+}
+
+.noney-sheet {
+  @include image-border;
+  margin: 1rem auto;
 }
 
 .max-width-lg-breakpoint {
   max-width: $bootstrap-breakpoint-lg;
+}
+
+.noney-rule {
+  width: 150px;
+  border-bottom: 1px solid $noney-violet;
 }
