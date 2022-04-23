@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="my-3 d-flex flex-column align-items-center">
       <Link to="/">
-        <img src={wordmark} alt="Alec Thibodeau wordmark" />
+        <img className="wordmark" src={wordmark} alt="Alec Thibodeau wordmark" />
       </Link>
     </header>
   );

@@ -1,8 +1,13 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
+.wordmark {
+  height: 53px;
+}
+
 nav {
   max-width: 400px;
+  height: 40px;
 }
 
 .nav-link {
@@ -31,6 +36,9 @@ nav {
 }
 
 .gallery-image {
+  width: $gallery-detail-dimension;
+  height: $gallery-detail-dimension;
+  background-color: $fifty-percent-gray;
   border: 1px solid $gallery-detail-color-border;
   outline: 3px solid transparent;
 
