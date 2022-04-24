@@ -22,6 +22,7 @@ const images = [
 function renderImage(path: string, index: number) {
   return (
     <img
+      key={`epochTravelersDetail${index + 1}`}
       className="m-4 mw-100"
       src={path}
       alt={`Detail #${index + 1} from Alec Thibodeau's Epoch Travelers installation in marble`}
