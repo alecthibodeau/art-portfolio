@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /* Images */
@@ -14,6 +14,12 @@ function NoneyScreen() {
 
   const [isFront, setNoneyNoteFaceIsFront] = useState(true);
 
+  useEffect(() => {
+    if (!isFront) {
+      setTimeout(() => setNoneyNoteFaceIsFront(true), 10000);
+    }
+  });
+
   return (
     <div>
       <h1 className="mt-2 mb-4 text-center">
@@ -27,7 +33,11 @@ function NoneyScreen() {
             alt={isFront ? "Noney note's ten front faces as an animated sequence" : "Noney note's back illustration"}
             onClick={() => setNoneyNoteFaceIsFront(!isFront)}
           />
-          <img className="mt-2 mb-3 noney-image" src={noneyCulturalTender} alt="Noney note's back detail: scroll with hand-drawn text" />
+          <img
+            className="mt-2 mb-3 noney-image"
+            src={noneyCulturalTender}
+            alt="Noney note's back detail: scroll with hand-drawn text"
+          />
           <p>
             Noney entered circulation when artist <Link to="/">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA.
           </p>
@@ -56,15 +66,31 @@ function NoneyScreen() {
           <p>
             In addition to the supply of cut Noney notes, there exists a limited edition of 200 uncut sheets, also on polyethylene fiber. These sheets feature Noney's standard ink colors on the front, but with red ink &mdash; not violet &mdash; on the back. Each sheet is numbered, signed and dated in pencil on the front.
           </p>
-          <img className="mb-3 noney-image" src={noneyArtichokeCrane} alt="Noney note's front detail: artichoke and crane illustration" />
+          <img
+            className="mb-3 noney-image"
+            src={noneyArtichokeCrane}
+            alt="Noney note's front detail: artichoke and crane illustration"
+          />
         </div>
         <div className="col d-flex flex-column align-items-center">
-          <img className="mb-3 noney-image" src={noneyPeoplesCurrency} alt="Noney note's front detail: The People's Currency illustration" />
+          <img
+            className="mb-3 noney-image"
+            src={noneyPeoplesCurrency}
+            alt="Noney note's front detail: The People's Currency illustration"
+          />
           <p>
             Noney is a limited edition currency, with each note being hand-drawn, hand-printed and hand-signed. Like other money, Noney is for people to circulate through trades. Unlike other money, Noney addresses the subjectivity of its own value. The result is a combination of printmaking, public art and performance. Click the animated image to see the shared back of Noney's ten front faces: Bexca, Stephen, Frances, Ryan, Ursula, Tha Streets, Cynthia, Tucci, Jennifer and William.
           </p>
-          <img className="my-3 noney-image noney-sheet" src={noneyUncutSheetFront} alt="Noney uncut sheet front" />
-          <img className="my-3 noney-image noney-sheet" src={noneyUncutSheetBack} alt="Noney uncut sheet back" />
+          <img
+            className="my-3 noney-image noney-sheet"
+            src={noneyUncutSheetFront}
+            alt="Noney uncut sheet front"
+          />
+          <img
+            className="my-3 noney-image noney-sheet"
+            src={noneyUncutSheetBack}
+            alt="Noney uncut sheet back"
+          />
         </div>
       </div>
     </div>
