@@ -21,13 +21,11 @@ const images = [
 
 function renderImage(path: string, index: number) {
   return (
-    <div>
-      <img
-        className="m-4 mw-100"
-        src={path}
-        alt={`Detail #${index + 1} from Alec Thibodeau's Epoch Travelers installation in marble`}
-      />
-    </div>
+    <img
+      className="m-4 mw-100"
+      src={path}
+      alt={`Detail #${index + 1} from Alec Thibodeau's Epoch Travelers installation in marble`}
+    />
   )
 }
 

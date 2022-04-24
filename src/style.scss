@@ -1,8 +1,13 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
+.wordmark {
+  height: 53px;
+}
+
 nav {
   max-width: 400px;
+  height: 40px;
 }
 
 .nav-link {
@@ -31,6 +36,9 @@ nav {
 }
 
 .gallery-image {
+  width: $gallery-detail-dimension;
+  height: $gallery-detail-dimension;
+  background-color: $fifty-percent-gray;
   border: 1px solid $gallery-detail-color-border;
   outline: 3px solid transparent;
 
@@ -40,10 +48,34 @@ nav {
   }
 }
 
-.piece {
-  border: 1px solid $piece-border-color;
+.piece,
+.noney-front-animation,
+.noney-sheet {
+  @include image-border;
 }
 
 .max-width-lg-breakpoint {
   max-width: $bootstrap-breakpoint-lg;
+}
+
+.max-width-xxl-breakpoint {
+  max-width: $bootstrap-breakpoint-xxl;
+}
+
+.noney-rule {
+  width: 150px;
+  border-bottom: 1px solid $noney-violet;
+}
+
+.noney-image {
+  max-width: 340px;
+}
+
+/* Breakpoints */
+
+@media only screen and (min-width: $bootstrap-breakpoint-sm) {
+
+  .noney-image {
+    max-width: initial;
+  }
 }

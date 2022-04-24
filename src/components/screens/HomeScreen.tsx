@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
+
 /* Config */
 import config from '../../config.json';
 
 /* Images */
-import { Link } from 'react-router-dom';
 import featureImage from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-07.jpg';
 
 function HomeScreen() {

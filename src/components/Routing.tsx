@@ -12,6 +12,7 @@ import AboutScreen from './screens/AboutScreen';
 import EpochTravelersScreen from './screens/EpochTravelersScreen';
 import GalleryScreen from './screens/GalleryScreen';
 import HomeScreen from './screens/HomeScreen';
+import NoneyScreen from './screens/NoneyScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
 import PieceScreen from './screens/PieceScreen';
 
@@ -44,6 +45,7 @@ function Routing() {
       {config.posters.map(renderPieceRoute)}
       <Route path={`/${config.navbarLinks[3]}`} element={<AboutScreen />} />
       <Route path={config.epochTravelersRoute} element={<EpochTravelersScreen />} />
+      <Route path="/noney" element={<NoneyScreen />} />
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>
