@@ -46,8 +46,8 @@ import posterLibraryForTheArchitectureOfMistakeMaking from '../assets/images/wor
 import posterMachinesWithMagnetsAnniversary from '../assets/images/work/details/thibodeau-detail-poster-mwm.jpg';
 import posterParmaleeBenefit from '../assets/images/work/details/thibodeau-detail-poster-parmalee-benefit.jpg';
 import posterStringBuilderAtWhiteElectric from '../assets/images/work/details/thibodeau-detail-poster-string-builder-white-electric.jpg';
-import posterAS22020Fest from '../assets/images/work/details/thibodeau-detail-poster-twenty-fest.jpg';
-import posterWonderShowOfTheUniverse from '../assets/images/work/details/thibodeau-detail-poster-wonder-show.jpg';
+import posterAS220s20Fest from '../assets/images/work/details/thibodeau-detail-poster-twenty-fest.jpg';
+import posterTheWonderShowOfTheUniverse from '../assets/images/work/details/thibodeau-detail-poster-wonder-show.jpg';
 import printTheApeAndTheBuffalosGhost from '../assets/images/work/details/thibodeau-detail-print-ape-and-buffalos-ghost.jpg';
 import printApplesAndSparrows from '../assets/images/work/details/thibodeau-detail-print-apples-and-sparrows.jpg';
 import printAssets from '../assets/images/work/details/thibodeau-detail-print-assets.jpg';
@@ -123,8 +123,8 @@ const detailsImages = {
   posterMachinesWithMagnetsAnniversary,
   posterParmaleeBenefit,
   posterStringBuilderAtWhiteElectric,
-  posterAS22020Fest,
-  posterWonderShowOfTheUniverse,
+  posterAS220s20Fest,
+  posterTheWonderShowOfTheUniverse,
   printTheApeAndTheBuffalosGhost,
   printApplesAndSparrows,
   printAssets,
