@@ -1,6 +1,6 @@
 {
   "name": "alecthibodeau.com",
-  "homempage": "https://alecthibodeau.com/",
+  "homepage": "https://alecthibodeau.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
