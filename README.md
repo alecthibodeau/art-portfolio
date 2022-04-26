@@ -1,4 +1,4 @@
-# Art Portfolio Website: alecthibodeau.com
+# React Art Portfolio Website: alecthibodeau.com
 
 ## Purpose
 
