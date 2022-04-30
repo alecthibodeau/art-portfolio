@@ -10,8 +10,23 @@ function HomeScreen() {
   return (
     <div>
       <Link to={`/${config.epochTravelersRoute}`}>
-        <img className="mw-100" src={featureImage} alt="Detail from Alec Thibodeau's Epoch Travelers installation in marble" />
+        <div>
+          <img
+            className="mw-100"
+            src={featureImage} alt="Detail from Alec Thibodeau's Epoch Travelers installation in marble"
+          />
+        </div>
       </Link>
+      <div className="mt-3 text-center">
+          <span className="fst-italic">
+            <Link to={`/${config.epochTravelersRoute}`}>
+              Epoch Travelers
+            </Link>
+          </span>
+          <span>
+            : A permanent installation in marble at a site in New York City
+          </span>
+      </div>
     </div>
   );
 }
