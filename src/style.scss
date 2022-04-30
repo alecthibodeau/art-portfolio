@@ -62,6 +62,10 @@ nav {
   max-width: $bootstrap-breakpoint-xxl;
 }
 
+.epoch-travelers-image {
+  width: 300px;
+}
+
 .noney-rule {
   width: 150px;
   border-bottom: 1px solid $noney-violet;
@@ -74,6 +78,10 @@ nav {
 /* Breakpoints */
 
 @media only screen and (min-width: $bootstrap-breakpoint-sm) {
+
+  .epoch-travelers-image{
+    width: initial;
+  }
 
   .noney-image {
     max-width: initial;

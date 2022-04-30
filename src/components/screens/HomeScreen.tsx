@@ -24,7 +24,7 @@ function HomeScreen() {
             </Link>
           </span>
           <span>
-            : A permanent installation in marble at a site in New York City
+            : A permanent marble artwork in New York City
           </span>
       </div>
     </div>
