@@ -8,7 +8,7 @@ import featureImage from '../../assets/images/work/site-specific/thibodeau-site-
 
 function HomeScreen() {
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
       <Link to={`/${config.epochTravelersRoute}`}>
         <div>
           <img
@@ -17,15 +17,8 @@ function HomeScreen() {
           />
         </div>
       </Link>
-      <div className="mt-3 text-center">
-          <span className="fst-italic">
-            <Link to={`/${config.epochTravelersRoute}`}>
-              Epoch Travelers
-            </Link>
-          </span>
-          <span>
-            : A permanent marble artwork in New York City
-          </span>
+      <div className="mt-3 px-3 home-caption">
+        <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">Epoch Travelers</span></Link> by Alec Thibodeau is a work in marble permanently installed at a site in New York City
       </div>
     </div>
   );
