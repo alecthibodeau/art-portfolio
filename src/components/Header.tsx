@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 /* Images */
-import wordmark from '../assets/images/main/alec-thibodeau-wordmark-seventy-five-percent-gray.svg';
+import wordmark from '../assets/images/main/alec-thibodeau-wordmark-ninety-percent-gray.svg';
 
 function Header() {
   return (
