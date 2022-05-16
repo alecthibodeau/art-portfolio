@@ -34,7 +34,7 @@ function EpochTravelersScreen() {
   return (
     <div>
       <div className="mx-auto max-width-lg-breakpoint">
-        <span className="fst-italic">Epoch Travelers</span> by artist Alec Thibodeau is a permanent installation in marble located at an interior site in New York City. It was commissioned by the NYC Department of Education and the NYC School Construction Authority Public Art for Public Schools Program in collaboration with the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241">NYC Department of Cultural Affairs Percent for Art Program</a>.
+        <span className="fst-italic">Epoch Travelers</span> by artist Alec Thibodeau is a large-scale work in marble permanently installed at an interior site in New York City. It was commissioned by the NYC Department of Education and the NYC School Construction Authority Public Art for Public Schools Program in collaboration with the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241">NYC Department of Cultural Affairs Percent for Art Program</a>.
       </div>
       <div className="d-flex flex-wrap justify-content-center">
         {images.map(renderImage)}

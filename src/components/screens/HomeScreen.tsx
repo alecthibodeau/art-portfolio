@@ -18,7 +18,7 @@ function HomeScreen() {
         </div>
       </Link>
       <div className="mt-3 home-caption">
-        <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">Epoch Travelers</span></Link> by Alec Thibodeau is a work in marble permanently installed at a site in New York City
+        <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">Epoch Travelers</span></Link> by artist Alec Thibodeau is a large-scale work in marble permanently installed at an interior site in New York City.
       </div>
     </div>
   );
