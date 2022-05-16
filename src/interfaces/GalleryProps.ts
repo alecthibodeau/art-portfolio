@@ -1,6 +1,6 @@
 import Piece from './Piece';
 interface GalleryProps {
-  pieces: Piece[]
+  pieces: Piece[];
 }
 
 export default GalleryProps;

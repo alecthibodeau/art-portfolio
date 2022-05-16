@@ -1,6 +1,6 @@
 interface MailToLinkProps {
-  label: string,
-  mailTo: string
+  label: string;
+  mailTo: string;
 }
 
 export default MailToLinkProps;
