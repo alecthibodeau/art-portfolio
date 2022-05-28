@@ -11,7 +11,7 @@ function PieceScreen(props: Piece) {
   return (
     <div className="mx-3 d-flex flex-column align-items-center text-center">
       <img
-        className="my-3 mw-100 piece"
+        className={`my-3 mw-100 ${props.noBorder ? '' : 'piece-with-border'}`}
         src={getPieceImage(props.id)}
         alt={`${props.title} ${props.category} ${config.artistCredit}`}
       />
