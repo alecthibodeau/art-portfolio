@@ -36,7 +36,8 @@
       "id": "drawingClarice",
       "path": "clarice",
       "title": "Clarice",
-      "medium": "ink"
+      "medium": "ink",
+      "noBorder": true
     },
     {
       "category": "drawing",
@@ -106,7 +107,8 @@
       "id": "drawingMsSock",
       "path": "ms-sock",
       "title": "Ms. Sock",
-      "medium": "ink"
+      "medium": "ink",
+      "noBorder": true
     },
     {
       "category": "drawing",
@@ -127,7 +129,8 @@
       "id": "drawingPeregrineFalcon",
       "path": "peregrine-falcon",
       "title": "Peregrine Falcon",
-      "medium": "ink"
+      "medium": "ink",
+      "noBorder": true
     },
     {
       "category": "drawing",
@@ -148,14 +151,16 @@
       "id": "drawingSonsAndDaughters",
       "path": "sons-and-daughters-of-eternal-light",
       "title": "Sons and Daughters of Eternal Light",
-      "medium": "ink"
+      "medium": "ink",
+      "noBorder": true
     },
     {
       "category": "drawing",
       "id": "drawingSwanAndAnchor",
       "path": "swan-and-anchor",
       "title": "Swan & Anchor",
-      "medium": "ink"
+      "medium": "ink",
+      "noBorder": true
     },
     {
       "category": "drawing",
@@ -255,7 +260,8 @@
       "id": "posterDeadInDesemboque",
       "path": "dead-in-desemboque",
       "title": "Dead in Desemboque",
-      "medium": "screen print, hand-printed and hand-cut by the artist"
+      "medium": "screen print, hand-printed and hand-cut by the artist",
+      "noBorder": true
     },
     {
       "category": "poster",
