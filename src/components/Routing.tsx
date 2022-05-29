@@ -15,6 +15,7 @@ import HomeScreen from './screens/HomeScreen';
 import NoneyScreen from './screens/NoneyScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
 import PieceScreen from './screens/PieceScreen';
+import SunshineSunshineScreen from './screens/SunshineSunshineScreen';
 
 function renderGalleryRoute(name: string) {
   return (
@@ -45,7 +46,8 @@ function Routing() {
       {config.posters.map(renderPieceRoute)}
       <Route path={`/${config.navbarLinks[3]}`} element={<AboutScreen />} />
       <Route path={config.epochTravelersRoute} element={<EpochTravelersScreen />} />
-      <Route path="/noney" element={<NoneyScreen />} />
+      <Route path={config.noneyRoute} element={<NoneyScreen />} />
+      <Route path={config.sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>

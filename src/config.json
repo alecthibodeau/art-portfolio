@@ -1,6 +1,8 @@
 {
   "artistCredit": "by Alec Thibodeau",
   "epochTravelersRoute": "epoch-travelers",
+  "noneyRoute": "noney",
+  "sunshineSunshineRoute": "sunshine-sunshine",
   "navbarLinks": ["drawings", "prints", "posters", "about"],
   "drawings": [
     {
