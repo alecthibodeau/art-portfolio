@@ -26,6 +26,9 @@ function AboutScreen() {
         <p>
           Contact: <MailToLink label="alec@alecthibodeau.com" mailTo="mailto:alec@alecthibodeau.com" />
         </p>
+        <p>
+          This site is built with React. <a href="https://github.com/alecthibodeau/art-portfolio">See the code</a>.
+        </p>
       </div>
     </div>
   );
