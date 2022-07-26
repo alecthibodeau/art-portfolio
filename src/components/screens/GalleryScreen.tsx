@@ -8,7 +8,7 @@ import GalleryProps from '../../interfaces/GalleryProps';
 import Piece from '../../interfaces/Piece';
 
 /* Helpers */
-import { getDetailImage } from '../../helpers/details';
+import { getDetailImage } from '../../helpers/images-gallery-details';
 
 function renderDetail(piece: Piece) {
   return (

@@ -5,7 +5,7 @@ import config from '../../config.json';
 import Piece from '../../interfaces/Piece';
 
 /* Helpers */
-import { getPieceImage } from '../../helpers/pieces';
+import { getPieceImage } from '../../helpers/images-gallery-pieces';
 
 function PieceScreen(props: Piece) {
   return (

@@ -1,23 +1,5 @@
 /* Images */
-import epochTravelersImage01 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-01.jpg';
-import epochTravelersImage02 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-02.jpg';
-import epochTravelersImage03 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-03.jpg';
-import epochTravelersImage04 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-04.jpg';
-import epochTravelersImage05 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-05.jpg';
-import epochTravelersImage06 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-06.jpg';
-import epochTravelersImage07 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-07.jpg';
-import epochTravelersImage08 from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-08.jpg';
-
-const images = [
-  epochTravelersImage01,
-  epochTravelersImage02,
-  epochTravelersImage03,
-  epochTravelersImage04,
-  epochTravelersImage05,
-  epochTravelersImage06,
-  epochTravelersImage07,
-  epochTravelersImage08
-]
+import { epochTravelersImages } from '../../helpers/images-general';
 
 const baisleyPondLink = "https://www.google.com/maps/place/Baisley+Pond/@40.677953,-73.7869538,17z/data=!3m1!4b1!4m5!3m4!1s0x89c266d07157d2a5:0x8aa3e097629e2bfb!8m2!3d40.6760745!4d-73.7853252";
 const percentForArtLink = "https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241";
@@ -44,7 +26,7 @@ function EpochTravelersScreen() {
         NYC Department of Cultural Affairs Percent for Art Program</a>.
       </div>
       <div className="d-flex flex-wrap justify-content-center">
-        {images.map(renderImage)}
+        {epochTravelersImages.map(renderImage)}
       </div>
       <div className="mx-auto max-width-lg-breakpoint">
         <p>Title: <span className="fst-italic">Epoch Travelers</span></p>

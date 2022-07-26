@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import config from '../../config.json';
 
 /* Images */
-import featureImage from '../../assets/images/work/site-specific/thibodeau-site-specific-epoch-travelers-07.jpg';
+import { epochTravelersImages } from '../../helpers/images-general';
 
 function HomeScreen() {
   return (
@@ -13,7 +13,7 @@ function HomeScreen() {
         <div>
           <img
             className="mw-100"
-            src={featureImage} alt="Detail from Alec Thibodeau's Epoch Travelers installation in marble"
+            src={epochTravelersImages[6]} alt="Detail from Alec Thibodeau's Epoch Travelers installation in marble"
           />
         </div>
       </Link>
