@@ -2,13 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /* Images */
-import noneyArtichokeCrane from '../../assets/images/work/noney/noney-artichoke-crane.jpg';
-import noneyCulturalTender from '../../assets/images/work/noney/noney-cultural-tender.jpg';
-import noneyNoteFrontAnimation from '../../assets/images/work/noney/noney-front-animation.gif';
-import noneyNoteBack from '../../assets/images/work/noney/noney-note-back.gif';
-import noneyPeoplesCurrency from '../../assets/images/work/noney/noney-peoples-currency.jpg';
-import noneyUncutSheetBack from '../../assets/images/work/noney/noney-uncut-sheet-back.gif';
-import noneyUncutSheetFront from '../../assets/images/work/noney/noney-uncut-sheet-front.gif';
+import { noneyImages } from '../../helpers/images-general';
 
 function NoneyScreen() {
 
@@ -25,13 +19,13 @@ function NoneyScreen() {
       <div className="col d-flex flex-column align-items-center">
         <img
           className="mb-3 noney-image noney-front-animation"
-          src={isFront ? noneyNoteFrontAnimation : noneyNoteBack}
+          src={isFront ? noneyImages.noneyNoteFrontAnimation : noneyImages.noneyNoteBack}
           alt={isFront ? "Noney note's ten front faces as an animated sequence" : "Noney note's back illustration"}
           onClick={() => setNoneyNoteFaceIsFront(!isFront)}
         />
         <img
           className="mt-2 mb-3 noney-image"
-          src={noneyCulturalTender}
+          src={noneyImages.noneyCulturalTender}
           alt="Noney note's back detail: scroll with hand-drawn text"
         />
         <p>
@@ -64,14 +58,14 @@ function NoneyScreen() {
         </p>
         <img
           className="mb-3 noney-image"
-          src={noneyArtichokeCrane}
+          src={noneyImages.noneyArtichokeCrane}
           alt="Noney note's front detail: artichoke and crane illustration"
         />
       </div>
       <div className="col d-flex flex-column align-items-center">
         <img
           className="mb-3 noney-image"
-          src={noneyPeoplesCurrency}
+          src={noneyImages.noneyPeoplesCurrency}
           alt="Noney note's front detail: The People's Currency illustration"
         />
         <p>
@@ -79,12 +73,12 @@ function NoneyScreen() {
         </p>
         <img
           className="my-3 noney-image noney-sheet"
-          src={noneyUncutSheetFront}
+          src={noneyImages.noneyUncutSheetFront}
           alt="Noney uncut sheet front"
         />
         <img
           className="my-3 noney-image noney-sheet"
-          src={noneyUncutSheetBack}
+          src={noneyImages.noneyUncutSheetBack}
           alt="Noney uncut sheet back"
         />
       </div>
