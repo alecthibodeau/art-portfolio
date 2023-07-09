@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 /* Config */
 import config from '../config.json';
 
-const navLinkDefault: string = 'col mx-sm-1 px-3 text-center nav-link';
+const navLinkDefault: string = 'col mx-sm-1 px-3 d-flex flex-column justify-content-center text-center nav-link';
 
 function renderNavbarLink(name: string) {
   return (
