@@ -24,3 +24,5 @@ The data to build the content of the various React components are stored as stri
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Software and content Copyright (C) Alec Thibodeau. Copyright year is by commit date.
