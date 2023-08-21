@@ -16,7 +16,10 @@ function SunshineSunshineScreen() {
   return (
     <div>
       <div className="text-center">
-        <span className="fst-italic">Sunshine Sunshine</span> by artist Alec Thibodeau is a mural he painted on an interior wall at a <a href="https://like-no-udder.com">vegan ice cream shop</a>.
+        <span className="fst-italic">Sunshine Sunshine</span> is a mural by artist Alec
+        Thibodeau. He painted it on an interior wall at
+        a <a href="https://like-no-udder.com">vegan ice cream shop</a> in
+        Providence, Rhode Island.
       </div>
       <div className="d-flex flex-wrap justify-content-center">
         {sunshineSunshineImages.map(renderImage)}
