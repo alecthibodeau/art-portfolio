@@ -20,8 +20,7 @@ function AboutScreen() {
           earlier projects. Visit Alec's <a href="https://huetown.com">Huetown</a> shop
           or <a href="https://www.instagram.com/huetown">Instagram</a> account to
           see work that's more current. Alec also <a href="https://alect.me">writes
-          code</a>. He's currently exploring different ways
-          to use software for visual expression.
+          code</a>. He's currently exploring new ways to use software for visual expression.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
