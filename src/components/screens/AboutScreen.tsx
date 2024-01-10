@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 /* Config */
 import config from '../../config.json';
 
-/* Components */
-import MailToLink from '../MailToLink';
-
 /* Images */
 import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
 
@@ -15,12 +12,12 @@ function AboutScreen() {
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
-          Alec Thibodeau is a visual artist whose work is primarily concentrated
+          Alec Thibodeau is a visual artist who works mainly
           in drawing and printmaking. This site serves as a portfolio for his
           earlier projects. Visit Alec's <a href="https://huetown.com">Huetown</a> shop
           or <a href="https://www.instagram.com/huetown">Instagram</a> account to
-          see work that's more current. Alec also <a href="https://alect.me">writes
-          code</a>. He's currently exploring new ways to use software for visual expression.
+          see his current projects. Alec also <a href="https://alect.me">writes
+          code</a>.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
@@ -41,12 +38,6 @@ function AboutScreen() {
           Secret Project Robot (New York City), Spudnik Press Cooperative (Chicago),
           Cade Tompkins Projects (Providence), the University of Tennessee's Ewing Gallery (Knoxville),
           Boston Center for the Arts Mills Gallery and the University of Alabama at Birmingham's Visual Arts Gallery.
-        </p>
-        <p>
-          Contact: <MailToLink label="alec@alecthibodeau.com" mailTo="mailto:alec@alecthibodeau.com" />
-        </p>
-        <p>
-          This site is built with React. <a href="https://github.com/alecthibodeau/art-portfolio">See the code</a>.
         </p>
       </div>
     </div>
