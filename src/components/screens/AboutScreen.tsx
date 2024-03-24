@@ -12,12 +12,11 @@ function AboutScreen() {
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
-          Alec Thibodeau is a visual artist who works mainly
-          in drawing and printmaking. This site serves as a portfolio for his
-          earlier projects. Visit Alec's <a href="https://huetown.com">Huetown</a> shop
-          or <a href="https://www.instagram.com/huetown">Instagram</a> account to
-          see his current projects. Alec also <a href="https://alect.me">writes
-          code</a>.
+          Alec Thibodeau is a visual artist who has worked mainly
+          in drawing and printmaking. This website serves as a portfolio for his
+          earlier explorations in those mediums. Visit Alec's <a href="https://huetown.com">
+          Huetown</a> site or <a href="https://www.instagram.com/huetown">Instagram</a> account
+          to see more recent endeavors. Alec also <a href="https://alect.me">writes code</a>.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
@@ -30,8 +29,6 @@ function AboutScreen() {
           Alec is also the recipient of a project grant from the LEF Foundation to
           print <Link to={`/${config.noneyRoute}`}><span className="fst-italic">Noney
           </span></Link>, an experimental currency which has circulated internationally.
-          A <Link to={`/${config.sunshineSunshineRoute}`}>mural</Link> he painted
-          is on an interior wall at a vegan ice cream shop in Providence, Rhode Island.
         </p>
         <p>
           Galleries that have shown Alec's work include Tomato House (New York City),

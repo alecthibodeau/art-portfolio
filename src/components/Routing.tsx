@@ -17,37 +17,41 @@ import NotFoundScreen from './screens/NotFoundScreen';
 import PieceScreen from './screens/PieceScreen';
 import SunshineSunshineScreen from './screens/SunshineSunshineScreen';
 
-function renderGalleryRoute(name: string) {
-  return (
-    <Route
-      key={`${name}Route`}
-      path={`/${name}`}
-      element={<GalleryScreen pieces={config[name as keyof Galleries]} />}
-    />
-  )
-}
+function Routing(): JSX.Element {
+  const isMuralCurrent: boolean = true;
 
-function renderPieceRoute(piece: Piece) {
-  return (
-    <Route
-      key={`${piece.id}Route`}
-      path={`/${piece.category}s/${piece.path}`}
-      element={<PieceScreen {...piece} />}
-    />
-  )
-}
+  function renderGalleryRoute(name: string) {
+    return (
+      <Route
+        key={`${name}Route`}
+        path={`/${name}`}
+        element={<GalleryScreen pieces={config[name as keyof Galleries]} />}
+      />
+    )
+  }
 
-function Routing() {
+  function renderPieceRoute(piece: Piece) {
+    return (
+      <Route
+        key={`${piece.id}Route`}
+        path={`/${piece.category}s/${piece.path}`}
+        element={<PieceScreen {...piece} />}
+      />
+    )
+  }
+
   return (
     <Routes>
-      {config.navbarLinks.slice(0, -1).map(renderGalleryRoute)}
       {config.drawings.map(renderPieceRoute)}
       {config.prints.map(renderPieceRoute)}
       {config.posters.map(renderPieceRoute)}
+      {config.navbarLinks.slice(0, -1).map(renderGalleryRoute)}
       <Route path={`/${config.navbarLinks[3]}`} element={<AboutScreen />} />
       <Route path={config.epochTravelersRoute} element={<EpochTravelersScreen />} />
       <Route path={config.noneyRoute} element={<NoneyScreen />} />
-      <Route path={config.sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
+      {isMuralCurrent ?
+        <Route path={config.sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
+      : null}
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>
