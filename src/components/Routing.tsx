@@ -27,17 +27,17 @@ function Routing(): JSX.Element {
         path={`/${name}`}
         element={<GalleryScreen pieces={config[name as keyof Galleries]} />}
       />
-    )
+    );
   }
 
-  function renderPieceRoute(piece: Piece) {
+  function renderPieceRoute(piece: Piece): JSX.Element {
     return (
       <Route
         key={`${piece.id}Route`}
         path={`/${piece.category}s/${piece.path}`}
         element={<PieceScreen {...piece} />}
       />
-    )
+    );
   }
 
   return (
@@ -55,7 +55,7 @@ function Routing(): JSX.Element {
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>
-  )
+  );
 };
 
 export default Routing;

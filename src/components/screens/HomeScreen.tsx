@@ -6,7 +6,7 @@ import config from '../../config.json';
 /* Images */
 import { epochTravelersImages } from '../../helpers/images-general';
 
-function HomeScreen() {
+function HomeScreen(): JSX.Element {
   return (
     <div className="d-flex flex-column align-items-center">
       <Link to={`/${config.epochTravelersRoute}`}>

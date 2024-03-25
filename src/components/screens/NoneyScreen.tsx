@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 /* Images */
 import { noneyImages } from '../../helpers/images-general';
 
-function NoneyScreen() {
-
+function NoneyScreen(): JSX.Element {
   const [isFront, setNoneyNoteFaceIsFront] = useState(true);
 
   useEffect(() => {

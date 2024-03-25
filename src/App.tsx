@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Routing from './components/Routing';
 
-function App() {
+function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Header />

@@ -7,7 +7,7 @@ import Piece from '../../interfaces/Piece';
 /* Helpers */
 import { getPieceImage } from '../../helpers/images-gallery-pieces';
 
-function PieceScreen(props: Piece) {
+function PieceScreen(props: Piece): JSX.Element {
   return (
     <div className="mx-3 d-flex flex-column align-items-center text-center">
       <img

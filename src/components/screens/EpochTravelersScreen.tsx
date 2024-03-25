@@ -1,22 +1,22 @@
 /* Images */
 import { epochTravelersImages } from '../../helpers/images-general';
 
-const baisleyPondLink = "https://www.google.com/maps/place/Baisley+Pond/@40.677953,-73.7869538,17z/data=!3m1!4b1!4m5!3m4!1s0x89c266d07157d2a5:0x8aa3e097629e2bfb!8m2!3d40.6760745!4d-73.7853252";
-const percentForArtLink = "https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241";
-const ps360QLink = "https://www.google.com/maps/place/P.S.+360Q/@40.7019531,-73.7578773,18z/data=!4m13!1m7!3m6!1s0x89c26145f6828d65:0x16ff1276a0fbebb4!2sSt.+Albans,+Queens,+NY!3b1!8m2!3d40.6894086!4d-73.7654367!3m4!1s0x0:0xba787b86bdebd9f9!8m2!3d40.7023517!4d-73.7563833";
+function EpochTravelersScreen(): JSX.Element {
+  const baisleyPondLink: string = 'https://www.google.com/maps/place/Baisley+Pond/@40.677953,-73.7869538,17z/data=!3m1!4b1!4m5!3m4!1s0x89c266d07157d2a5:0x8aa3e097629e2bfb!8m2!3d40.6760745!4d-73.7853252';
+  const percentForArtLink: string = 'https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241';
+  const ps360QLink: string = 'https://www.google.com/maps/place/P.S.+360Q/@40.7019531,-73.7578773,18z/data=!4m13!1m7!3m6!1s0x89c26145f6828d65:0x16ff1276a0fbebb4!2sSt.+Albans,+Queens,+NY!3b1!8m2!3d40.6894086!4d-73.7654367!3m4!1s0x0:0xba787b86bdebd9f9!8m2!3d40.7023517!4d-73.7563833';
 
-function renderImage(path: string, index: number) {
-  return (
-    <img
-      key={`epochTravelersDetail${index + 1}`}
-      className="m-4 mw-100 epoch-travelers-image"
-      src={path}
-      alt={`Detail #${index + 1} from Alec Thibodeau's Epoch Travelers installation in marble`}
-    />
-  )
-}
+  function renderImage(path: string, index: number): JSX.Element {
+    return (
+      <img
+        key={`epochTravelersDetail${index + 1}`}
+        className="m-4 mw-100 epoch-travelers-image"
+        src={path}
+        alt={`Detail #${index + 1} from Alec Thibodeau's Epoch Travelers installation in marble`}
+      />
+    );
+  }
 
-function EpochTravelersScreen() {
   return (
     <div>
       <div className="mx-auto max-width-lg-breakpoint">

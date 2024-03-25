@@ -1,4 +1,4 @@
-function NotFoundScreen() {
+function NotFoundScreen(): JSX.Element {
   return (
     <div className="m-3 text-center">
       <h1>404 Error</h1>

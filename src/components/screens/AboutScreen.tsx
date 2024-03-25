@@ -6,7 +6,7 @@ import config from '../../config.json';
 /* Images */
 import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
 
-function AboutScreen() {
+function AboutScreen(): JSX.Element {
   return (
     <div className="max-width-lg-breakpoint">
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
