@@ -18,8 +18,9 @@ function SunshineSunshineScreen(): JSX.Element {
   return (
     <div>
       <div className="text-center">
-        <span className="fst-italic">Sunshine Sunshine</span> is a mural in water-based paint by
-        Alec Thibodeau. It's on an interior wall at a <a href={shopLink}>vegan ice cream shop</a> in
+        <span className="fst-italic">Sunshine Sunshine</span> is a mural in
+        water-based paint by Alec Thibodeau. Alec painted it at the
+        original location of a <a href={shopLink}>vegan ice cream shop</a> in
         Providence, Rhode Island.
       </div>
       <div className="d-flex flex-wrap justify-content-center">

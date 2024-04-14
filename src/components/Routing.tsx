@@ -18,23 +18,32 @@ import PieceScreen from './screens/PieceScreen';
 import SunshineSunshineScreen from './screens/SunshineSunshineScreen';
 
 function Routing(): JSX.Element {
-  const isMuralCurrent: boolean = true;
+  const {
+    drawings,
+    prints,
+    posters,
+    navbarLinks,
+    epochTravelersRoute,
+    noneyRoute,
+    sunshineSunshineRoute
+  } = config;
 
   function renderGalleryRoute(name: string) {
     return (
       <Route
         key={`${name}Route`}
-        path={`/${name}`}
+        path={name}
         element={<GalleryScreen pieces={config[name as keyof Galleries]} />}
       />
     );
   }
 
   function renderPieceRoute(piece: Piece): JSX.Element {
+    console.log('id is: ', piece.id)
     return (
       <Route
         key={`${piece.id}Route`}
-        path={`/${piece.category}s/${piece.path}`}
+        path={`${piece.category}s/${piece.path}`}
         element={<PieceScreen {...piece} />}
       />
     );
@@ -42,16 +51,14 @@ function Routing(): JSX.Element {
 
   return (
     <Routes>
-      {config.drawings.map(renderPieceRoute)}
-      {config.prints.map(renderPieceRoute)}
-      {config.posters.map(renderPieceRoute)}
-      {config.navbarLinks.slice(0, -1).map(renderGalleryRoute)}
-      <Route path={`/${config.navbarLinks[3]}`} element={<AboutScreen />} />
-      <Route path={config.epochTravelersRoute} element={<EpochTravelersScreen />} />
-      <Route path={config.noneyRoute} element={<NoneyScreen />} />
-      {isMuralCurrent ?
-        <Route path={config.sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
-      : null}
+      {drawings.map(renderPieceRoute)}
+      {prints.map(renderPieceRoute)}
+      {posters.map(renderPieceRoute)}
+      {navbarLinks.slice(0, -1).map(renderGalleryRoute)}
+      <Route path={navbarLinks[navbarLinks.length - 1]} element={<AboutScreen />} />
+      <Route path={epochTravelersRoute} element={<EpochTravelersScreen />} />
+      <Route path={noneyRoute} element={<NoneyScreen />} />
+      <Route path={sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>
