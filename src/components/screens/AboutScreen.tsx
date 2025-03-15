@@ -12,11 +12,9 @@ function AboutScreen(): JSX.Element {
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
-          Alec Thibodeau is a visual artist who has worked primarily
-          in drawing and printmaking. This website is a portfolio for his
-          early explorations in those two mediums. Visit Alec's <a href="https://huetown.com">
-          Huetown</a> site or <a href="https://www.instagram.com/huetown">Instagram</a> account
-          to see recent projects. Alec also <a href="https://alect.me">writes code</a>.
+          Alec Thibodeau is a visual artist. This website is a portfolio for his
+          early explorations in drawing, printmaking and related work. Visit
+          Alec's <a href="https://huetown.com"> Huetown</a> site to see more current projects.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
