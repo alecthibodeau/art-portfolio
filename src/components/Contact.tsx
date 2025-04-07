@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+
+/* Constants */
+import stringValues from '../constants/stringValues';
 
 /* Helpers */
 import formatDate from '../helpers/format-date-and-time';
@@ -9,29 +11,31 @@ import formatText from '../helpers/format-text';
 import '../styles/contact.scss';
 
 function Contact(): JSX.Element {
-  const form: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
+  const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
   const currentDate: Date = new Date();
-  const emailServiceId: string = 'service_motlos2';
-  const emailTemplateId: string = 'template_twmeleg';
-  const emailPublicKey: string = 'rv9Ct6p5U0kLM8po5';
   const formattedTime: string = formatDate.formatFullDateAndTime(currentDate);
-  const inputFieldNames: string[] = ['name', 'email', 'phone', 'message'];
 
   async function sendFormFromUser(event: React.FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
-    if (form.current) {
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+    formData.append('service_id', stringValues.emailServiceId);
+    formData.append('template_id', stringValues.emailTemplateId);
+    formData.append('user_id', stringValues.emailPublicKey);
+    if (contactForm.current) {
       try {
-        await emailjs.sendForm(
-          emailServiceId,
-          emailTemplateId,
-          form.current,
-          { publicKey: emailPublicKey }
-        );
-        console.log('SUCCESS! Form submitted successfully.');
-        form.current.reset();
+        const response: Response = await fetch(stringValues.urlSendForm, {
+          method: 'POST',
+          body: formData
+        });
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(errorText);
+        }
+        console.log('SUCCESS! Form submitted successfully.', response.status);
+        contactForm.current.reset();
       } catch (error) {
-        console.log('FAILED...', error as string);
-        throw new Error(error as string);
+        console.error(error);
       }
     } else {
       console.error('Form reference is null.');
@@ -70,9 +74,9 @@ function Contact(): JSX.Element {
         <span className="contact-alec">Contact Alec</span>
         <span>(asterisk indicates required form field)</span>
       </div>
-      <form ref={form} onSubmit={sendFormFromUser}>
+      <form ref={contactForm} onSubmit={sendFormFromUser}>
         <input type="hidden" name="time" value={formattedTime} />
-        {inputFieldNames.map(renderInputGroup)}
+        {stringValues.inputFieldNames.map(renderInputGroup)}
         <div className="submit-button-container">
           <button type="submit">
             Submit
