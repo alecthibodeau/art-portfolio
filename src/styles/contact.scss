@@ -7,9 +7,8 @@
 
 .contact-message {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .contact-alec {
@@ -31,4 +30,27 @@
 .textarea-field {
   border: 1px solid $piece-border-color;
   width: 100%;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button[type='submit'] {
+  padding: .75rem 1.75rem;
+  border: 2px solid $dark-cyan-blue;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+  background-color: $medium-dark-pink;
+  color: $dark-yellow-green;
+  font-size: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-yellow-green;
+    color: $bootstrap-body-color;
+  }
 }

@@ -68,14 +68,16 @@ function Contact(): JSX.Element {
     <div className="contact-container">
       <div className="contact-message">
         <span className="contact-alec">Contact Alec</span>
-        <span>&nbsp;(asterisk indicates required form field)</span>
+        <span>(asterisk indicates required form field)</span>
       </div>
       <form ref={form} onSubmit={sendFormFromUser}>
         <input type="hidden" name="time" value={formattedTime} />
         {inputFieldNames.map(renderInputGroup)}
-        <button type="submit">
-          Submit
-        </button>
+        <div className="submit-button-container">
+          <button type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
