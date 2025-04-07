@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+/* Components */
+import Contact from '../Contact';
+
 /* Config */
 import config from '../../config.json';
 
@@ -35,6 +38,7 @@ function AboutScreen(): JSX.Element {
           Boston Center for the Arts Mills Gallery and the University of Alabama at Birmingham's Visual Arts Gallery.
         </p>
       </div>
+      <Contact />
     </div>
   );
 }

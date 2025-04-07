@@ -39,7 +39,6 @@ function Routing(): JSX.Element {
   }
 
   function renderPieceRoute(piece: Piece): JSX.Element {
-    console.log('id is: ', piece.id)
     return (
       <Route
         key={`${piece.id}Route`}

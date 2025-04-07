@@ -1,0 +1,34 @@
+@use './variables' as *;
+
+.contact-container {
+  margin: 0 auto;
+  max-width: $bootstrap-breakpoint-sm;
+}
+
+.contact-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-alec {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .375rem;
+}
+
+.required {
+  color: $dark-hotpink;
+}
+
+.input-field,
+.textarea-field {
+  border: 1px solid $piece-border-color;
+  width: 100%;
+}
