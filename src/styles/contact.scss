@@ -23,13 +23,20 @@
 }
 
 .required {
-  color: $dark-hotpink;
+  color: $medium-dark-pink;
 }
 
 .input-field,
 .textarea-field {
   border: 1px solid $piece-border-color;
   width: 100%;
+}
+
+.error-messages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: $medium-dark-pink;
 }
 
 .submit-button-container {
