@@ -35,12 +35,12 @@ function formatPadStart(unit: number): string {
 }
 
 function formatDayOfTheWeek(date: Date): string {
-  return formatText.makeTitleCase(daysOfTheWeek[date.getDay() + 1]);
+  return formatText.formatTitleCase(daysOfTheWeek[date.getDay() + 1]);
 }
 
 function formatMonth(date: Date): string {
   const month: string = monthsOfTheYear[date.getMonth() + 1];
-  return formatText.makeTitleCase(month);
+  return formatText.formatTitleCase(month);
 }
 
 function formatTwentyFourHourTime(date: Date): string {

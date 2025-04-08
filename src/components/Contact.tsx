@@ -12,12 +12,25 @@ import formatText from '../helpers/format-text';
 import '../styles/contact.scss';
 
 function Contact(): JSX.Element {
+  const {
+    textEmail,
+    textPhone,
+    textMessage,
+    textText,
+    errorMessages: {
+      invalidEmail,
+      errorTryAgain,
+      formReferenceNull
+    }
+  } = stringValues
+  const { allNonDigits, validEmail, formatLettersAndNumbers, formatTitleCase } = formatText;
   const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
   const currentDate: Date = new Date();
   const formattedTime: string = formatDate.formatFullDateAndTime(currentDate);
   const [errors, setErrors] = useState<string[]>([]);
   const [currentField, setCurrentField] = useState<string>('');
   const [isValidationDisplayed, setIsValidationDisplayed] = useState<boolean>(false);
+  const [formattedPhone, setFormattedPhone] = useState('');
 
   function appendFormData(formData: FormData): FormData {
     formData.append('service_id', stringValues.emailServiceId);
@@ -37,22 +50,23 @@ function Contact(): JSX.Element {
     setErrors((prevErrors) => prevErrors.filter((error) => error !== errorMessage));
   }
 
+  function formatPhone(input: string): void {
+    const digits: string = input.replace(allNonDigits, '').slice(0, 10);
+    const parts: string[] = [];
+    if (digits.length > 0) parts.push(digits.slice(0, 3));
+    if (digits.length > 3) parts.push(digits.slice(3, 6));
+    if (digits.length > 6) parts.push(digits.slice(6));
+    setFormattedPhone(parts.join('-'));
+  }
+
   function validateInput(event: React.ChangeEvent<HTMLInputElement>): void {
     const input: string = event.target.value;
-    const requiredError: string = `${formatText.makeTitleCase(currentField)} is required.`;
-    const invalidEmail: string = 'Invalid email address.';
-    const invalidPhone: string = 'Phone must contain only numbers.';
-
-    const onlyDigits: RegExp = /^\d+$/;
-    const validEmail: RegExp = /^\S+@\S+\.\S+$/;
-
+    const requiredError: string = `${formatTitleCase(currentField)} is required.`;
     !input.trim() ? addError(requiredError) : removeError(requiredError);
-    if (currentField === 'email') {
+    if (currentField === textEmail) {
       !validEmail.test(input) ? addError(invalidEmail) : removeError(invalidEmail);
     }
-    if (currentField === 'phone') {
-      !onlyDigits.test(input) ? addError(invalidPhone) : removeError(invalidPhone);
-    }
+    if (currentField === textPhone) formatPhone(input);
   }
 
   async function sendUserMessage(formData: FormData): Promise<void> {
@@ -62,11 +76,11 @@ function Contact(): JSX.Element {
         await apiSendMessage.postForm(formData);
         contactForm.current.reset();
       } catch (error) {
-        console.error('Error sending message:', error);
+        console.error(errorTryAgain, error);
       }
     } else {
-      console.error('Form reference is null.');
-      alert('There was an error. Please try again.');
+      console.error(formReferenceNull);
+      alert(errorTryAgain);
     }
   }
 
@@ -86,7 +100,7 @@ function Contact(): JSX.Element {
   }
 
   function renderInputGroup(fieldName: string, index: number): JSX.Element {
-    const fieldNameTitleCase: string = formatText.makeTitleCase(fieldName);
+    const fieldNameTitleCase: string = formatTitleCase(fieldName);
     return (
       <div
         key={`${index}${fieldNameTitleCase}Field`}
@@ -94,20 +108,21 @@ function Contact(): JSX.Element {
       >
         <label htmlFor={fieldName}>
           <span>{fieldNameTitleCase}</span>
-          {fieldName !== 'phone' ? <span className="required">*</span> : null}
+          {fieldName !== textPhone ? <span className="required">*</span> : null}
         </label>
         {
-          fieldName !== 'message' ?
+          fieldName !== textMessage ?
           <input
-            required={fieldName !== 'phone'}
-            type={fieldName === 'email' ? 'email' : 'text'}
+            required={fieldName !== textPhone}
+            type={fieldName === textEmail ? textEmail : textText}
             id={fieldName}
             name={fieldName}
             className="input-field"
             onChange={validateInput}
             onFocus={() => setCurrentField(fieldName)}
+            {...(fieldName === textPhone ? { value: formattedPhone } : {})}
           /> :
-          <textarea required id="message" name="message" className="textarea-field" />
+          <textarea required id={textMessage} name={textMessage} className="textarea-field" />
         }
       </div>
     );
@@ -116,7 +131,7 @@ function Contact(): JSX.Element {
   function renderValidationErrorMessage(message: string, index: number): JSX.Element {
     return (
       <span
-        key={`${index}${formatText.formatLettersAndNumbers(message)}`}
+        key={`${index}${formatLettersAndNumbers(message)}`}
         className="error-message"
       >
         {message}
