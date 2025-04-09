@@ -14,13 +14,16 @@ import '../styles/contact.scss';
 function Contact(): JSX.Element {
   const {
     textEmail,
-    textPhone,
     textMessage,
+    textName,
+    textPhone,
+    textTime,
     textText,
     errorMessages: {
+      allRequiredFields,
+      formReferenceNull,
       invalidEmail,
-      errorTryAgain,
-      formReferenceNull
+      tryAgain
     }
   } = stringValues
   const { allNonDigits, validEmail, formatLettersAndNumbers, formatTitleCase } = formatText;
@@ -37,6 +40,16 @@ function Contact(): JSX.Element {
     formData.append('template_id', stringValues.emailTemplateId);
     formData.append('user_id', stringValues.emailPublicKey);
     return formData;
+  }
+
+  function isUserSubmissionIncomplete(): boolean {
+    let isIncomplete: boolean = false;
+    if (contactForm.current) {
+      const formData = new FormData(contactForm.current);
+      const requiredFields = [textName, textEmail, textMessage];
+      isIncomplete = requiredFields.some((field) => !formData.get(field));
+    }
+    return isIncomplete;
   }
 
   function addError(errorMessage: string): void {
@@ -59,7 +72,7 @@ function Contact(): JSX.Element {
     setFormattedPhone(parts.join('-'));
   }
 
-  function validateInput(event: React.ChangeEvent<HTMLInputElement>): void {
+  function validateInput(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >): void {
     const input: string = event.target.value;
     const requiredError: string = `${formatTitleCase(currentField)} is required.`;
     !input.trim() ? addError(requiredError) : removeError(requiredError);
@@ -67,20 +80,26 @@ function Contact(): JSX.Element {
       !validEmail.test(input) ? addError(invalidEmail) : removeError(invalidEmail);
     }
     if (currentField === textPhone) formatPhone(input);
+    if (isUserSubmissionIncomplete()) {
+      addError(allRequiredFields);
+    } else {
+      removeError(allRequiredFields);
+    }
   }
 
   async function sendUserMessage(formData: FormData): Promise<void> {
+    setFormattedPhone('');
+    setErrors([]);
     if (contactForm.current) {
-      appendFormData(formData);
+      contactForm.current.reset();
       try {
         await apiSendMessage.postForm(formData);
-        contactForm.current.reset();
       } catch (error) {
-        console.error(errorTryAgain, error);
+        console.error(tryAgain, error);
       }
     } else {
       console.error(formReferenceNull);
-      alert(errorTryAgain);
+      alert(tryAgain);
     }
   }
 
@@ -88,7 +107,7 @@ function Contact(): JSX.Element {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
     if (!errors.length) {
-      sendUserMessage(formData);
+      sendUserMessage(appendFormData(formData));
       if (isValidationDisplayed) setIsValidationDisplayed(false);
     } else {
       setIsValidationDisplayed(true);
@@ -96,7 +115,12 @@ function Contact(): JSX.Element {
   }
 
   function onClickSubmitButton(): void {
-    if (errors.length) setIsValidationDisplayed(true);
+    if (isUserSubmissionIncomplete()) {
+      addError(allRequiredFields);
+      setIsValidationDisplayed(true);
+    } else if (errors.length) {
+      setIsValidationDisplayed(true);
+    }
   }
 
   function renderInputGroup(fieldName: string, index: number): JSX.Element {
@@ -122,13 +146,20 @@ function Contact(): JSX.Element {
             onFocus={() => setCurrentField(fieldName)}
             {...(fieldName === textPhone ? { value: formattedPhone } : {})}
           /> :
-          <textarea required id={textMessage} name={textMessage} className="textarea-field" />
+          <textarea
+            required
+            id={textMessage}
+            name={textMessage}
+            className="textarea-field"
+            onChange={validateInput}
+            onFocus={() => setCurrentField(fieldName)}
+          />
         }
       </div>
     );
   }
 
-  function renderValidationErrorMessage(message: string, index: number): JSX.Element {
+  function renderErrorMessage(message: string, index: number): JSX.Element {
     return (
       <span
         key={`${index}${formatLettersAndNumbers(message)}`}
@@ -146,12 +177,12 @@ function Contact(): JSX.Element {
         <span>(asterisk indicates required form field)</span>
       </div>
       <form ref={contactForm} onSubmit={handleSubmit}>
-        <input type="hidden" name="time" value={formattedTime} />
+        <input type="hidden" name={textTime} value={formattedTime} />
         {stringValues.inputFieldNames.map(renderInputGroup)}
         {
           isValidationDisplayed ?
           <div className="error-messages">
-            {errors.map(renderValidationErrorMessage)}
+            {errors.map(renderErrorMessage)}
           </div> :
           null
         }
