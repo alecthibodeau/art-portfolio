@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /* Components */
@@ -8,10 +9,20 @@ import config from '../../config.json';
 
 /* Images */
 import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
+import Modal from '../InfoModal';
 
 function AboutScreen(): JSX.Element {
+  const [isModalDisplayed, setIsModalDisplayed] = useState<boolean>(false);
   return (
     <div className="max-width-lg-breakpoint">
+      {
+        isModalDisplayed ?
+          <Modal
+            isModalDisplayed={isModalDisplayed}
+            onClickCloseButton={() => setIsModalDisplayed(false)}
+          /> :
+        null
+      }
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
@@ -38,7 +49,9 @@ function AboutScreen(): JSX.Element {
           Boston Center for the Arts Mills Gallery and the University of Alabama at Birmingham's Visual Arts Gallery.
         </p>
       </div>
-      <Contact />
+      <Contact
+        onClickSubmit={() => setIsModalDisplayed(true)}
+      />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import formatText from '../helpers/format-text';
 /* Styles */
 import '../styles/contact.scss';
 
-function Contact(): JSX.Element {
+function Contact(props: { onClickSubmit: () => void} ): JSX.Element {
   const {
     textEmail,
     textMessage,
@@ -94,6 +94,7 @@ function Contact(): JSX.Element {
       contactForm.current.reset();
       try {
         await apiSendMessage.postForm(formData);
+        props.onClickSubmit();
       } catch (error) {
         console.error(tryAgain, error);
       }
@@ -174,7 +175,7 @@ function Contact(): JSX.Element {
     <div className="contact-container">
       <div className="contact-message">
         <span className="contact-alec">Contact Alec</span>
-        <span>(asterisk indicates required form field)</span>
+        <span>(asterisk indicates required field)</span>
       </div>
       <form ref={contactForm} onSubmit={handleSubmit}>
         <input type="hidden" name={textTime} value={formattedTime} />
