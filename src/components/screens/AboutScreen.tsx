@@ -10,11 +10,20 @@ import config from '../../config.json';
 /* Images */
 import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
 import Modal from '../InfoModal';
+import Loader from '../Loader';
 
 function AboutScreen(): JSX.Element {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isModalDisplayed, setIsModalDisplayed] = useState<boolean>(false);
+
+  function handleSuccessfulSubmission(): void {
+    setIsLoading(false);
+    setIsModalDisplayed(true);
+  }
+
   return (
     <div className="max-width-lg-breakpoint">
+      {isLoading ? <Loader /> : null }
       {
         isModalDisplayed ?
           <Modal
@@ -50,7 +59,8 @@ function AboutScreen(): JSX.Element {
         </p>
       </div>
       <Contact
-        onClickSubmit={() => setIsModalDisplayed(true)}
+        onSubmitForm={() => setIsLoading(true)}
+        onSuccessfulSubmission={handleSuccessfulSubmission}
       />
     </div>
   );

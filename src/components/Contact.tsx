@@ -1,5 +1,8 @@
 import React, { useRef, useState } from 'react';
 
+/* Interfaces */
+import ContactProps from '../interfaces/ContactProps';
+
 /* Constants */
 import stringValues from '../constants/stringValues';
 
@@ -11,7 +14,7 @@ import formatText from '../helpers/format-text';
 /* Styles */
 import '../styles/contact.scss';
 
-function Contact(props: { onClickSubmit: () => void} ): JSX.Element {
+function Contact(props: ContactProps): JSX.Element {
   const {
     textEmail,
     textMessage,
@@ -92,9 +95,10 @@ function Contact(props: { onClickSubmit: () => void} ): JSX.Element {
     setErrors([]);
     if (contactForm.current) {
       contactForm.current.reset();
+      props.onSubmitForm();
       try {
         await apiSendMessage.postForm(formData);
-        props.onClickSubmit();
+        props.onSuccessfulSubmission();
       } catch (error) {
         console.error(tryAgain, error);
       }
