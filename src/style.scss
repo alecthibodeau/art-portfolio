@@ -52,8 +52,14 @@ nav {
   }
 }
 
+.noney-note-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 .piece-with-border,
-.noney-front-animation,
+.noney-note,
 .noney-sheet {
   @include image-border;
 }

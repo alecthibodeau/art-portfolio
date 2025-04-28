@@ -11,17 +11,22 @@ function NoneyScreen(): JSX.Element {
     if (!isFront) {
       setTimeout(() => setNoneyNoteFaceIsFront(true), 10000);
     }
-  });
+  }, [isFront]);
 
   return (
     <div className="row justify-content-center max-width-xxl-breakpoint">
       <div className="col d-flex flex-column align-items-center">
-        <img
-          className="mb-3 noney-image noney-front-animation"
-          src={isFront ? noneyImages.noneyNoteFrontAnimation : noneyImages.noneyNoteBack}
-          alt={isFront ? "Noney note's ten front faces as an animated sequence" : "Noney note's back illustration"}
+        <button
           onClick={() => setNoneyNoteFaceIsFront(!isFront)}
-        />
+          className="mb-3 noney-note-button"
+          type="button"
+        >
+          <img
+            className="noney-image noney-note"
+            src={isFront ? noneyImages.noneyNoteFrontAnimation : noneyImages.noneyNoteBack}
+            alt={isFront ? 'Noney note\'s ten front faces as an animated sequence' : 'Noney note\'s back illustration'}
+          />
+        </button>
         <img
           className="mt-2 mb-3 noney-image"
           src={noneyImages.noneyCulturalTender}
