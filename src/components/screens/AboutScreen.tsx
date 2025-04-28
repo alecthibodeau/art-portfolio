@@ -37,7 +37,7 @@ function AboutScreen(): JSX.Element {
         <p>
           Alec Thibodeau is a visual artist. This website is a portfolio for his
           early explorations in drawing, printmaking and related work. Visit
-          Alec's <a href="https://huetown.com"> Huetown</a> site to see more current projects.
+          Alec's <a href="https://huetown.com"> Huetown</a> site to see recent projects.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
@@ -45,16 +45,16 @@ function AboutScreen(): JSX.Element {
           that's permanently installed at an interior site in New York City. This
           piece was commissioned by the NYC Department of Education and the NYC School
           Construction Authority Public Art for Public Schools Program in collaboration with
-          the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241">NYC
+          the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241" target="_blank" rel="noreferrer">NYC
           Department of Cultural Affairs Percent for Art Program</a>.
-          Alec is also the recipient of a project grant from the LEF Foundation to
-          print <Link to={`/${config.noneyRoute}`}><span className="fst-italic">Noney
-          </span></Link>, an experimental currency which has circulated internationally.
+          Alec is also the recipient of funding from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF
+          Foundation</a>, which awarded him a project grant to print <Link to={`/${config.noneyRoute}`}>Noney
+          </Link>, an experimental currency which has circulated internationally.
         </p>
         <p>
           Galleries that have shown Alec's work include Tomato House (New York City),
           Secret Project Robot (New York City), Spudnik Press Cooperative (Chicago),
-          Cade Tompkins Projects (Providence), the University of Tennessee's Ewing Gallery (Knoxville),
+          Cade Tompkins Projects (Providence), World's Fair Gallery (Providence), the University of Tennessee's Ewing Gallery (Knoxville),
           Boston Center for the Arts Mills Gallery and the University of Alabama at Birmingham's Visual Arts Gallery.
         </p>
       </div>

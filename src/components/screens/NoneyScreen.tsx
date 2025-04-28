@@ -28,11 +28,11 @@ function NoneyScreen(): JSX.Element {
           alt="Noney note's back detail: scroll with hand-drawn text"
         />
         <p>
-          Noney entered circulation when artist <Link to="/">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA.
+          <span className="fw-bold">Project summary</span><span>: Noney entered circulation when artist <Link to="/">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA. Funding for Noney was provided by a project grant from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF Foundation</a></span>
         </p>
         <p className="noney-rule"></p>
         <p>
-          Over the course of human history, various materials have served as money, from stones and shells to grains and molasses. Precious metals &mdash; in the form of coins &mdash; were early trading instruments due to their consistent weight. Paper currency was another development. Originating as individual legal agreements, paper notes guaranteed specific amounts of precious metal in reserve, even though the notes themselves had no intrinsic value. They merely represented something else that did.
+        <span className="fw-bold">Project description</span><span>: Over the course of human history, various materials have served as money, from stones and shells to grains and molasses. Precious metals &mdash; in the form of coins &mdash; were early trading instruments due to their consistent weight. Paper currency was another development. Originating as individual legal agreements, paper notes guaranteed specific amounts of precious metal in reserve, even though the notes themselves had no intrinsic value. They merely represented something else that did.</span>
         </p>
         <p>
           The value of currency progressively became more abstract, as banks and governments began issuing more paper notes than their metal reserves could back. This practice of fractional-reserve banking established a situation with unfortunate consequences, like bank panics.
