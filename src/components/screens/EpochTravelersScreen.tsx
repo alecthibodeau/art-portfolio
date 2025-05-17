@@ -19,6 +19,7 @@ function EpochTravelersScreen(): JSX.Element {
 
   return (
     <div>
+      <h1 className="row justify-content-center mb-4">Epoch Travelers</h1>
       <div className="mx-auto max-width-lg-breakpoint">
         <span className="fst-italic">Epoch Travelers</span> by artist Alec Thibodeau is a large-scale work in marble
         permanently installed at an interior site in New York City. It was commissioned by the NYC Department of Education

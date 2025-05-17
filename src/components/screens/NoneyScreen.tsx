@@ -15,6 +15,7 @@ function NoneyScreen(): JSX.Element {
 
   return (
     <div className="row justify-content-center max-width-xxl-breakpoint">
+      <h1 className="row justify-content-center mb-4">Noney</h1>
       <div className="col d-flex flex-column align-items-center">
         <button
           onClick={() => setNoneyNoteFaceIsFront(!isFront)}
@@ -33,7 +34,7 @@ function NoneyScreen(): JSX.Element {
           alt="Noney note's back detail: scroll with hand-drawn text"
         />
         <p>
-          <span className="fw-bold">Project summary</span><span>: Noney entered circulation when artist <Link to="/">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA. Funding for Noney was provided by a project grant from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF Foundation</a></span>
+          <span className="fw-bold">Project summary</span><span>: Noney entered circulation when artist <Link to="/about">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA. Funding for Noney was provided by a project grant from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF Foundation</a></span>
         </p>
         <p className="noney-rule"></p>
         <p>
