@@ -8,11 +8,11 @@ import contactFormConfig from '../constants/contact-form-config';
 
 /* Helpers */
 import apiSendMessage from '../helpers/api-send-message';
-import formatDate from '../helpers/format-date-and-time';
+import formatDateAndTime from '../helpers/format-date-and-time';
 import formatText from '../helpers/format-text';
 
 /* Styles */
-import '../styles/contact.scss';
+import '../styles/contact-form.scss';
 
 function ContactForm(props: ContactFormProps): JSX.Element {
   const {
@@ -29,7 +29,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
   const { allNonDigits, validEmail, formatLettersAndNumbers, formatTitleCase } = formatText;
   const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
   const currentDate: Date = new Date();
-  const formattedTime: string = formatDate.formatFullDateAndTime(currentDate);
+  const formattedTime: string = formatDateAndTime.formatFullDateAndTime(currentDate);
   const [errors, setErrors] = useState<string[]>([]);
   const [currentField, setCurrentField] = useState<string>('');
   const [isValidationDisplayed, setIsValidationDisplayed] = useState<boolean>(false);
@@ -175,8 +175,8 @@ function ContactForm(props: ContactFormProps): JSX.Element {
   }
 
   return (
-    <div className="contact-container">
-      <div className="contact-message">
+    <div className="contact-form-wrapper">
+      <div className="contact-form-message">
         <span className="contact-alec">Contact Alec</span>
         <span>(asterisk indicates required field)</span>
       </div>

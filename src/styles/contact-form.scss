@@ -1,11 +1,11 @@
 @use './variables' as *;
 
-.contact-container {
-  margin: 0 auto;
+.contact-form-wrapper {
   max-width: $bootstrap-breakpoint-sm;
+  margin: 0 auto;
 }
 
-.contact-message {
+.contact-form-message {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -29,7 +29,6 @@
 .input-field,
 .textarea-field {
   border: 1px solid $piece-border-color;
-  width: 100%;
 }
 
 .error-messages {
