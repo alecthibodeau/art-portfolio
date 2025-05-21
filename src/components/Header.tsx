@@ -5,7 +5,7 @@ import { wordmarkForHeader } from '../helpers/images-general';
 
 function Header(): JSX.Element {
   return (
-    <header className="my-3 d-flex flex-column align-items-center">
+    <header className="my-2 d-flex flex-column align-items-center">
       <Link to="/">
         <img className="wordmark" src={wordmarkForHeader} alt="Alec Thibodeau wordmark" />
       </Link>

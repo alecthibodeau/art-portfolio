@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 
 /* Interfaces */
-import ContactProps from '../interfaces/ContactProps';
+import ContactFormProps from '../interfaces/ContactFormProps';
 
 /* Constants */
-import stringValues from '../constants/stringValues';
+import contactFormConfig from '../constants/contact-form-config';
 
 /* Helpers */
 import apiSendMessage from '../helpers/api-send-message';
@@ -14,21 +14,18 @@ import formatText from '../helpers/format-text';
 /* Styles */
 import '../styles/contact.scss';
 
-function Contact(props: ContactProps): JSX.Element {
+function ContactForm(props: ContactFormProps): JSX.Element {
   const {
-    textEmail,
-    textMessage,
-    textName,
-    textPhone,
-    textTime,
-    textText,
+    inputs: { name, email, phone, message },
+    formatting: { text, time },
     errorMessages: {
       allRequiredFields,
       formReferenceNull,
       invalidEmail,
       tryAgain
-    }
-  } = stringValues
+    },
+    submission: { emailServiceId, emailTemplateId, emailPublicKey }
+  } = contactFormConfig;
   const { allNonDigits, validEmail, formatLettersAndNumbers, formatTitleCase } = formatText;
   const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
   const currentDate: Date = new Date();
@@ -38,10 +35,12 @@ function Contact(props: ContactProps): JSX.Element {
   const [isValidationDisplayed, setIsValidationDisplayed] = useState<boolean>(false);
   const [formattedPhone, setFormattedPhone] = useState('');
 
+  const inputFieldNames: string[] = [name, email, phone, message];
+
   function appendFormData(formData: FormData): FormData {
-    formData.append('service_id', stringValues.emailServiceId);
-    formData.append('template_id', stringValues.emailTemplateId);
-    formData.append('user_id', stringValues.emailPublicKey);
+    formData.append('service_id', emailServiceId);
+    formData.append('template_id', emailTemplateId);
+    formData.append('user_id', emailPublicKey);
     return formData;
   }
 
@@ -49,7 +48,7 @@ function Contact(props: ContactProps): JSX.Element {
     let isIncomplete: boolean = false;
     if (contactForm.current) {
       const formData = new FormData(contactForm.current);
-      const requiredFields = [textName, textEmail, textMessage];
+      const requiredFields = [name, email, message];
       isIncomplete = requiredFields.some((field) => !formData.get(field));
     }
     return isIncomplete;
@@ -79,10 +78,10 @@ function Contact(props: ContactProps): JSX.Element {
     const input: string = event.target.value;
     const requiredError: string = `${formatTitleCase(currentField)} is required.`;
     !input.trim() ? addError(requiredError) : removeError(requiredError);
-    if (currentField === textEmail) {
+    if (currentField === email) {
       !validEmail.test(input) ? addError(invalidEmail) : removeError(invalidEmail);
     }
-    if (currentField === textPhone) formatPhone(input);
+    if (currentField === phone) formatPhone(input);
     if (isUserSubmissionIncomplete()) {
       addError(allRequiredFields);
     } else {
@@ -137,24 +136,24 @@ function Contact(props: ContactProps): JSX.Element {
       >
         <label htmlFor={fieldName}>
           <span>{fieldNameTitleCase}</span>
-          {fieldName !== textPhone ? <span className="required">*</span> : null}
+          {fieldName !== phone ? <span className="required">*</span> : null}
         </label>
         {
-          fieldName !== textMessage ?
+          fieldName !== message ?
           <input
-            required={fieldName !== textPhone}
-            type={fieldName === textEmail ? textEmail : textText}
+            required={fieldName !== phone}
+            type={fieldName === email ? email : text}
             id={fieldName}
             name={fieldName}
             className="input-field"
             onChange={validateInput}
             onFocus={() => setCurrentField(fieldName)}
-            {...(fieldName === textPhone ? { value: formattedPhone } : {})}
+            {...(fieldName === phone ? { value: formattedPhone } : {})}
           /> :
           <textarea
             required
-            id={textMessage}
-            name={textMessage}
+            id={message}
+            name={message}
             className="textarea-field"
             onChange={validateInput}
             onFocus={() => setCurrentField(fieldName)}
@@ -182,8 +181,8 @@ function Contact(props: ContactProps): JSX.Element {
         <span>(asterisk indicates required field)</span>
       </div>
       <form ref={contactForm} onSubmit={handleSubmit}>
-        <input type="hidden" name={textTime} value={formattedTime} />
-        {stringValues.inputFieldNames.map(renderInputGroup)}
+        <input type="hidden" name={time} value={formattedTime} />
+        {inputFieldNames.map(renderInputGroup)}
         {
           isValidationDisplayed ?
           <div className="error-messages">
@@ -201,4 +200,4 @@ function Contact(props: ContactProps): JSX.Element {
   );
 }
 
-export default Contact;
+export default ContactForm;

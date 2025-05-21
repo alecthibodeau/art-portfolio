@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 /* Components */
-import Contact from '../Contact';
+import ContactForm from '../ContactForm';
 
 /* Config */
 import config from '../../config.json';
 
 /* Images */
 import selfPortrait from '../../assets/images/main/alec-thibodeau-self-portrait.jpg';
-import Modal from '../InfoModal';
+import InfoModal from '../InfoModal';
 import Loader from '../Loader';
 
 function AboutScreen(): JSX.Element {
@@ -26,7 +26,7 @@ function AboutScreen(): JSX.Element {
       {isLoading ? <Loader /> : null }
       {
         isModalDisplayed ?
-          <Modal
+          <InfoModal
             isModalDisplayed={isModalDisplayed}
             onClickCloseButton={() => setIsModalDisplayed(false)}
           /> :
@@ -58,7 +58,7 @@ function AboutScreen(): JSX.Element {
           Boston Center for the Arts Mills Gallery and the University of Alabama at Birmingham's Visual Arts Gallery.
         </p>
       </div>
-      <Contact
+      <ContactForm
         onSubmitForm={() => setIsLoading(true)}
         onSuccessfulSubmission={handleSuccessfulSubmission}
       />

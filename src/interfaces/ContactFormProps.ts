@@ -1,6 +1,6 @@
-interface ContactProps {
+interface ContactFormProps {
   onSubmitForm: () => void;
   onSuccessfulSubmission: () => void;
 }
 
-export default ContactProps;
+export default ContactFormProps;

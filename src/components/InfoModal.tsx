@@ -5,12 +5,14 @@ import { useEffect } from 'react';
 import InfoModalProps from '../interfaces/InfoModalProps';
 
 /* Constants */
-import stringValues from '../constants/stringValues';
+import variables from '../constants/_variables';
 
 /* Styles */
-import '../styles/modal.scss';
+import '../styles/info-modal.scss';
 
 function InfoModal(props: InfoModalProps): React.JSX.Element {
+  const { dimensionSVGClosingXPoints } = variables;
+
   const keydown = 'keydown';
   const keyEscape = 'Escape';
 
@@ -25,7 +27,7 @@ function InfoModal(props: InfoModalProps): React.JSX.Element {
   }, [props, props.isModalDisplayed]);
 
   return (
-    <div className="info-modal-container">
+    <div className="info-modal-wrapper">
       <div className="info-modal">
         <div className="info-modal-header">
           <button
@@ -36,7 +38,7 @@ function InfoModal(props: InfoModalProps): React.JSX.Element {
               viewBox="30 0 96 96"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <polygon fill="#fff" points={stringValues.svgPaths.closingX}/>
+              <polygon fill="#fff" points={dimensionSVGClosingXPoints}/>
             </svg>
           </button>
         </div>

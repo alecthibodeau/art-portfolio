@@ -1,9 +1,11 @@
 /* Constants */
-import stringValues from '../constants/stringValues';
+import contactFormConfig from '../constants/contact-form-config';
+
+const { urlSendForm } = contactFormConfig.submission;
 
 async function postForm(formData: FormData): Promise<void> {
   try {
-    const response: Response = await fetch(stringValues.urlSendForm, {
+    const response: Response = await fetch(urlSendForm, {
       method: 'POST',
       body: formData
     });
