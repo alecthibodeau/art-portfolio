@@ -1,6 +1,17 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
 @use './styles/variables' as *;
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .wordmark {
   height: 65px;
 }
@@ -29,6 +40,16 @@ nav {
       color: $nav-link-color-active-hover-gallery;
     }
   }
+}
+
+main {
+  display: flex;
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .home-caption {

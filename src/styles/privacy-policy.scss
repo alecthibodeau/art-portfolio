@@ -1,0 +1,6 @@
+@use './variables' as *;
+
+.privacy-policy {
+  max-width: $bootstrap-breakpoint-lg;
+  padding-inline: 1.5rem;
+}

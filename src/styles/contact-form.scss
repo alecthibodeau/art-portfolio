@@ -29,6 +29,10 @@
 .input-field,
 .textarea-field {
   border: 1px solid $piece-border-color;
+
+  &.textarea-field {
+    min-height: 4rem;
+  }
 }
 
 .error-messages {

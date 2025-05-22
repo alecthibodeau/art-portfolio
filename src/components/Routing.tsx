@@ -15,6 +15,7 @@ import HomeScreen from './screens/HomeScreen';
 import NoneyScreen from './screens/NoneyScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
 import PieceScreen from './screens/PieceScreen';
+import PrivacyPolicyScreen from './screens/PrivacyPolicyScreen';
 import SunshineSunshineScreen from './screens/SunshineSunshineScreen';
 
 function Routing(): JSX.Element {
@@ -58,6 +59,7 @@ function Routing(): JSX.Element {
       <Route path={epochTravelersRoute} element={<EpochTravelersScreen />} />
       <Route path={noneyRoute} element={<NoneyScreen />} />
       <Route path={sunshineSunshineRoute} element={<SunshineSunshineScreen />} />
+      <Route path="privacy-policy" element={<PrivacyPolicyScreen />} />
       <Route path="/" element={<HomeScreen />} />
       <Route path="*" element={<NotFoundScreen />} />
     </Routes>

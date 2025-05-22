@@ -1,9 +1,15 @@
 const allButLettersAndNumbers: RegExp = /[^a-zA-Z0-9]/g;
+const allButLettersNumbersAndSpaces: RegExp = /[^a-zA-Z0-9\s]/g;
+const allSpaces: RegExp = /\s+/g;
 const allNonDigits: RegExp = /\D/g;
 const validEmail: RegExp = /^\S+@\S+\.\S+$/;
 
 function formatLettersAndNumbers(text: string): string {
   return text.replace(allButLettersAndNumbers, '');
+}
+
+function formatDashCase(text: string): string {
+  return text.toLowerCase().replace(allButLettersNumbersAndSpaces, '').replace(allSpaces, '-');
 }
 
 function formatTitleCase(text: string): string {
@@ -13,6 +19,7 @@ function formatTitleCase(text: string): string {
 const formatText = {
   allNonDigits,
   validEmail,
+  formatDashCase,
   formatLettersAndNumbers,
   formatTitleCase
 };
