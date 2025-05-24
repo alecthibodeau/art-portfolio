@@ -29,6 +29,8 @@ function Routing(): JSX.Element {
     sunshineSunshineRoute
   } = config;
 
+  const allNavBarLinksButAbout: string[] = navbarLinks.slice(0, -1);
+
   function renderGalleryRoute(name: string) {
     return (
       <Route
@@ -54,7 +56,7 @@ function Routing(): JSX.Element {
       {drawings.map(renderPieceRoute)}
       {prints.map(renderPieceRoute)}
       {posters.map(renderPieceRoute)}
-      {navbarLinks.slice(0, -1).map(renderGalleryRoute)}
+      {allNavBarLinksButAbout.map(renderGalleryRoute)}
       <Route path={navbarLinks[navbarLinks.length - 1]} element={<AboutScreen />} />
       <Route path={epochTravelersRoute} element={<EpochTravelersScreen />} />
       <Route path={noneyRoute} element={<NoneyScreen />} />
