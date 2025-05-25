@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+/* Helpers */
+import scrollToTop from '../../helpers/scroll-to-top';
+
 /* Images */
 import { noneyImages } from '../../helpers/images-general';
 
@@ -34,7 +37,7 @@ function NoneyScreen(): JSX.Element {
           alt="Noney note's back detail: scroll with hand-drawn text"
         />
         <p>
-          <span className="fw-bold">Project summary</span><span>: Noney entered circulation when artist <Link to="/about">Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA. Funding for Noney was provided by a project grant from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF Foundation</a>.</span>
+          <span className="fw-bold">Project summary</span><span>: Noney entered circulation when artist <Link to="/about" onClick={scrollToTop}>Alec Thibodeau</Link> began distributing its supply of 10,000 notes through various release events. Noney notes have since made their way into dozens of countries and every state in the USA. Funding for Noney was provided by a project grant from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF Foundation</a>.</span>
         </p>
         <p className="noney-rule"></p>
         <p>

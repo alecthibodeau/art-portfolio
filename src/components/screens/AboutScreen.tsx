@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 /* Components */
 import ContactForm from '../ContactForm';
 
+/* Helpers */
+import scrollToTop from '../../helpers/scroll-to-top';
+
 /* Config */
 import config from '../../config.json';
 
@@ -40,7 +43,7 @@ function AboutScreen(): JSX.Element {
           Alec's <a href="https://huetown.com"> Huetown</a> site to see recent projects.
         </p>
         <p>
-          Alec's <Link to={`/${config.epochTravelersRoute}`}><span className="fst-italic">
+          Alec's <Link to={`/${config.epochTravelersRoute}`} onClick={scrollToTop}><span className="fst-italic">
           Epoch Travelers</span></Link> is a large-scale drawing incised into marble
           that's permanently installed at an interior site in New York City. This
           piece was commissioned by the NYC Department of Education and the NYC School
@@ -48,7 +51,7 @@ function AboutScreen(): JSX.Element {
           the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241" target="_blank" rel="noreferrer">NYC
           Department of Cultural Affairs Percent for Art Program</a>.
           Alec is also the recipient of funding from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF
-          Foundation</a>, which awarded him a project grant to print <Link to={`/${config.noneyRoute}`}>Noney
+          Foundation</a>, which awarded him a project grant to print <Link to={`/${config.noneyRoute}`} onClick={scrollToTop}>Noney
           </Link>, an experimental currency which has circulated internationally.
         </p>
         <p>

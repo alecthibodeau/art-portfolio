@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 
+/* Helpers */
+import scrollToTop from '../../helpers/scroll-to-top';
+
 /* Config */
 import config from '../../config.json';
 
@@ -18,6 +21,7 @@ function GalleryScreen(props: GalleryProps): JSX.Element {
         key={`${piece.id}Detail`}
         className="m-3"
         to={piece.path}
+        onClick={scrollToTop}
       >
         <img
           className="gallery-image"
