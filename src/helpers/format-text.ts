@@ -1,13 +1,8 @@
-const allButLettersAndNumbers: RegExp = /[^a-zA-Z0-9]/g;
 const allButLettersNumbersAndSpaces: RegExp = /[^a-zA-Z0-9\s]/g;
 const allCapitalLetters: RegExp = /([A-Z])/g;
 const allSpaces: RegExp = /\s+/g;
 const allNonDigits: RegExp = /\D/g;
 const validEmail: RegExp = /^\S+@\S+\.\S+$/;
-
-function formatLettersAndNumbers(text: string): string {
-  return text.replace(allButLettersAndNumbers, '');
-}
 
 function addSpaceBeforeCapitalLetters(text: string): string {
   return text.replace(allCapitalLetters, ' $1').trim();
@@ -25,13 +20,17 @@ function formatFormLabel(text: string): string {
   return formatTitleCase(addSpaceBeforeCapitalLetters(text));
 }
 
+function replaceAngleBrackets(text: string): string {
+  return text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 const formatText = {
   allNonDigits,
   validEmail,
   formatDashCase,
   formatFormLabel,
-  formatLettersAndNumbers,
-  formatTitleCase
+  formatTitleCase,
+  replaceAngleBrackets
 };
 
 export default formatText;

@@ -17,11 +17,13 @@ import '../styles/contact-form.scss';
 function ContactForm(props: ContactFormProps): JSX.Element {
   const {
     inputs: { name, email, confirmEmail, phone, message },
-    formatting: { text, time },
+    textFormatting: { noPhoneNumberSubmitted, text, time },
     errorMessages: {
       allRequiredFields,
       formReferenceNull,
+      invalidConfirmEmail,
       invalidEmail,
+      invalidPhone,
       tryAgain
     },
     submission: { emailServiceId, emailTemplateId, emailPublicKey }
@@ -30,18 +32,23 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     allNonDigits,
     validEmail,
     formatFormLabel,
-    formatLettersAndNumbers,
-    formatTitleCase
+    replaceAngleBrackets
   } = formatText;
   const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
-  const currentDate: Date = new Date();
-  const formattedTime: string = formatDateAndTime.formatFullDateAndTime(currentDate);
   const [errors, setErrors] = useState<string[]>([]);
   const [currentField, setCurrentField] = useState<string>('');
   const [isValidationDisplayed, setIsValidationDisplayed] = useState<boolean>(false);
   const [formattedPhone, setFormattedPhone] = useState('');
+  const [messageLength, setMessageLength] = useState<number>(0);
+
+  const currentDate: Date = new Date();
+  const formattedTime: string = formatDateAndTime.formatFullDateAndTime(currentDate);
 
   const inputFieldNames: string[] = [name, email, confirmEmail, phone, message];
+
+  const messageMaxLength: number = 1000;
+  const remainingCount: number = messageMaxLength - messageLength;
+  const isMaxCount: boolean = messageLength === messageMaxLength;
 
   function appendFormData(formData: FormData): FormData {
     formData.append('service_id', emailServiceId);
@@ -73,6 +80,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
 
   function formatPhone(input: string): void {
     const digits: string = input.replace(allNonDigits, '').slice(0, 10);
+    (digits.length && digits.length < 10) ? addError(invalidPhone) : removeError(invalidPhone);
     const parts: string[] = [];
     if (digits.length > 0) parts.push(digits.slice(0, 3));
     if (digits.length > 3) parts.push(digits.slice(3, 6));
@@ -80,14 +88,32 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     setFormattedPhone(parts.join('-'));
   }
 
-  function validateInput(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >): void {
-    const input: string = event.target.value;
-    const requiredError: string = `${formatTitleCase(currentField)} is required.`;
-    !input.trim() ? addError(requiredError) : removeError(requiredError);
-    if (currentField === email) {
-      !validEmail.test(input) ? addError(invalidEmail) : removeError(invalidEmail);
+  function validateConfirmEmail(inputValue: string): void {
+    if (contactForm.current) {
+      const formData = new FormData(contactForm.current);
+      const otherInput = currentField === email ? confirmEmail : email;
+      const otherInputValue: string | null = formData.get(otherInput) as string | null;
+      if (otherInputValue && otherInputValue !== inputValue) {
+        addError(invalidConfirmEmail);
+      } else {
+        removeError(invalidConfirmEmail);
+      }
     }
-    if (currentField === phone) formatPhone(input);
+  }
+
+  function validateInput(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >): void {
+    const input: string = replaceAngleBrackets(event.target.value);
+    if (currentField === message) setMessageLength(input.length);
+    if (currentField === phone) {
+      formatPhone(input);
+    } else {
+      const requiredError: string = `${formatFormLabel(currentField)} is required.`;
+      !input.trim() ? addError(requiredError) : removeError(requiredError);
+    }
+    if (currentField === email || currentField === confirmEmail) {
+      !validEmail.test(input) ? addError(invalidEmail) : removeError(invalidEmail);
+      validateConfirmEmail(input);
+    }
     if (isUserSubmissionIncomplete()) {
       addError(allRequiredFields);
     } else {
@@ -97,6 +123,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
 
   async function sendUserMessage(formData: FormData): Promise<void> {
     setFormattedPhone('');
+    setMessageLength(0);
     setErrors([]);
     if (contactForm.current) {
       contactForm.current.reset();
@@ -117,6 +144,8 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
     if (!errors.length) {
+      formData.delete(confirmEmail);
+      if (!formData.get(phone)) formData.set(phone, noPhoneNumberSubmitted);
       sendUserMessage(appendFormData(formData));
       if (isValidationDisplayed) setIsValidationDisplayed(false);
     } else {
@@ -151,6 +180,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
             id={fieldName}
             name={fieldName}
             className="input-field"
+            maxLength={fieldName === name ? 100: 250}
             onChange={validateInput}
             onFocus={() => setCurrentField(fieldName)}
             {...(fieldName === phone ? { value: formattedPhone } : {})}
@@ -160,6 +190,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
             id={message}
             name={message}
             className="textarea-field"
+            maxLength={messageMaxLength}
             onChange={validateInput}
             onFocus={() => setCurrentField(fieldName)}
           />
@@ -168,12 +199,25 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     );
   }
 
+  function renderCharactersRemainingMessage(): JSX.Element {
+    return (
+      <div className={`characters-remaining-message${isMaxCount ? ' limit' : ''}`}>
+        {`${remainingCount} character${remainingCount === 1 ? '' : 's'} remaining`}
+      </div>
+    );
+  }
+
+  function renderErrorMessagesWrapper(): JSX.Element {
+    return (
+      <div className="error-messages-wrapper">
+        {errors.map(renderErrorMessage)}
+      </div>
+    );
+  }
+
   function renderErrorMessage(message: string, index: number): JSX.Element {
     return (
-      <span
-        key={`${index}${formatLettersAndNumbers(message)}`}
-        className="error-message"
-      >
+      <span key={`${index}${message}`} className="error-message">
         {message}
       </span>
     );
@@ -188,14 +232,9 @@ function ContactForm(props: ContactFormProps): JSX.Element {
       <form ref={contactForm} onSubmit={handleSubmit}>
         <input type="hidden" name={time} value={formattedTime} />
         {inputFieldNames.map(renderInputGroup)}
-        {
-          isValidationDisplayed ?
-          <div className="error-messages">
-            {errors.map(renderErrorMessage)}
-          </div> :
-          null
-        }
-        <div className="submit-button-container">
+        {messageLength ? renderCharactersRemainingMessage() : null}
+        {isValidationDisplayed ? renderErrorMessagesWrapper() : null}
+        <div className="submit-button-wrapper">
           <button type="submit" onClick={onClickSubmitButton}>
             Submit
           </button>

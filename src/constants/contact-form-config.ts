@@ -6,7 +6,8 @@ const inputs: { [key: string]: string } = {
   message: 'message'
 };
 
-const formatting: { [key: string]: string } = {
+const textFormatting: { [key: string]: string } = {
+  noPhoneNumberSubmitted: '(no phone number submitted)',
   text: 'text',
   time: 'time'
 };
@@ -15,6 +16,8 @@ const errorMessages: { [key: string]: string } = {
   allRequiredFields: 'Please fill out all required fields.',
   formReferenceNull: 'Form reference is null.',
   invalidEmail: 'Invalid email address.',
+  invalidConfirmEmail: 'Email and Confirm Email do not match.',
+  invalidPhone: 'Phone number value must be empty or all ten digits (USA format) — enter non-USA numbers as part of message field.',
   tryAgain: 'There was an error. Please try again.'
 };
 
@@ -27,7 +30,7 @@ const submission: { [key: string]: string } = {
 
 const contactFormConfig = {
   inputs,
-  formatting,
+  textFormatting,
   errorMessages,
   submission
 };

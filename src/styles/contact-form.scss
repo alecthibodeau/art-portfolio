@@ -36,14 +36,23 @@
   }
 }
 
-.error-messages {
+.characters-remaining-message {
+  color: $green-yellow;
+  text-align: right;
+
+  &.limit {
+    color: $medium-dark-pink;
+  }
+}
+
+.error-messages-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: .125rem 1rem;
   color: $medium-dark-pink;
 }
 
-.submit-button-container {
+.submit-button-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -58,7 +67,10 @@ button[type='submit'] {
   color: $dark-yellow-green;
   font-size: inherit;
   text-decoration: none;
-  cursor: pointer;
+
+  &:not(:disabled) {
+    cursor: default;
+  }
 
   &:hover {
     background-color: $dark-yellow-green;
