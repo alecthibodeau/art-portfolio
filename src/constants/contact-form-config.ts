@@ -1,6 +1,7 @@
 const inputs: { [key: string]: string } = {
   name: 'name',
   email: 'email',
+  confirmEmail: 'confirmEmail',
   phone: 'phone',
   message: 'message'
 };

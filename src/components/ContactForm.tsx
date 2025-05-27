@@ -16,7 +16,7 @@ import '../styles/contact-form.scss';
 
 function ContactForm(props: ContactFormProps): JSX.Element {
   const {
-    inputs: { name, email, phone, message },
+    inputs: { name, email, confirmEmail, phone, message },
     formatting: { text, time },
     errorMessages: {
       allRequiredFields,
@@ -26,7 +26,13 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     },
     submission: { emailServiceId, emailTemplateId, emailPublicKey }
   } = contactFormConfig;
-  const { allNonDigits, validEmail, formatLettersAndNumbers, formatTitleCase } = formatText;
+  const {
+    allNonDigits,
+    validEmail,
+    formatFormLabel,
+    formatLettersAndNumbers,
+    formatTitleCase
+  } = formatText;
   const contactForm: React.MutableRefObject<HTMLFormElement | null> = useRef(null);
   const currentDate: Date = new Date();
   const formattedTime: string = formatDateAndTime.formatFullDateAndTime(currentDate);
@@ -35,7 +41,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
   const [isValidationDisplayed, setIsValidationDisplayed] = useState<boolean>(false);
   const [formattedPhone, setFormattedPhone] = useState('');
 
-  const inputFieldNames: string[] = [name, email, phone, message];
+  const inputFieldNames: string[] = [name, email, confirmEmail, phone, message];
 
   function appendFormData(formData: FormData): FormData {
     formData.append('service_id', emailServiceId);
@@ -128,14 +134,13 @@ function ContactForm(props: ContactFormProps): JSX.Element {
   }
 
   function renderInputGroup(fieldName: string, index: number): JSX.Element {
-    const fieldNameTitleCase: string = formatTitleCase(fieldName);
     return (
       <div
-        key={`${index}${fieldNameTitleCase}Field`}
+        key={`${index}${fieldName}Field`}
         className="input-group"
       >
         <label htmlFor={fieldName}>
-          <span>{fieldNameTitleCase}</span>
+          <span>{formatFormLabel(fieldName)}</span>
           {fieldName !== phone ? <span className="required">*</span> : null}
         </label>
         {
