@@ -82,7 +82,7 @@ main {
 .piece-with-border,
 .noney-note,
 .noney-sheet {
-  @include image-border;
+  border: 1px solid $piece-border-color;
 }
 
 .max-width-lg-breakpoint {

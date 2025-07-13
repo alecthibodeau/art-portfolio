@@ -31,12 +31,8 @@ $piece-border-color: $thirty-five-percent-gray;
 $footer-bar-background-color: $eighty-percent-gray;
 
 /* Size */
-$gallery-detail-dimension: 80px;
 
-/* Border */
-@mixin image-border {
-  border: 1px solid $piece-border-color;
-}
+$gallery-detail-dimension: 80px;
 
 /* Bootstrap Breakpoints */
 
