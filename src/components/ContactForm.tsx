@@ -226,7 +226,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-message">
-        <span className="contact-alec">Contact Alec</span>
+        <span className="contact-form-title">Contact</span>
         <span>(asterisk indicates required field)</span>
       </div>
       <form ref={contactForm} onSubmit={handleSubmit}>
