@@ -39,9 +39,10 @@ function AboutScreen(): JSX.Element {
       <div>
         <p>
           Alec Thibodeau is a visual artist. This website is a portfolio for his
-          early explorations in drawing, printmaking and related work. Visit
-          Alec's <a href="https://huetown.com">Huetown</a> site to learn about recent work.
-          See Alec's <a href="https://alect.me">coding projects</a>.
+          explorations in drawing, printmaking and related media. Visit
+          Alec's <a href="https://huetown.com">huetown.com</a> site to learn about
+          additional work, including pieces currently available for sale.
+          Or find his coding projects at <a href="https://alect.me">alect.me</a>.
         </p>
         <p>
           Alec's <Link to={`/${config.epochTravelersRoute}`} onClick={scrollToTop}><span className="fst-italic">
