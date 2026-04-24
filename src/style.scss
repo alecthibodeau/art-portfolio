@@ -20,32 +20,6 @@ html {
   height: 65px;
 }
 
-nav {
-  max-width: 400px;
-  height: 40px;
-}
-
-.nav-link {
-  color: $nav-link-color-default;
-
-  &:hover {
-    color: $nav-link-color-default-hover;
-  }
-
-  &.nav-link-active {
-    color: $nav-link-color-active;
-    background-color: $nav-link-background-color-active;
-
-    &:hover {
-      color: $nav-link-color-active-hover-piece;
-    }
-
-    &:hover.gallery {
-      color: $nav-link-color-active-hover-gallery;
-    }
-  }
-}
-
 main {
   display: flex;
   flex: 1;

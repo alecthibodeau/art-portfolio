@@ -3,8 +3,24 @@ import { NavLink } from 'react-router-dom';
 /* Config */
 import config from '../config.json';
 
+/* Styles */
+import '../styles/nav.css';
+
 function Navbar(): JSX.Element {
-  const navLinkDefault: string = 'col mx-sm-1 px-3 d-flex flex-column justify-content-center text-center nav-link';
+  const navLinkDefault: string = 'navigation-link';
+  const navbarLinks: string[] = [
+    config.textEpochTravelers,
+    config.textNoney,
+    config.textAbout
+  ];
+
+  function capitalizeWords(text: string) {
+    return text
+      .toLowerCase()
+      .split(' ')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
   function renderNavbarLink(name: string): JSX.Element {
     return (
@@ -13,16 +29,16 @@ function Navbar(): JSX.Element {
         className={
           ({ isActive }) => isActive ? navLinkDefault + ' nav-link-active' : navLinkDefault
         }
-        to={`/${name}`}
+        to={`/${name.replace(' ', '-')}`}
       >
-        {`${name.charAt(0).toUpperCase()}${name.slice(1)}`}
+        {capitalizeWords(name)}
       </NavLink>
     );
   }
 
   return (
-    <nav className="row mx-auto px-2">
-      {config.navbarLinks.map(renderNavbarLink)}
+    <nav>
+      {navbarLinks.map(renderNavbarLink)}
     </nav>
   );
 };
