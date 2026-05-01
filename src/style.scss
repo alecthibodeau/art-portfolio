@@ -17,7 +17,8 @@ html {
 }
 
 .wordmark {
-  height: 65px;
+  width: 326px;
+  max-width: 90vw;
 }
 
 main {
@@ -87,7 +88,7 @@ img.self-portrait {
 }
 
 .noney-image {
-  max-width: 340px;
+  max-width: 96vw;
 }
 
 /* Breakpoints */
