@@ -6,21 +6,29 @@ import config from '../config.json';
 /* Styles */
 import '../styles/nav.css';
 
+/* Helpers */
+import formatText from '../helpers/format-text';
+
 function Navbar(): JSX.Element {
+  const {
+    textAbout,
+    textDrawings,
+    textPosters,
+    textPrints
+  } = config;
+
+  const {
+    formatTitleCase,
+    formatTitleCaseMultipleWords
+  } = formatText;
+
   const navLinkDefault: string = 'navigation-link';
   const navbarLinks: string[] = [
-    config.textEpochTravelers,
-    config.textNoney,
-    config.textAbout
+    textDrawings,
+    textPrints,
+    textPosters,
+    textAbout
   ];
-
-  function capitalizeWords(text: string) {
-    return text
-      .toLowerCase()
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  }
 
   function renderNavbarLink(name: string): JSX.Element {
     return (
@@ -31,7 +39,7 @@ function Navbar(): JSX.Element {
         }
         to={`/${name.replace(' ', '-')}`}
       >
-        {capitalizeWords(name)}
+        {name.includes(' ') ? formatTitleCaseMultipleWords(name) : formatTitleCase(name)}
       </NavLink>
     );
   }

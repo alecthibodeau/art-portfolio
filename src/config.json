@@ -1,8 +1,13 @@
 {
   "artistCredit": "by Alec Thibodeau",
+  "textAbout": "about",
+  "textDrawings": "drawings",
   "textEpochTravelers": "epoch travelers",
   "textNoney": "noney",
-  "textAbout": "about",
+  "textPosters": "posters",
+  "textPrints": "prints",
+  "textPrivacyPolicy": "privacy policy",
+  "textSunshineSunshine": "sunshine sunshine",
   "drawings": [
     {
       "category": "drawing",

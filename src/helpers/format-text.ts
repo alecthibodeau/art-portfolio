@@ -13,7 +13,15 @@ function formatDashCase(text: string): string {
 }
 
 function formatTitleCase(text: string): string {
-  return text[0].toUpperCase() + text.slice(1);
+  return text.toLowerCase()[0].toUpperCase() + text.slice(1);
+}
+
+function formatTitleCaseMultipleWords(text: string) {
+  return text
+    .toLowerCase()
+    .split(' ')
+    .map(word => formatTitleCase(word))
+    .join(' ');
 }
 
 function formatFormLabel(text: string): string {
@@ -30,6 +38,7 @@ const formatText = {
   formatDashCase,
   formatFormLabel,
   formatTitleCase,
+  formatTitleCaseMultipleWords,
   replaceAngleBrackets
 };
 
