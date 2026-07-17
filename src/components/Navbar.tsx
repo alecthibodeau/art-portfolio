@@ -18,6 +18,7 @@ function Navbar(): JSX.Element {
   } = config;
 
   const {
+    formatDashCase,
     formatTitleCase,
     formatTitleCaseMultipleWords
   } = formatText;
@@ -37,7 +38,7 @@ function Navbar(): JSX.Element {
         className={
           ({ isActive }) => isActive ? navLinkDefault + ' nav-link-active' : navLinkDefault
         }
-        to={`/${name.replace(' ', '-')}`}
+        to={`/${formatDashCase(name)}`}
       >
         {name.includes(' ') ? formatTitleCaseMultipleWords(name) : formatTitleCase(name)}
       </NavLink>

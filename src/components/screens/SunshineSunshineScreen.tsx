@@ -1,8 +1,11 @@
+/* Constants */
+import navigationLinks from '../../constants/navigation-links';
+
 /* Images */
 import { sunshineSunshineImages } from '../../helpers/images-general';
 
 function SunshineSunshineScreen(): JSX.Element {
-  const shopLink: string = 'https://like-no-udder.com';
+  const shopLink: string = navigationLinks.urlLikeNoUdder;
 
   function renderImage(path: string, index: number): JSX.Element {
     return (
@@ -19,9 +22,9 @@ function SunshineSunshineScreen(): JSX.Element {
     <div>
       <div className="text-center">
         <span className="fst-italic">Sunshine Sunshine</span> is a mural in
-        water-based paint by Alec Thibodeau. Alec painted it at the
-        original location of a <a href={shopLink}>vegan ice cream shop</a> in
-        Providence, Rhode Island.
+        water-based paint by Alec Thibodeau. Alec painted it at the original
+        location of a <a href={shopLink} target="_blank" rel="noreferrer">vegan
+        ice cream shop</a> in Providence, Rhode Island.
       </div>
       <div className="d-flex flex-wrap justify-content-center">
         {sunshineSunshineImages.map(renderImage)}

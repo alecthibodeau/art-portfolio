@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 /* Components */
 import ContactForm from '../ContactForm';
 
+/* Constants */
+import navigationLinks from '../../constants/navigation-links';
+
 /* Helpers */
 import scrollToTop from '../../helpers/scroll-to-top';
 
@@ -16,6 +19,12 @@ import InfoModal from '../InfoModal';
 import Loader from '../Loader';
 
 function AboutScreen(): JSX.Element {
+  const {
+    urlEpochTravelers,
+    urlLefFoundation,
+    urlHuetown,
+    urlPercentForArt
+  } = navigationLinks;
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isModalDisplayed, setIsModalDisplayed] = useState<boolean>(false);
 
@@ -38,17 +47,17 @@ function AboutScreen(): JSX.Element {
       <img className="self-portrait" src={selfPortrait} alt="Alec Thibodeau self portrait" />
       <div>
         <p>
-          Alec Thibodeau is a visual artist. See more of his work at <a href="https://huetown.com" target="_blank" rel="noreferrer">huetown.com</a>.
+          Alec Thibodeau is a visual artist. See more of his work at <a href={urlHuetown} target="_blank" rel="noreferrer">huetown.com</a>.
         </p>
         <p>
-          Alec's <Link to={`/${config.textEpochTravelers}`} onClick={scrollToTop}><span className="fst-italic">
+          Alec's <Link to={`/${urlEpochTravelers}`} onClick={scrollToTop}><span className="fst-italic">
           Epoch Travelers</span></Link> piece is a large-scale drawing incised into marble
           that's permanently installed at an interior site in New York City, NY. This
           work was commissioned by the NYC Department of Education and the NYC School
           Construction Authority Public Art for Public Schools Program in collaboration with
-          the <a href="https://www1.nyc.gov/site/dclapercentforart/projects/projects-detail.page?recordID=241" target="_blank" rel="noreferrer">NYC
+          the <a href={urlPercentForArt} target="_blank" rel="noreferrer">NYC
           Department of Cultural Affairs Percent for Art Program</a>.
-          Alec is also the recipient of funding from the <a href="https://lef-foundation.org" target="_blank" rel="noreferrer">LEF
+          Alec is also the recipient of funding from the <a href={urlLefFoundation} target="_blank" rel="noreferrer">LEF
           Foundation</a>, which awarded him a project grant to print <Link to={`/${config.textNoney}`} onClick={scrollToTop}>Noney
           </Link>, an experimental currency which has circulated internationally.
         </p>
