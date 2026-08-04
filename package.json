@@ -46,7 +46,7 @@
     ]
   },
   "resolutions": {
-    "postcss": "8.4.31",
+    "postcss": "8.5.25",
     "ws": "8.17.1",
     "nth-check": "2.0.1"
   },
